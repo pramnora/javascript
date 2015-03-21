@@ -100,6 +100,8 @@ Method 2: (long form) : USING A [barebone.html] DOCUMENT
  (<)/body(>)    
 (<)/html(>)  
 
+NOTE: Please, take out the pair of curly brackets: () that you see being written inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
+
 Save the file as...  
 filename.html  
 ...again, left double click to run it; your web browser should automatically launch itself; read/execute the Javascript source code; and, then, display the output.
