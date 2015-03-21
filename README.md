@@ -14,7 +14,7 @@ The really good thing about learning to write/run Javascript code...is there is 
 
 1> A text editor...I usually use the built in Windows Notepad. 
 
-Other text editors you can download for FREE are...  
+Other text editors you can download for FREE are...    
 -> Notepad++  
 -> SublimeText  
 -> -etc.
@@ -23,7 +23,7 @@ Other text editors you can download for FREE are...
 
 Your web browser software already contains a built-in Javascript code interpeter program...which both knows how to read Javascript codes/and, so display the Javascript output, effectively.
 
-Other web browsers you can download for FREE are...
+Other web browsers you can download for FREE are...  
 -> Google Chrome  
 -> Mozilla Firefox  
 -> Apple Safari  
@@ -43,9 +43,11 @@ Javascript, is generally written to run inside of web pages in one of 2 differen
 a> the HEAD-/HEAD tags, at the top of the web page  
 b> the BODY-/BODY tags; at the bottom of the page...that way the entire page can finish loading before the script runs.
 
-2> As an external script file; that is linked to from inside of the HTML web page. 
+2> In the HEAD-/HEAD section of the web page you can include a link to an external Javascript file.
 
 (<)script type="text/javascript" src="js01.js(>)(<)/script(>)    
+
+NOTE: Please, take out the pair of curly brackets that you see being written inside of the above code: (); I had to include these as otherwise the code would not display here.
 
 STARTING THE SCRIPT RUNNING
 
@@ -61,7 +63,9 @@ function test(){
 
 Sometimes, the start BODY tag will add something like the following to start the scripts running when the web page has already finished loading...
 
-<BODY onLoad="javascript:test();">
+(<)BODY onLoad="javascript:test();"(>)
+
+NOTE: Please, take out the pair of curly brackets that you see being written inside of the above code: (); I had to include these as otherwise the code would not display here.
 
 -----
 
