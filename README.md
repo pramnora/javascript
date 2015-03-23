@@ -107,3 +107,12 @@ filename.html
 ...again, left double click to run it; your web browser should automatically launch itself; read/execute the Javascript source code; and, then, display the output.
 
 Using this 2nd method is the 'correct' way of doing things. However, when I'm in a hurry; and, don't wish to write a [barebone.html] file, first; then, I just simply use the more straight forwards Method 1; which, I find usually works inside of most web browsers. Basically, if the web browser doesn't see any [barebone.html] already having been included; then, the web browser will automatically add that [barebone.html] code all on it's own.
+
+LINKS
+
+
+Javascript code: Using the web browser console to send output by employing: 'console.log()' function.
+
+WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
+http://jsconsole.com  
+http://jsfiddle.com
