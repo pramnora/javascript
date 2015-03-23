@@ -114,5 +114,6 @@ LINKS
 Javascript code: Using the web browser console to send output by employing: 'console.log()' function.
 
 WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
-http://jsconsole.com  
-http://jsfiddle.com
+
+http://jsconsole.com      
+http://jsfiddle.net
