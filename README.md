@@ -130,5 +130,5 @@ Javascript code: Using the web browser console to send output by employing: 'con
 WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
 http://jsconsole.com      
-http://jsfiddle.net
+http://jsfiddle.net  
 http://www.w3schools.com/js
