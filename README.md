@@ -1,5 +1,8 @@
 # javascript
-Javascript code
+
+JAVASCRIPT CODE
+
+Here are some Javascript code snippets which you can freely study/learn from.
 
 -----
 
