@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Javascript array using mixed data types</title>
+ </head>
+ <body>
+  <p id="demo"></p>
+  <script>
+   arrayOfMixedDataTypes=[1,"two",3+3,[1e6,5.2,6]];
+   text="";
+   for (var x=0;x<arrayOfMixedDataTypes.length;x++){
+    text+=arrayOfMixedDataTypes[x]+"<br>";
+   }
+   document.getElementById("demo").innerHTML=text;
+  </script>
+ </body>
+</html>
