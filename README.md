@@ -47,7 +47,7 @@ Other web browsers you can download for FREE are...
 
 -----
 
-1.01 HOW TO INCLUDE JAVASCRIPT INSIDE OF WEB PAGES
+**1.01 HOW TO INCLUDE JAVASCRIPT INSIDE OF WEB PAGES**
 
 Javascript, is generally written to run inside of web pages in one of 2 different ways...
 
@@ -64,7 +64,7 @@ NOTE: Please, take out the pair of curly brackets: () that you see being written
 
 -----
 
-1.02 STARTING THE SCRIPT RUNNING
+**1.02 STARTING THE SCRIPT RUNNING**
 
 If your script is not enclosed inside of a function; then, it will run instantly, right away.
 
@@ -84,7 +84,7 @@ NOTE: Please, take out the pair of curly brackets: () that you see being written
 
 -----
 
-1.03 TESTING JAVASCRIPT
+**1.03 TESTING JAVASCRIPT**
 
 There are 2 ways to test javascript...
 
@@ -123,7 +123,7 @@ Using this 2nd method is the 'correct' way of doing things. However, when I'm in
 
 -----
 
-1.04 LINKS
+**1.04 LINKS**
 
 Javascript code: Using the web browser console to send output by employing: 'console.log()' function.
 
