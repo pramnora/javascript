@@ -1,10 +1,14 @@
-x=1;
+//*** Variable declarations...
+
+var x=1;
 
 //*** if you are executing only a single output line; then, providing that line is short; then, there is no need to use braces...
-if (x=1) alert("x=1");
+
+if (x==1) alert("x=1");
 
 //*** if you are executing multiple lines of output/or, long output; then, it might be far better to use braces, instead...
-if (x=1){
+
+if (x==1){
  alert("x=1");
 }
 
