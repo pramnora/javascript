@@ -1,0 +1,11 @@
+//*** variable declarations...
+
+var x=1;
+
+//*** if/else statement block...
+
+if (x == 1){
+ alert("x = 1");
+} else {
+ alert(x != 1");
+}
