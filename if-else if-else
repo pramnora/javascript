@@ -1,0 +1,13 @@
+//*** variable declarations...
+
+var x=1;
+
+//*** if-else if-else decision block...
+
+if (x==1){
+ alert("x=1");
+} else if (x==0){
+ alert("x=0");
+} else {
+ alert("x!=0 && x!=1");
+}
