@@ -2,7 +2,7 @@
 
 var x=1;
 
-//*** if-else if-else decision block...
+//*** if/else if/else decision block...
 
 if (x==1){
  alert("x=1");
