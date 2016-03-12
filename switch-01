@@ -2,7 +2,7 @@
 
 var x=1; 
 
-//*** switch decision block...
+//*** switch decision block statement...
 
 switch (x){
  case 1: 
