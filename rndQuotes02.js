@@ -11,5 +11,5 @@ var quotes = [
             ];
 
 for (var x=0;x<names.length;x++){
- alert(quotes[x]+ " -" + names[x]);
+ alert(quotes[x] + " -" + names[x]);
 }
