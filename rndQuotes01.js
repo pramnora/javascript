@@ -1,4 +1,14 @@
-//...function to serve up a different random quote each time it is called...
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <title>Javascript web page template document</title>
+
+  <script>
 function writeARandomQuote(){
  var noOfQuotes=3;
  var rndNum = Math.floor(Math.random()*noOfQuotes)+1;
@@ -8,3 +18,18 @@ function writeARandomQuote(){
   case 3:document.write("\"On a clear day, one can see forever...\" - (Nat King Cole)");
  }
 }
+  </script>
+
+ </head>
+
+ <body>
+
+  <p>
+   <script>
+    writeARandomQuote(); 
+   </script>
+  </p>
+ 
+ </body>
+
+</html>
