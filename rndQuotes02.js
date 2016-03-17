@@ -11,20 +11,18 @@
   <script>
 
 function init(){
- var noOfQuotes=4;
+ var noOfQuotes=3;
  var rndNum=Math.floor(Math.random()*noOfQuotes)+1;
  var strText="";
  var names = [
               "Ali",
               "Shakespeare",
               "Nat King Cole",
-              "Gene Kelly"
              ];
  var quotes = [
                "\"I am the Greatest!\"",
                "\"To be, or not to be...that is the ?\"",
                "\"On a clear day one can see forever...\"",
-               "\"I'm singing in the rain...!\""
               ]; 
 
 /* NOTE: I had to use formula: (rndNum-1); 
