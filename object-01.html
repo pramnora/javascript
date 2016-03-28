@@ -2,12 +2,11 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Javascript: Object</title>
+  <title>Javascript: Objects</title>
  </head>
  <body>
   <header>
-   <h1>Javascript</h1>
-   <h2>Object</h2>
+   <h1>Javascript: Objects</h2>
   </header>
   <script>
    function Person(name,age){
@@ -15,7 +14,14 @@
     this.age=age;
    }
    person1=new Person("Jack","12");
-   document.write("Person name: " + person1.name + "<br>" + "Person age: " + person1.age); 
+   person2=new Person("Jill","13");
+   document.write("Person name: " + person1.name)
+   document.write("<br>");
+   document.write("Person age: " + person1.age); 
+   document.write("<hr>");
+   document.write("Person name: " + person2.name)
+   document.write("<br>");
+   document.write("Person age: " + person2.age); 
   </script> 
  </body>
 </html>
