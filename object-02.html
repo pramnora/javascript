@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>Test: Javascript Object</title>
+  <script>
+   objPerson = {
+         name: "Jackie",
+          age: 18, 
+          sex: "F"
+   };
+   function formTest(){
+    selValue=frm1.sel1.value;
+    if (selValue=="") alert("Please, choose a specific item from the drop down list, \neither: Name/or, Age/or, Sex. \n-Thanks!");
+    if (selValue=="name") frm1.txt1.value=objPerson.name;
+    if (selValue=="age")  frm1.txt1.value=objPerson.age;
+    if (selValue=="sex")  frm1.txt1.value=objPerson.sex;
+   }
+  </script>
+ </head>
+ <body>
+  <header>
+   <h1>Javascript Code : Object testing</h1>
+   <h2>HTML Code : Form objects</h2>
+  </header>
+  <hr />
+  <main>
+   <form name="frm1" method="get" action="javascript:formTest()">
+    Person: 
+    <select name="sel1">
+     <option value="">Choose...</option>
+     <option value="">---------</option>
+     <option value="name">Name</option>
+     <option value="age">Age</option>
+     <option value="sex">Sex</option>
+    </select>
+    <br />
+    <input type="text" name="txt1" /> 
+    <br />
+    <input type="submit" /> 
+    <input type="reset" value="Clear form" />
+   </form>
+   <hr />
+  </main>
+ </body>
+</html>
