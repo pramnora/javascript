@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <!--This file uses a mixture of HTML forms/CSS/Javascript to: add/subtract/divide/multiply.-->
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML 5/Form controls: Number</title>
+
+
+  <!--css stylesheet/starts-->
+
+  <style type="text/css">
+
+  a:link{
+   text-decoration:none;
+   color:blue;
+  }
+
+  a:hover{
+   text-decoration:underline;
+   background-color:white;
+   color:red;
+  }
+
+  body{
+   font-family:arial,verdana,sans-serif;
+   margin-right:25%;
+   margin-left:25%;
+  }
+
+  header{
+   background-color:black;
+   color:white;
+  }
+ 
+  h1,div{
+   text-align:center;
+  }
+
+  caption{
+   background-color:black;
+   color:white;
+   margin-top:10px;
+  } 
+
+  table{
+   background-color:silver;
+  } 
+
+  .clsTHNumbersAndTotal{
+   text-align:right;
+  }
+
+  .clsTDButtons{
+   text-align:center;
+  }
+
+  footer{
+   border:10px solid black;
+   margin-top:30px;
+   background-color:silver;
+   text-align:center;
+  }
+
+
+  #idPowered{
+   font-weight:bold;
+   font-style:italic;
+  }
+
+  #idCopyrightMsg{
+   background-color:black;
+   color:white;
+  }
+
+  .clsTimeDateStamp{
+   font-style:italic;
+   color:red;
+  }
+
+  </style>
+
+  <!--css stylesheet/ends-->
+
+
+
+	
+
+  <!--javascript code/starts-->
+
+  <script language="javascript" type="text/javascript">
+
+   function add(){
+    num1 = eval(addForm.txtNum1.value);
+    num2 = eval(addForm.txtNum2.value);
+    addForm.txtTotal.value = (num1 + num2); 
+   }
+
+   function subtract(){
+    num1 = eval(subtractForm.txtNum1.value);
+    num2 = eval(subtractForm.txtNum2.value);
+    subtractForm.txtTotal.value = (num1 - num2); 
+   }
+ 
+   function multiply(){
+    num1 = eval(multiplyForm.txtNum1.value);
+    num2 = eval(multiplyForm.txtNum2.value);
+    multiplyForm.txtTotal.value = (num1 * num2); 
+   }
+
+   function divide(){
+    num1 = eval(divideForm.txtNum1.value);
+    num2 = eval(divideForm.txtNum2.value);
+    divideForm.txtTotal.value = (num1 / num2); 
+   }
+
+  </script>
+
+  <!--javascript code/ends-->
+
+
+ </head>
+
+
+
+
+
+
+
+ <body>
+
+
+
+
+ <header>
+
+  <h1>Maths</h1>
+
+ </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div>
+
+  <center>
+
+  <!--addition/start-->
+
+  <form name="addForm" method="get" action="javascript:add()">
+   <table>
+    <caption>Addition</caption>
+    <tr>
+     <th class="clsTHNumbersAndTotal">Number 1:</th>
+     <td><input name="txtNum1" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center"> 
+     <th class="clsTHNumbersAndTotal">Number 2:</th>
+     <td><input name="txtNum2" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center">
+     <th class="clsTHNumbersAndTotal">Total:</th>
+     <td><input name="txtTotal" type="text" value="" /></td>
+    </tr>
+    <tr>
+     <th>&nbsp;</th>
+     <td class="clsTDButtons"><input type="reset" name="btnReset" value="Clear" /><input type="submit" name="btnAdd" value="Add" /></td>
+    </tr>
+   </table>
+  </form>
+
+  <!--addition/end-->
+
+
+  <!--subraction/start-->
+
+  <form name="subtractForm" method="get" action="javascript:subtract()">
+   <table>
+    <caption>Subtraction</caption>
+    <tr>
+     <th class="clsTHNumbersAndTotal">Number 1:</th>
+     <td><input name="txtNum1" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center"> 
+     <th class="clsTHNumbersAndTotal">Number 2:</th>
+     <td><input name="txtNum2" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center">
+     <th class="clsTHNumbersAndTotal">Total:</th>
+     <td><input name="txtTotal" type="text" value="" /></td>
+    </tr>
+    <tr>
+     <th>&nbsp;</th>
+     <td class="clsTDButtons"><input type="reset" name="btnReset" value="Clear" /><input type="submit" name="btnSubtract" value="Subtract" /></td>
+    </tr>
+   </table>
+  </form>
+
+  <!--subraction/end-->
+
+
+  <!--multiplication/start-->
+
+  <form name="multiplyForm" method="get" action="javascript:multiply()">
+   <table>
+    <caption>Multiplication</caption>
+    <tr>
+     <th class="clsTHNumbersAndTotal">Number 1:</th>
+     <td><input name="txtNum1" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center"> 
+     <th class="clsTHNumbersAndTotal">Number 2:</th>
+     <td><input name="txtNum2" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center">
+     <th class="clsTHNumbersAndTotal">Total:</th>
+     <td><input name="txtTotal" type="text" value="" /></td>
+    </tr>
+    <tr>
+     <th>&nbsp;</th>
+     <td class="clsTDButtons"><input type="reset" name="btnReset" value="Clear" /><input type="submit" name="btnMultiply" value="Multiply" /></td>
+    </tr>
+   </table>
+  </form>
+
+  <!--multiplication/end-->
+
+
+  <!--division/start-->
+
+  <form name="divideForm" method="get" action="javascript:divide()">
+   <table>
+    <caption>Division</caption>
+    <tr>
+     <th class="clsTHNumbersAndTotal">Number 1:</th>
+     <td><input name="txtNum1" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center"> 
+     <th class="clsTHNumbersAndTotal">Number 2:</th>
+     <td><input name="txtNum2" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center">
+     <th class="clsTHNumbersAndTotal">Total:</th>
+     <td><input name="txtTotal" type="text" value="" /></td>
+    </tr>
+    <tr>
+     <th>&nbsp;</th>
+     <td class="clsTDButtons"><input type="reset" name="btnReset" value="Clear" /><input type="submit" name="btnDivide" value="Divide" /></td>
+    </tr>
+   </table>
+  </form>
+
+  <!--division/end-->
+
+
+  </center>
+
+  </div>
+
+
+
+
+
+
+
+  <footer>
+
+  <p>
+   Email:
+   <a href="mailto:pramnora@yahoo.com">
+    pramnora@yahoo.com
+   </a>
+   <br />
+   This web page is *<span id="idPowered">powered</span>* by:
+   <br />
+   Windows 10/Notepad/HTML/CSS/Javascript
+   <br />
+   <span id="idCopyrightMsg">
+    &copy;2016, Mr. Paul Ramnora./All rights reserved.
+   </span>
+   <br />
+   Created: <span class="clsTimeDateStamp">00:18 11/09/2016</span>
+   <br />
+   Updated: <span class="clsTimeDateStamp">00:18 11/09/2016</span>
+  </p>
+
+  </footer>
+
+
+
+
+
+ </body>
+
+</html>
