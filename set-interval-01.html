@@ -3,18 +3,21 @@
  <head>
   <meta charset="UTF-8" />
   <title>Javascript countdown test</title>
+  <!--Javascript code/start-->
   <script>
   var intMinCount = 1, intMaxCount = 10, intCount = intMinCount;   
   function doCountdown(){
    var interval = setInterval(function()
    {
-     document.getElementById("idDivOutputDisplay").innerHTML = intCount;
+     document.getElementById("divOutputDisplay").innerHTML = intCount;
      divDisplay=intCount;
      if (intCount == intMaxCount) { clearInterval(interval) };
      intCount++;
    },1000); //...end setInterval
   }//...end function
   </script>
+  <!--Javascript code/end-->
+  <!--stylesheet code/start-->
   <style type="text/css">
    #idDivDisplay{
     font-weight:bold;
@@ -28,6 +31,7 @@
     text-align:center;
    }
   </style>
+  <!--stylesheet code/end-->
  </head>
  <body onload="javascript:doCountdown()">
   <h1>
@@ -37,6 +41,6 @@
    <script>document.write(intMaxCount);</script>
    ...
   </h1>
-  <div id="idDivOutputDisplay"></div>
+  <div id="divOutputDisplay"></div>
  </body>
 </html>
