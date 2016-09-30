@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <title>Javascript web page template document</title>
+
+<script>
+function doWriteToDisplay(){
+ //*** using Javascript to write to a div section of the HTML document...
+ document.getElementById("idDisplay").innerHTML="<p>Hello, world!</p>";
+}
+</script>
+
+ </head>
+
+ <body onload="doWriteToDisplay()">
+
+  <div id="idDisplay"></div>
+
+ </body>
+
+</html>
