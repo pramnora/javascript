@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>Javascript countdown test</title>
+  <script>
+  var intMinCount = 1, intMaxCount = 10, intCount = intMinCount;   
+  function doCountdown(){
+   var interval = setInterval(function()
+   {
+     document.getElementById("idDivOutputDisplay").innerHTML = intCount;
+     divDisplay=intCount;
+     if (intCount == intMaxCount) { clearInterval(interval) };
+     intCount++;
+   },1000); //...end setInterval
+  }//...end function
+  </script>
+  <style type="text/css">
+   #idDivDisplay{
+    font-weight:bold;
+    font-size:100px;
+    background:yellow;
+    color:red;
+    border:solid 1px green;
+    height:120px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+   }
+  </style>
+ </head>
+ <body onload="javascript:doCountdown()">
+  <h1>
+   Javascript countdown: 
+   <script>document.write(intCount);</script>
+   to 
+   <script>document.write(intMaxCount);</script>
+   ...
+  </h1>
+  <div id="idDivOutputDisplay"></div>
+ </body>
+</html> 
