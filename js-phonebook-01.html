@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Javascript phonebook application 01</title>
+  <script>
+  //*** Create a pair of parallel arrays...
+   var pName = new Array();
+   var pNumber = new Array();
+   //*** Initialise the parallel arrays with values...
+   pName[0]="Abe";
+   pNumber[0]="111 1111 1111";
+   pName[1]="Brian";
+   pNumber[1]="222 2222 2222";
+   pName[2]="Carol";
+   pNumber[2]="333 3333 3333";
+   //*** print out parallel array values into the web page 'output' section...
+   function showAllData(){
+    output=document.getElementById("divOutput");
+    output.innerHTML = "<table border='1' width='50%'><tr style='background-color:black;color:white;'><th width='50%'>Name</th><th width='50%'>Number</th></tr></table>";
+    for (var i=0; i<pName.length; i++){
+     output.innerHTML += "<table border='1' width='50%'><tr align='center'><td width='50%'>" + pName[i] + "</td><td width='50%'>" + pNumber[i] + "</td></tr></table>";
+    }
+   }
+  </script>
+ </head>
+ <body>
+  <h1>Javascript Phonebook App 01</h1>
+  <input type="button" value="Show ALL" onClick="javascript:showAllData();" />   
+  <hr />
+  <div id="divOutput"></div>
+ </body>
+</html>
