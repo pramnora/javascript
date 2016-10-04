@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Javascript phonebook application 02</title>
+  <script>
+   //*** Initialise database with values...
+   var phoneObj = [
+                   {   name:"Abe",number:"111 1111 1111"},
+                   {name: "Brian",number:"222 2222 2222"},
+                   {name: "Carol",number:"333 3333 3333"}
+                  ];
+   //*** print ALL database values into the web page 'output' section...
+   function showAllData(){
+    output=document.getElementById("divOutput");
+    output.innerHTML = "<table border='1' width='50%'><tr style='background-color:black;color:white;'><th width='50%'>Name</th><th width='50%'>Number</th></tr></table>";
+    for (var i=0; i<phoneObj.length; i++){
+     output.innerHTML += "<table border='1' width='50%'><tr align='center'><td width='50%'>" + phoneObj[i].name + "</td><td width='50%'>" + phoneObj[i].number + "</td></tr></table>";
+    }
+   }
+  </script>
+ </head>
+ <body>
+  <h1>Javascript Phonebook App 02</h1>
+  <input type="button" value="Show ALL" onClick="javascript:showAllData();" />   
+  <hr />
+  <div id="divOutput"></div>
+ </body>
+</html>
