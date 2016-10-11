@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--  CREATED: 16:54 11/10/2016
+       UPDATED: 16:54 11/10/2016
+      COMPUTER: Home based PC/Windows 10/Notepad
+      LANGUAGE: HTML/Javascript
+        AUTHOR: Mr. Paul Ramnora
+         EMAIL: paul@ramnora.com
+     COPYRIGHT: Mr. Paul Ramnora./All rights reserved.
+  -->
+ <head>
+  <meta charset="UTF-8" />
+  <title>Javascript: Maths</title>
+  <script>
+/* 
+     EXPLAINING WHAT MATHS PROBLEM THE PROGRAM AIMS TO SOLVE  
+     This Javascript Maths program is meant to...
+     find the sum of 4 successive numbers starting at 1;
+     then, incrementing this start number by +1 each time;
+     to calculate the next series of 4 successive numbers;
+     and, so, on...
+     4 successive numbers = Total = Total of 2 digits
+     1,2,3,4              = 10    = (1+0=)  1
+     2,3,4,5              = 14    = (1+4=)  5
+     ...and, so on...
+     ...calculating from start number: 1...up to...start number: 9
+     9,10,11,12           = 42    = (4+2=)  6      
+     ...when each sum total is found; then, it's meant to add up the 
+     sum total of the two digits; then, output the result, eg:
+     10 = 1+0 = 1;
+     ...eventually, this should leave an output of digits...
+     159483726
+     ...which lists all 'unique' digits going from 1 up to 9;
+     having been printed out in a 'sort of' random order.
+*/
+function doSomeMaths(){
+  var output = document.getElementById('output'),
+      total=0,
+      digitsSum;
+      for(var n1 = 1; n1 < 10; n1++){
+          total += n1;
+          output.innerHTML += n1 + ",";
+          for (var n2 = 1; n2<4; n2++){
+              total +=n1+n2;
+               output.innerHTML += (n1+n2) + ",";
+          }    
+          output.innerHTML += "<br />Total = " + total + "<br />";  
+          digitsSum = calculateTotalOf2Digits(total);
+          output.innerHTML += digitsSum + "<br /><br />";   
+          total=0;
+      }
+}
+function calculateTotalOf2Digits(total){
+     var newTotal = total.toString(),
+     newTotal = ((parseInt(newTotal[0])+parseInt(newTotal[1])).toString());
+     if (newTotal.length > 1) {
+         if (newTotal.length==2){
+             newTotal=((parseInt(newTotal[0])+parseInt(newTotal[1])).toString());
+             return newTotal;
+         }
+     } else {
+       return newTotal;
+     }
+}
+  </script>
+ </head>
+ <body onload="doSomeMaths()">
+  <div id="output"></div>
+ </body>
+</html> 
