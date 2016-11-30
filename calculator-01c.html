@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <!--PROGRAM: Calculator: Version II  
+     This file uses a mixture HTML5/CSS3/Javascript
+     to produce a web page calculator program which includes functions to: 
+     add/subtract/divide/multiply/square.
+     ---------------------------------------------------------------------
+     NOTE: Version III, is very different from both Version I/II;
+           in that this time the user interface attempts to simulate being
+           a proper 'real life' calculator.
+
+           The Javascript code is extremely 'short', as the program uses only 
+           3 x 1 line functions to do its job. 
+     ---------------------------------------------------------------------
+           First, I watched a few 'create a calculator' videos on YouTube...
+           Tutor: Jay Watson
+           Tutorial - Learn How to Create a Basic JavaScript Calculator                                 https://www.youtube.com/watch?v=Xu2tulgn0KA
+           ...and, this experience 'inspired' me to try and create my own calculator
+           without actually copying the above code; using what is entirely my own code;
+           much to my surprise it worked, and, with surprising 'simplicty'.
+  -->
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <title>Calculator: Version III</title>
+
+
+  <!--css stylesheet/starts-->
+
+  <style type="text/css">
+
+  a:link{
+   text-decoration:none;
+   color:blue;
+  }
+
+  a:hover{
+   text-decoration:underline;
+   background-color:white;
+   color:red;
+  }
+
+  body{
+   font-family:arial,verdana,sans-serif;
+   margin-right:25%;
+   margin-left:25%;
+  }
+
+  header{
+   background-color:black;
+   color:white;
+  }
+ 
+  h1,div{
+   text-align:center;
+  }
+
+  footer{
+   border:10px solid black;
+   margin-top:30px;
+   background-color:silver;
+   text-align:center;
+  }
+
+  #idPowered{
+   font-weight:bold;
+   font-style:italic;
+  }
+
+  #idCopyrightMsg{
+   background-color:black;
+   color:white;
+  }
+
+  .clsTimeDateStamp{
+   font-style:italic;
+   color:red;
+  }
+
+  input.clsBtn:hover{
+    background:black;
+    color:white;
+  }
+ 
+  input, input.clsBtn{
+   font-size:25px;
+   font-weight:bold;
+   border-radius:15%;
+  }
+
+  </style>
+
+  <!--css stylesheet/ends-->
+
+
+
+	
+
+  <!--javascript code/starts-->
+
+  <script language="javascript" type="text/javascript">
+
+  window.onload=function(){
+   display=document.getElementById("idDisplay");
+  }
+
+  function doSquare(){
+   display.value = display.value*display.value;      
+  }
+
+  function doCalc(){
+   display.value=eval(display.value);
+  }
+
+  </script>
+
+  <!--javascript code/ends-->
+
+
+ </head>
+
+
+
+
+
+
+
+ <body>
+
+
+
+
+ <header>
+
+  <h1>Calculator: Version III</h1>
+
+ </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="divContainer">
+   <div id="divCalc">
+    <input class="clsBtn" type="button" value="C" onclick='idDisplay.value=""' />
+    <input id="idDisplay" type="text" value="" />  
+    <br /><br />
+    <input class="clsBtn" type="button" value="7" onclick='idDisplay.value+="7"' />
+    <input class="clsBtn" type="button" value="8" onclick='idDisplay.value+="8"'/>
+    <input class="clsBtn" type="button" value="9" onclick='idDisplay.value+="9"' />
+    <input class="clsBtn" type="button" value="+" onclick='idDisplay.value+="+"' />
+    <br />
+    <input class="clsBtn" type="button" value="4" onclick='idDisplay.value+="4"' />
+    <input class="clsBtn" type="button" value="5" onclick='idDisplay.value+="5"' />
+    <input class="clsBtn" type="button" value="6" onclick='idDisplay.value+="6"' />
+    <input class="clsBtn" type="button" value="-" onclick='idDisplay.value+="-"' />
+    <br />
+    <input class="clsBtn" type="button" value="1" onclick='idDisplay.value+="1"' />
+    <input class="clsBtn" type="button" value="2" onclick='idDisplay.value+="2"' />
+    <input class="clsBtn" type="button" value="3" onclick='idDisplay.value+="3"' />
+    <input class="clsBtn" type="button" value="x" onclick='idDisplay.value+="*"' />   
+    <br />
+    <input class="clsBtn" type="button" value="Sq" onclick="doSquare();" />
+    <input class="clsBtn" type="button" value="0" onclick='idDisplay.value+="0"' />
+    <input class="clsBtn" type="button" value="." onclick='idDisplay.value+="."' />
+    <input class="clsBtn" type="button" value="/" onclick='idDisplay.value+="/"' />   
+    <br /><br />
+    <input class="clsBtn" type="button" value="Calc" onclick="doCalc();" />
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer>
+
+  <p>
+   Email:
+   <a href="mailto:pramnora@yahoo.com">
+    pramnora@yahoo.com
+   </a>
+   <br />
+   This web page is *<span id="idPowered">powered</span>* by:
+   <br />
+   Windows 10/Notepad/HTML/CSS/Javascript
+   <br />
+   <span id="idCopyrightMsg">
+    &copy;2016, Mr. Paul Ramnora./All rights reserved.
+   </span>
+   <br />
+   Created: <span class="clsTimeDateStamp">14:10 30/11/2016</span>
+   <br />
+   Updated: <span class="clsTimeDateStamp">14:10 30/11/2016</span>
+  </p>
+
+  </footer>
+
+
+
+
+
+ </body>
+
+</html>
