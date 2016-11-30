@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <!--PROGRAM: Calculator: Version II  
+     This file uses a mixture of HTML forms/CSS/Javascript
+     to produce a web page calculator program which includes functions to: 
+     add/subtract/divide/multiply.
+     ---------------------------------------------------------------------
+     NOTE: Version II, simplifies Version I by greatly compressing the code.
+           Instead, of 4 separate functions: add()/subtract()/divide()/multiply();
+           now, there is only 1 function: funDoCalc().
+           Too, instead of 4 separate forms: addForm/subtractFrom/divideForm/multiplyForm;
+           now, there is only 1 form: frmCalc.
+  -->
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML 5/Form controls: Number</title>
+
+
+  <!--css stylesheet/starts-->
+
+  <style type="text/css">
+
+  a:link{
+   text-decoration:none;
+   color:blue;
+  }
+
+  a:hover{
+   text-decoration:underline;
+   background-color:white;
+   color:red;
+  }
+
+  body{
+   font-family:arial,verdana,sans-serif;
+   margin-right:25%;
+   margin-left:25%;
+  }
+
+  header{
+   background-color:black;
+   color:white;
+  }
+ 
+  h1,div{
+   text-align:center;
+  }
+
+  caption{
+   background-color:black;
+   color:white;
+   margin-top:10px;
+  } 
+
+  table{
+   background-color:silver;
+  } 
+
+  .clsTHNumbersAndTotal{
+   text-align:right;
+  }
+
+  .clsTDButtons{
+   text-align:center;
+  }
+
+  footer{
+   border:10px solid black;
+   margin-top:30px;
+   background-color:silver;
+   text-align:center;
+  }
+
+
+  #idPowered{
+   font-weight:bold;
+   font-style:italic;
+  }
+
+  #idCopyrightMsg{
+   background-color:black;
+   color:white;
+  }
+
+  .clsTimeDateStamp{
+   font-style:italic;
+   color:red;
+  }
+
+  input.clsBtn:hover{
+    background:black;
+    color:white;
+  }
+
+  </style>
+
+  <!--css stylesheet/ends-->
+
+
+
+	
+
+  <!--javascript code/starts-->
+
+  <script language="javascript" type="text/javascript">
+
+   function funDoCalc(strMathsOp){
+    if (frmCalc.txtNum1.value=="" || frmCalc.txtNum2.value=="") {
+     alert("Please, enter 2 numbers. -Thanks!");
+    } else {
+     num1 = eval(frmCalc.txtNum1.value);
+     num2 = eval(frmCalc.txtNum2.value);
+     frmCalc.txtTotal.value = eval(num1 + strMathsOp + num2); 
+    }
+   }
+
+  </script>
+
+  <!--javascript code/ends-->
+
+
+ </head>
+
+
+
+
+
+
+
+ <body>
+
+
+
+
+ <header>
+
+  <h1>Calculator/Version II</h1>
+
+ </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div>
+
+  <center>
+
+  <!--addition/start-->
+
+  <form name="frmCalc">
+   <table>
+    <caption>-Please, enter 2 numbers...</caption>
+    <tr>
+     <th class="clsTHNumbersAndTotal">Number 1:</th>
+     <td><input name="txtNum1" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center"> 
+     <th class="clsTHNumbersAndTotal">Number 2:</th>
+     <td><input name="txtNum2" type="number" min="0" required /></td>
+    </tr>
+    <tr align="center">
+     <th class="clsTHNumbersAndTotal">Total:</th>
+     <td><input name="txtTotal" type="text" value="" /></td>
+    </tr>
+    <tr>
+     <td width="50%">&nbsp;</td>
+     <td align="center">
+      <input class="clsBtn" type="button" value="+" onclick="javascript:funDoCalc('+')" />
+      <input class="clsBtn" type="button" value="-" onclick="javascript:funDoCalc('-')" />
+      <input class="clsBtn" type="button" value="x" onclick="javascript:funDoCalc('*')" />
+      <input class="clsBtn" type="button" value="/" onclick="javascript:funDoCalc('/')" />
+     </td>
+    </tr>
+    <tr>
+     <td width="50%">&nbsp;</td>
+     <td align="center" class="clsTDButtons">
+      <input class="clsBtn" type="reset" value="Clear" />
+     </td>
+    </tr>
+   </table>
+  </form>
+
+  <!--addition/end-->
+
+  </center>
+
+  </div>
+
+
+
+
+
+
+
+  <footer>
+
+  <p>
+   Email:
+   <a href="mailto:pramnora@yahoo.com">
+    pramnora@yahoo.com
+   </a>
+   <br />
+   This web page is *<span id="idPowered">powered</span>* by:
+   <br />
+   Windows 10/Notepad/HTML/CSS/Javascript
+   <br />
+   <span id="idCopyrightMsg">
+    &copy;2016, Mr. Paul Ramnora./All rights reserved.
+   </span>
+   <br />
+   Created: <span class="clsTimeDateStamp">12:58 30/11/2016</span>
+   <br />
+   Updated: <span class="clsTimeDateStamp">12:58 30/11/2016</span>
+  </p>
+
+  </footer>
+
+
+
+
+
+ </body>
+
+</html>
