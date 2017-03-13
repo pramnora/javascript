@@ -8,8 +8,8 @@ Here are some Javascript code snippets which you can freely study/learn from.
 
 Table Of Contents:-
 
-**1.00 JAVASCRIPT - A VERY HIGHLY POPULAR WEB PAGE PROGRAMMING LANGUAGE** 
-**1.01 HOW TO INCLUDE JAVASCRIPT INSIDE OF WEB PAGES** 
+**1.00 JAVASCRIPT - A VERY HIGHLY POPULAR WEB PAGE PROGRAMMING LANGUAGE**  
+**1.01 HOW TO INCLUDE JAVASCRIPT INSIDE OF WEB PAGES**  
 **1.02 STARTING THE SCRIPT RUNNING**  
 **1.03 TESTING JAVASCRIPT**  
 **1.04 LINKS**
@@ -133,4 +133,7 @@ http://codepen.io/
 http://jsbin.com  
 http://jsconsole.com      
 http://jsfiddle.net  
-http://www.w3schools.com/js
+http://www.w3schools.com/js  
+http://www.jscompress.com  
+
+
