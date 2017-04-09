@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--code created: 090417 18:42
+    last updated: 090417 18:42-->
+
+<!--this code was originally borrowed from W3Schools web site...
+       https://www.w3schools.com/code/tryit.asp?filename=FEH31QE0OF83
+ NOTE: Their example code is being used to change just a single paragraph;
+       I later decided to adapt that same code to go create a Q&A Test program;
+       the result of my own adaptation can be found here:
+       https://www.w3schools.com/code/tryit.asp?filename=FEH385D58KGB
+-->
+
+<head>
+ <meta charset="utf-8" />
+ <title>Q & A Test</title>
+ <style>
+  div{ border:solid 1px black; margin-bottom:10px;}
+  h1{text-align:center;}
+  footer{text-align:right;}
+  button{background:gray;color:white; margin:10px;}
+  button,#copyrightMessage{font-weight:bold;}
+  #copyrightMessage{background:black;color:white;}
+ </style>
+</head>
+
+<body>
+
+<header>
+ <h1>Q&A test</h1>
+</header>
+
+<main>
+
+ <div>
+  <p>Q1: What does the term, HTML, mean?</p>
+  <ul>
+   <li>A: Hood Thrust MarkUp Language</li>
+   <li><span id="Q1">A: HyperText MarkUp Language</span></li>
+   <li>A: How To Make Languages</li>
+   <li>A: How To Master Language</li>
+  </ul>
+  <button onclick="funChangeText('Q1')">-Please, click here to show what is the correct answer...</button>
+ </div>
+
+ <div>
+  <p>Q2: What does the term, DTD, mean?</p>
+  <ul>
+   <li>Dirty Transaction Deal</li>
+   <li>A: Don't Try Decoding</li>
+   <li>A: Display The Diary entry</li>
+   <li><span id="Q2">A: Document Type Definition</span></li>
+  </ul>
+  <button onclick="funChangeText('Q2')">-Please, click here to show what is the correct answer...</button>
+ </div>
+
+</main>
+
+<footer>
+ <p>
+  <span id="copyrightMessage">
+   &copy;2017, Mr. Paul Ramnora./All rights reserved.
+  </span>
+ </p>
+</footer>
+
+<!--Javascript code goes here-->
+
+<script>
+//*** Using Javascript to set/change font style properties...
+function funChangeText(questionID) {
+    var x = document.getElementById(questionID);
+    x.style.fontFamily = "Comic Sans MS";
+    x.style.fontWeight = "bold"; 
+    x.style.fontStyle = "italic"; 
+    x.style.fontSize = "100%"; 
+    x.style.color = "white"; 
+    x.style.background="black";
+}
+</script>
+
+ </body>
+</html>
