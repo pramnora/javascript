@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>Javascript program: Find a string</title>
+ </head>
+ <body>
+  <h1>Javascript PROGRAM: String finder</h1>
+  <script>
+  var strSearchText="T";   
+  var bolCaseSensitiveFlag = true;
+  var intLineCount = 0;
+  var strText = [
+   "Mary had a little lamb,",
+   "Whose fleece was white as snow,",
+   "And, everywhere that Mary went",
+   "The lamb was sure to follow."
+  ];
+  showTextToBeSearched();
+  document.write("<br />");
+  document.write("Search term: " + strSearchText + "<br >");
+  document.write("<i>Case sensitive</i>: "); 
+  (bolCaseSensitiveFlag == true) ? document.write("Yes") : document.write("No");
+  document.write("<br /><br />");
+  document.write("<b>Search Results:</b><br />");
+  intLineCount=0;
+  for (var intEachLineNo=0; intEachLineNo < strText.length; intEachLineNo++){
+   intLineCount++;
+   if (bolCaseSensitiveFlag == true) {
+    doCheckToFindString();
+   } else {
+     strText[intEachLineNo] = strText[intEachLineNo].toLowerCase();
+     strSearchText = strSearchText.toLowerCase();
+     doCheckToFindString();
+   }
+  }
+  function showTextToBeSearched(){
+   intLineCount=0;
+   document.write("Here is the text to be searched through...<br /><br />");
+   for (var intEachLineNo=0; intEachLineNo < strText.length; intEachLineNo++){
+    intLineCount++;
+    document.write(intLineCount +  ": " + strText[intEachLineNo] + "<br />");
+   }
+  }
+  function doCheckToFindString(){
+     if (strText[intEachLineNo].indexOf(strSearchText) >= 0) { 
+      document.write(intLineCount + ": " + strText[intEachLineNo] + "<br />");
+     }
+  }
+  </script>
+ </body>
+</html> 
