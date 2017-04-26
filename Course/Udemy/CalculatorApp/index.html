@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <!--NOTE: The 'original' code was borrowed from:
+     Udemy course: Create a calculator web app with Javascript/HTML/CSS - Instructor: Aarthi Elumalai
+     https://www.udemy.com/create-a-calculator-web-app-with-javascript-html-css/learn/v4/overview     
+     NOTE: The above code has been personally adapted by me: Paul Ramnora, 25th April 2017.
+  -->
+
+ <head>
+
+  <meta charset="utf-8" />
+
+  <title>A basic calculator app.</title>
+
+  <style>
+
+   html{
+    margin: 0 25% 0 25%;
+    background-color:white;
+   }
+
+   body{
+    background-color:pink;
+    font-family:"comic sans ms",arial,verdana,sans-serif;
+   }  
+
+   header,footer,form{
+    text-align:center;
+   }
+
+   form{
+    width:25%;
+    margin:20px auto;
+    border:5px solid black;
+    border-radius:.75px;
+    padding:15px;
+    background-color:silver;
+   }
+
+   input{
+    font-weight:bold;
+   }
+
+   input[type=text]{
+    background:yellow;
+   }
+
+   hr{
+    width:50%;
+    height:10px;
+    background-color:red;
+   }
+
+   .clsTimeDateStamp{
+    font-style:italic;
+   }
+
+  </style>
+
+  <script>
+   function doCalc(c){    
+    if ((c != "=") && (c != "C")) { document.calc.output.value += c; }              /* add either: 'numbers/operators', to output screen */
+    if (c == "=") { document.calc.output.value = eval(document.calc.output.value) } /* do calculation; then, send total to output screen */
+    if (c == "C") { document.calc.output.value = ""; }                              /* clear calculator output screen */
+   }
+  </script>
+
+ </head>
+
+ <body>
+
+  <header>
+
+   <h1>
+    A Basic Calculator App.
+   </h1>
+
+  </header>
+
+  <hr />
+
+  <main>
+
+   <div id="idContainer">
+
+    <form name="calc">
+
+     <input type="text" name="output" placeholder="0">  
+
+     <br />
+
+     <input type="button" value=" 1 " onclick="doCalc('1')" />
+     <input type="button" value=" 2 " onclick="doCalc('2')" />
+     <input type="button" value=" 3 " onclick="doCalc('3')" />
+     <input type="button" value=" / " onclick="doCalc('/')" />
+      
+     <br />
+
+     <input type="button" value=" 4 " onclick="doCalc('4')" />
+     <input type="button" value=" 5 " onclick="doCalc('5')" />
+     <input type="button" value=" 6 " onclick="doCalc('6')" />
+     <input type="button" value=" * " onclick="doCalc('*')" />
+      
+
+     <br />
+
+     <input type="button" value=" 7 " onclick="doCalc('7')" />
+     <input type="button" value=" 8 " onclick="doCalc('8')" />
+     <input type="button" value=" 9 " onclick="doCalc('9')" />
+     <input type="button" value=" - " onclick="doCalc('-')" />
+
+     <br />
+
+     <input type="button" value=" ( " onclick="doCalc('(')" />
+     <input type="button" value=" ) " onclick="doCalc(')')" />
+     <input type="button" value=" 0 " onclick="doCalc('0')" />
+     <input type="button" value=" + " onclick="doCalc('+')" />
+
+     <br />
+
+     <input type="button" value=" C " onclick="doCalc('C')" />
+     <input type="button" value=" . " onclick="doCalc('.')" />
+     <input type="button" value=" = " onclick="doCalc('=')" />
+     <input type="button" value=" % " onclick="doCalc('%')" />
+
+    </form>
+
+   </div>  
+
+  </main>
+
+  <hr />
+
+  <footer>
+
+   <p>
+
+    Page created: 
+    <span class="clsTimeDateStamp">
+     07:32 25/04/2017
+    </span>
+
+    <br />
+
+    Last updated:
+    <span class="clsTimeDateStamp">
+     23:44 25/04/2017
+    </span>
+
+   </p>
+
+  </footer>
+
+ </body>
+
+</html>
