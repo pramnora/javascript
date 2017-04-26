@@ -6,11 +6,13 @@
      Udemy course: Create a calculator web app with Javascript/HTML/CSS - Instructor: Aarthi Elumalai
      https://www.udemy.com/create-a-calculator-web-app-with-javascript-html-css/learn/v4/overview
      --------------------------------------------------------------------------------------------------          
-     NOTE: The above code has been personally adapted by me, Paul Ramnora, on the date: 25th April 2017.
-     My own personal adaptation can be found here:
+     NOTE: The above code has been personally adapted by me, Paul Ramnora, on the date: 26th April 2017.
+     The adaptation 'source code' can be found here:
      https://github.com/pramnora/javascript/blob/master/Course/Udemy/CalculatorApp/index.html
-  -->
-
+     ...and, an actual working example of the code you can test inside of your browser online can be found here...
+     https://pramnora.github.io/courses/udemy/javascript/calculator-app/index.html
+-->
+ 
  <head>
 
   <meta charset="utf-8" />
@@ -37,7 +39,7 @@
     width:25%;
     margin:20px auto;
     border:5px solid black;
-    border-radius:.75px;
+    border-radius:7px;
     padding:15px;
     background-color:silver;
    }
@@ -64,10 +66,21 @@
 
   <script>
    function doCalc(c){    
-    if ((c != "=") && (c != "C")) { document.calc.output.value += c; }              /* add either: 'numbers/operators', to output screen */
-    if (c == "=") { document.calc.output.value = eval(document.calc.output.value) } /* do calculation; then, send total to output screen */
-    if (c == "C") { document.calc.output.value = ""; }                              /* clear calculator output screen */
-   }
+    strOut = document.calc.output.value.toString();         /* create string of output screen values/(shortens code)    */  
+    if (c == "=") {                                         /* If '=' sign button is pressed...                         */
+     document.calc.output.value = eval(strOut);             /* then, do calculation; and, send total to output screen.  */
+    } else if (c == "DEL") {                                /* If 'DEL' button is pressed...                            */
+     document.calc.output.value=strOut.slice(0,-1);         /* then, delete off the last output screen character        */
+    } else if (c == "Clear") {                              /* If 'Clear' button is pressed...                          */
+     document.calc.output.value = "";                       /* then, clear calculator output screen.                    */
+    } else if (c == "Sq") {                                 /* If 'Sq' button is pressed...                             */
+     document.calc.output.value = strOut**2;                /* then, square the number/and, show on output screen.      */
+    } else if (c == "Cb") {                                 /* If 'Cb' button is pressed...                             */
+     document.calc.output.value = strOut**3;                /* then, cube the number/and, show on output screen         */
+    } else {                                                /* If 'any other button' is pressed...                      */
+     document.calc.output.value += c;                       /* then, add either: 'numbers/operators', to output screen  */
+    } //...end of if block
+   } //...end of function: doCalc()
   </script>
 
  </head>
@@ -123,10 +136,19 @@
 
      <br />
 
-     <input type="button" value=" C " onclick="doCalc('C')" />
+     <input type="button" value=" % " onclick="doCalc('%')" />
      <input type="button" value=" . " onclick="doCalc('.')" />
      <input type="button" value=" = " onclick="doCalc('=')" />
-     <input type="button" value=" % " onclick="doCalc('%')" />
+
+     <br />
+
+     <input type="button" value=" Square " onclick="doCalc('Sq')" />
+     <input type="button" value=" Cube " onclick="doCalc('Cb')" />
+
+     <br />
+
+     <input type="button" value=" DEL " onclick="doCalc('DEL')" />
+     <input type="button" value=" Clear " onclick="doCalc('Clear')" />
 
     </form>
 
@@ -149,7 +171,7 @@
 
     Last updated:
     <span class="clsTimeDateStamp">
-     23:44 25/04/2017
+     14:49 26/04/2017
     </span>
 
    </p>
