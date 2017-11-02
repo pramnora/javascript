@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-gb"><!-- html/start -->
+ <head><!-- head/start -->
+  <!--meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="YourName Web Site, Homepage">
+  <meta name="keywords" content="YourName,personal web site">
+  <meta name="page-created" content="2ND NOV 2017 04:29 PM GMT">
+  <meta name="last-updated" content="2ND NOV 2017 04:29 AM GMT">
+  <!-- title bar heading-->
+  <title>YourName's Web Site, Homepage</title>
+  <!--link to internal stylesheet;
+      should be replaced by an external link to the stylesheet code-->
+<style type="text/css">
+/* body */
+body{
+ background-color:white;
+ font-family:arial,verdana,sans-serif;
+}
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: yellow;
+    color:black;
+    border:2px solid gray;
+}
+.clsSelected{
+ background-color:red;
+ color:black;
+ font-weight:bold;
+ font-size:larger;
+ font-style:italic;
+ padding:16px;
+}
+/* Links */
+footer a{text-decoration:none;}
+footer a:hover{color:red;text-decoration:underline;}
+main a:link{color:blue;text-decoration:none;}
+main a:active{color:purple;}
+main a:visited{color:purple;}
+main a:hover{color:red;text-decoration:underline;}
+/* Main */
+header{
+ margin-top:80px;
+ margin-bottom:40px;
+ text-align:center;
+ background-color:yellow; 
+}
+#idNameText,#idWebSiteText{
+ padding:20px;
+}
+#idH1Text{
+ padding:40px;
+ background-color:green;
+ color:white; 
+}
+main p.clsPara{
+ text-indent:1cm;
+}
+/* Footer */
+footer{
+ text-align:center;
+}
+.clsCopyright{
+ margin-top:50px;
+ margin-bottom:40px;
+ background-color:green;
+}
+#idCopyrightMessage{
+ background-color:red;
+ font-weight:bold;
+ color:white;
+ padding:15px;
+}
+.clsTimeDateStamp{
+ font-style:italic;
+ color:red;
+}
+</style>
+  <!--internal javascript file;
+      should be replaced by an external link to the Javascript code-->
+<script>
+/*
+  NOTE: 
+  This script will create an automatic header for your web page; containing
+  black coloured buttons; and, also, 'selected' page highlighted red.
+  The script works in conjunction with the corresponding stylesheet.
+  All the user has to do from within the linked to web page is...
+   doNav("Home"); 
+   Replace "Home" with your own page name, instead.
+*/
+/* Web page navigation menu links... */
+var links = [ 
+  {
+   pageName:"home.html",
+   linkName:"Home"
+  },
+  {
+   pageName:"link1.html",
+   linkName:"Link 1"
+  },
+  {
+   pageName:"link2.html",
+   linkName:"Link 2"
+  },
+  {
+   pageName:"link3.html",
+   linkName:"Link 3"
+  }
+]
+function doNav(strLinkName){
+ document.write("<nav>");
+ document.write("<ul>");
+ for (var intEachLink=0; intEachLink < links.length; intEachLink++){
+  if (links[intEachLink].linkName == strLinkName) {
+                document.write("<li class='clsSelected'>" 
+                + links[intEachLink].linkName 
+                + "</li>");
+  } else {
+                document.write("<li><a href='" 
+                + links[intEachLink].pageName + "'>" 
+                + links[intEachLink].linkName 
+                + "</a></li>");
+  }
+ }
+ document.write("</ul>");
+ document.write("</nav>");
+}
+</script>
+ </head><!-- head/end -->
+ <body><!-- body/start -->
+  <!-- nav/start -->
+  <script>
+   doNav("Home");
+  </script>
+  <!-- nav/end -->
+  <!-- header/start -->
+  <header>
+   <h1>
+    <span id="idH1Text">
+     Dominic's Web Site
+    </span>
+   </h1>
+  </header>
+  <!-- header/end -->
+  <!-- main/start -->  
+  <main>
+   <h2>
+    Introduction
+   </h2>
+   <p class="clsPara">
+    Welcome to my homepage!
+   </p>   
+  </main>
+  <!-- main/end -->
+  <!-- footer/start -->
+  <footer>
+   <div class="clsCopyright">
+    <p>
+     <span id="idCopyrightMessage">
+      &copy;2017, YourName./All rights reserved.
+     </span>
+    </p>
+   </div>
+   <div>
+    <p>
+     Document last modified: 
+     <br>
+     <span class="clsTimeDateStamp">
+      2ND NOV 2017 04:32 AM GMT
+     </span>
+    </p>
+   </div>
+   <div>
+    <p>
+     Web site design: 
+     <span id="idEmail">
+      <a href="mailto:yourName@yourEmailProvider.com">yourName@yourEmailProvider/a>
+     </span>
+    </p>
+   </div>
+  </footer>
+  <!-- footer/end -->
+ </body><!-- body/end -->
+<!-- html/end -->
+</html>
