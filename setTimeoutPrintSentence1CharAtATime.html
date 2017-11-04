@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--CREATED: 05:49 04/11/2017
+     UPDATED: 05:49 04/11/2017-->
+ <meta charset="utf-8">
+ <head>
+  <script>
+   var strSentence="This is a sentence.";
+   var counter = 0;
+   function printEachChar(){
+    document.write(strSentence[counter]);
+    counter ++;
+   }
+   for (x = 0; x < strSentence.length; x ++){ 
+    setTimeout(printEachChar, (x + 1) * 1000);
+   }
+  </script>
+ </head>
+ <body>
+ </body>
+</html>
