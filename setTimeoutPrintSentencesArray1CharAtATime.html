@@ -6,9 +6,9 @@
  <head>
   <script>
    var araStrSentence=[
-     "This is a sentence 1.",
-     "<br>This is a sentence 2.",
-     "<br>This is a sentence 3."
+     "This is sentence 1." + 
+     "<br>This is sentence 2." + 
+     "<br>This is sentence 3."
    ];
    var araStrSentenceCopy=[];
    araStrSentenceCopy = araStrSentence.join();
@@ -18,7 +18,7 @@
     intEachLine ++;
    }
    for (x = 0; x < araStrSentenceCopy.length; x ++){ 
-    setTimeout(printEachLine, (x + 1) * 1000);
+    setTimeout(printEachLine, (x + 1) * 200);
    }
   </script>
  </head>
