@@ -6,32 +6,35 @@
   <!--Javascript code/start-->
   <script>
   <!--set global variables--> 
-  var intMinCount = 1, intMaxCount = 10
+  var intMinCount = 0, intMaxCount = 10
   function doCountdown()
   {
    <!--set local variables-->
-   var intCount = intMinCount, 
+   var intCount = intMaxCount, 
        interval = setInterval(function()
        {
          document.getElementById("divOutputDisplay").innerHTML = intCount;
-         divDisplay=intCount;
-         if (intCount == intMaxCount) { clearInterval(interval) };
-         intCount++;
+         if (intCount == intMinCount) { clearInterval(interval) };
+         intCount--;
        },1000); //...end setInterval
   }//...end function
   </script>
   <!--Javascript code/end-->
   <!--stylesheet code/start-->
   <style type="text/css">
+   h1{
+    text-align:center;
+   } 
    #divOutputDisplay{
     font-weight:bold;
-    font-size:100px;
+    font-size:600%;
     background:yellow;
     color:red;
-    border:solid 1px green;
+    border:solid 10px green;
     height:120px;
     padding-top:10px;
     padding-bottom:10px;
+    margin: 0px 40% 0px 40%;
     text-align:center;
    }
   </style>
@@ -40,9 +43,9 @@
  <body onload="javascript:doCountdown()">
   <h1>
    Javascript countdown: 
-   <script>document.write(intMinCount);</script>
-   to 
    <script>document.write(intMaxCount);</script>
+   to 
+   <script>document.write(intMinCount);</script>
    ...
   </h1>
   <div id="divOutputDisplay"></div>
