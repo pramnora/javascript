@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--CREATED: 06:25 04/11/2017
+     UPDATED: 06:25 04/11/2017-->
+ <meta charset="utf-8">
+ <head>
+  <script>
+   var araStrSentence=[
+     "This is a sentence 1.",
+     "This is a sentence 2.",
+     "This is a sentence 3."
+   ];
+   var intEachLine = 0;
+   function printEachChar(){
+    document.write(araStrSentence[intEachLine]+"<br>");
+    intEachLine ++;
+   }
+   for (x = 0; x < araStrSentence.length; x ++){ 
+    setTimeout(printEachChar, (x + 1) * 1000);
+   }
+  </script>
+ </head>
+ <body>
+ </body>
+</html>
