@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--CREATED: 07:50 04/11/2017
+     UPDATED: 07:51 04/11/2017-->
+ <meta charset="utf-8">
+ <head>
+  <script>
+   //*** What this program does is to take multiple sentences;
+   //    then, concatenate them into becoming just one long sentence;
+   //    that can  be printed out a single character at a time.
+   var strSentence="This is sentence 1." +
+                   "<br>This is sentence 2." +
+                   "<br>This is sentence 3.";
+   var intEachLine = 0;
+   function printEachLine(){
+    document.write(strSentence[intEachLine]);
+    intEachLine ++;
+   }
+   for (x = 0; x < strSentence.length; x ++){ 
+    setTimeout(printEachLine, (x + 1) * 200);
+   }
+  </script>
+ </head>
+ <body>
+ </body>
+</html>
