@@ -5,19 +5,15 @@
   <title>Javascript countdown test</title>
   <!--Javascript code/start-->
   <script>
-  <!--set global variables--> 
-  var intMinCount = 0, intMaxCount = 10
-  function doCountdown()
+  function doCountdown(intMaxCount,intMinCount)
   {
-   <!--set local variables-->
-   var intCount = intMaxCount, 
        interval = setInterval(function()
        {
-         document.getElementById("divOutputDisplay").innerHTML = intCount;
-         if (intCount == intMinCount) { clearInterval(interval) };
-         intCount--;
-       },1000); //...end setInterval
-  }//...end function
+         document.getElementById("divOutputDisplay").innerHTML = intMaxCount;
+         if (intMaxCount == intMinCount) { clearInterval(interval) };
+         intMaxCount--;
+       },1000); //...end setInterval function
+  }//...end doCountdown function
   </script>
   <!--Javascript code/end-->
   <!--stylesheet code/start-->
@@ -40,7 +36,7 @@
   </style>
   <!--stylesheet code/end-->
  </head>
- <body onload="javascript:doCountdown()">
+ <body onload="javascript:doCountdown(10,0)">
   <h1>
    Javascript countdown: 
    <script>document.write(intMaxCount);</script>
