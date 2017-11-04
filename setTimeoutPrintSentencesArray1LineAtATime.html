@@ -11,12 +11,12 @@
      "This is a sentence 3."
    ];
    var intEachLine = 0;
-   function printEachChar(){
+   function printEachLine(){
     document.write(araStrSentence[intEachLine]+"<br>");
     intEachLine ++;
    }
    for (x = 0; x < araStrSentence.length; x ++){ 
-    setTimeout(printEachChar, (x + 1) * 1000);
+    setTimeout(printEachLine, (x + 1) * 1000);
    }
   </script>
  </head>
