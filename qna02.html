@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <!--
+    I got the initial idea for this code from seeing a CSS example being shown at...
+    https://www.w3schools.com/js/tryit.asp?filename=tryjs_default 
+    ...I edited that code in order to produce this simple Q&A Test
+       which uses a mixture of: HTML/CSS/Javascript.
+   -->
+   
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Javascript: Q&A Test</title>
+
+    <style>
+     body{font-family:arial,verdana,sans-serif;}
+     header{text-align:center;}
+     footer{text-align:right;}
+    </style>
+
+  </head>
+ 
+  <body>
+ 
+    <header> 
+     <h1>Javascript: Q and A Test</h1>
+    </header>
+ 
+    <hr>
+ 
+    <main>
+
+    <h2>1></h2>
+    <blockquote>
+     <h3>Q: What does the term HTML mean?</h3>
+     <p><input type="radio" name="one">A: How To Make Languages</p>
+     <p><input type="radio" name="one">A: How the man lies</p>
+     <p><input type="radio" name="one">A: Hold This Message Longer</p>
+     <p id="1"><input type="radio" name="one">A: HyperText Markup Language</p>
+    </blockquote>
+    <button onclick="showMessage('1')">Show answer...</button>
+
+    <hr>
+
+    <h2>2></h2>
+    <blockquote>
+     <h3>Q: What is my favourite color?</h3>
+     <p><input type="radio" name="two">A: Red</p>
+     <p><input type="radio" name="two">A: Green</p>
+     <p id="2"><input type="radio" name="two">A: Blue</p>
+    </blockquote>
+    <button onclick="showMessage('2')">Show answer...</button>
+
+    </main>
+
+    <hr>
+
+    <footer>
+     <p>
+      Created: <i>26th July 2019 - 20:47 PM GMT</i>
+      <br>
+      Updated: <i>26th July 2019 - 20:47 PM GMT</i>
+     </p>
+    </footer>
+
+    <script>
+     function showMessage(idText){ 
+      var x = document.getElementById(idText);
+      x.style.fontSize="larger";
+      x.style.color="red";
+      x.style.fontStyle="italic";      
+     }
+    </script>
+
+  </body>
+
+</html>
