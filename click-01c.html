@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <title>Javascript: Click testing...</title>
+ </head>
+
+ <body>
+
+  <p>Click: <span id="xSelectedPos"><u>here</u></span>.</p>
+
+  <script>
+
+   //*** Version 3: This javascript program displays an alert message text box
+   //               whenever the user clicks on the underlined word: 'here'.
+
+   //    NOTE: If they click anywhere else inside the main 'body' of the web page;
+   //          then, absolutely nothing happens.
+
+   //          So, the idea here is to show that it's possible to isolate
+   //          exactly which part of the web page the user has to click on,
+   //          before obtaining any response message.
+
+   //          One could, for example, choose to isolate either a: 
+   //          HTML element: header/div/paragraph/ul/form/button/image;
+   //          or, paragraph/sentence/word/letter/-etc. 
+
+   let xSelectedPos = document.getElementById("xSelectedPos");
+
+   xSelectedPos.addEventListener("click",()=>{
+    alert("Thanks for clicking");
+   });
+
+  </script>
+
+ </body>
+
+</html>
