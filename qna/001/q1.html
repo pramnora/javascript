@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content"">  
+
+  <title>QnA Test/Page 1 of 3</title>
+
+  <link rel="stylesheet" type="text/css" href="css01.css">
+
+ </head>
+
+ <body>
+
+  <header>
+   <h1>Q&A</h1>
+  </header>
+
+  <main>
+
+  <p class="question">
+   1> Q: What is 3 + 4?
+  </p>
+
+  <ul>
+   <li id="a" onclick="javascript:markGuess('a');">34</li>
+   <li id="b" onclick="javascript:markGuess('b');">77</li>
+   <li id="c" onclick="javascript:markGuess('c');">7</li>
+   <li id="d" onclick="javascript:markGuess('d');">1</li>
+  </ul>
+
+  <button onclick="javascript:markCorrectAnswer('c');">Show answer</button>
+
+  <nav>
+   <button onclick="javascript:window.location='index.html';">
+    Start >
+   </button>
+   <button onclick="javascript:window.location='q2.html';">
+    Next >>
+   </button>
+   <button onclick="javascript:window.location='index.html';">
+    << Previous
+   </button>
+   <button onclick="javascript:window.location='finish.html';">
+    < End
+   </button>
+  </nav>
+
+  </main>
+
+  <footer>
+   <p>
+    Page created: <span class="timeDateStamp">20:55 20/08/2019</span>
+    <br>
+    Last updated: <span class="timeDateStamp">20:55 20/08/2019</span>
+   </p>
+
+  </footer>
+
+  <script language="javascript" type="text/javascript" src="js01.js">
+  </script>
+
+ </body>
+
+</html>
