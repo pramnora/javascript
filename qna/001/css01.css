@@ -1,0 +1,92 @@
+/* CSS reset... */
+
+*{
+ padding:0px;
+ margin:0px;
+}
+
+/* BODY... */
+
+body{
+ line-height:200%;
+ font-family:arial,verdana,sans-serif;
+}
+
+main{
+ margin:25px;
+}
+
+h1{
+ font-size:600%;
+ text-shadow:15px 15px 15px black;
+ background-color:orange;
+ color:yellow;
+ padding:25px;
+}
+
+h1,h2{
+ text-align:center;
+}
+
+h2{
+ padding:10px;
+}
+
+p{
+ text-align:center;
+}
+
+p.question{
+ text-align:left;
+ font-weight:bold;
+}
+
+ul{
+ margin-top:10px;
+ margin-bottom:10px;
+ margin-left:25px;
+}
+
+ul li:hover{
+ border:1px solid black;
+}
+
+/* NAV... */
+
+nav{
+ background:linear-gradient(red,black);
+ padding:10px;
+ background-color:grey;
+ text-align:center;
+}
+
+button{
+ padding:5px;
+ font-size:larger;
+ background:linear-gradient(red,white);
+}
+
+button:hover{
+ background-color:yellow;
+ background:linear-gradient(yellow,orange);
+}
+
+button.disabled{
+ background:linear-gradient(black,silver,black);
+ background-color:red;
+}
+
+/* FOOTER...*/
+
+footer{
+ background:linear-gradient(grey,silver);
+ background-color:silver;
+ padding:10px;
+ color:rgba(255,255,0,0.2);
+}
+
+.timeDateStamp{
+ font-style:italic;
+ color:rgba(255,255,255,0.2);
+}
+
