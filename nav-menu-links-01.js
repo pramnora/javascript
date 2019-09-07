@@ -1,6 +1,25 @@
 /*
+
  Created: 04:29 03/09/2019
  Updated: 02:53 07/09/2019
+
+ This code will add an automatic navigation menu bar to your web pages.
+ For it to work, properly, you have to call it from each individual web page as follows...
+
+1> Change the following line...to page names used in your actual web site...
+ var strArrayPageName = ["index","page1","page2","page3"];
+
+2> Save this page as being an external script file called:
+nav-menu-links-01.js
+
+3>  Link to the external script file...from the calling page...
+ <script language="javascript" type="text/javascript" src="nav-menu-links-01.js"></script>
+
+4> From the calling page...call the following function...
+ <script>
+  writeNavMenuLinks("pageName"); //....replace pageName...with the actual page name you're calling the script from
+ </script>
+
 */
 
 function writeNavMenuLinks(strSelectedPageName){
