@@ -10,9 +10,9 @@ There are 3 interlinked but entirely separate program files:-
 
 ...and, there are 3 printout files:-
 
--> find-primes.png  (printout of the entire program working in actual 'real life' action/including source codes...all being shown inside of 1 screenful window...with compressed code)   
--> find-primes-b.png  (printout of the program working in actual 'real life' action/the program finds a prime number: 7)   
--> find-primes-c.png  (printout out of the program working in actual 'real life' action/the program finds a non prime number: 10)   
+-> find-primes-01.png  (printout of the entire program working in actual 'real life' action/including source codes...all being shown inside of 1 screenful window...with compressed code)   
+-> find-primes-01b.png  (printout of the program working in actual 'real life' action/the program finds a prime number: 7)   
+-> find-primes-01c.png  (printout out of the program working in actual 'real life' action/the program finds a non prime number: 10)   
 
 
 ## REASONS AS TO WHY I DECIDED TO WRITE THIS PROGRAM
