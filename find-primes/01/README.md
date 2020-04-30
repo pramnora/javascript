@@ -14,9 +14,9 @@ The 4 included files are listed as follows:-
 I wanted to write a fairly simple application which I could then easily port to other languages...; 
 for example, I have written the same code -so far to date- using...
 
--> Python
--> QBASIC
--> Web (HTML/CSS/Javascript)
--etc.
+-> Python  
+-> QBASIC  
+-> Web (HTML/CSS/Javascript)  
+-etc.  
 
 ...and, I do fully intend to write more...including a C, C++, etc. versions.
