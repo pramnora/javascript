@@ -9,13 +9,14 @@ The 4 included files are listed as follows:-
 -> find-primes.js   (the computer program which calculates if a number is either prime or not)  
 -> find-primes.png  (the print out of the program working in actual 'real life' action)  
 
-## REASONS AS TO WHY I DECIDED TO WRITE THIS
+## REASONS AS TO WHY I DECIDED TO WRITE THIS PROGRAM
 
 I wanted to write a fairly simple application which I could then easily port to other languages...; 
 for example, I have written the same code -so far to date- using...
 
 -> Python  
 -> QBASIC  
+-> VBScript  
 -> Web (HTML/CSS/Javascript)  
 -etc.  
 
