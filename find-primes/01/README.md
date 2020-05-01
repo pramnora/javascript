@@ -2,6 +2,8 @@
 
 This is a web application program which uses a mixture of: HTML/CSS/Javascript.
 
+### PROGRAM RUN
+
 Enter number: 7 [Check if number is prime?]
 
 The program's aim is, after the user has entered a number to check, first;    
@@ -15,7 +17,7 @@ Factors: 1 7
 Total factors: 2  
 Prime: Y  
 
-# FILE LISTING
+## FILE LISTING
 
 There are 3 interlinked but entirely separate program files:-
 
@@ -29,7 +31,7 @@ There are 3 interlinked but entirely separate program files:-
 -> find-primes-01b.png  (printout of the program working in actual 'real life' action/the program finds a prime number: 7)   
 -> find-primes-01c.png  (printout out of the program working in actual 'real life' action/the program finds a non prime number: 10)  
 
-# HOW TO USE IT
+## HOW TO USE IT
 
 There are 2 different ways...
 
