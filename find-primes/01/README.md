@@ -2,7 +2,7 @@
 
 This is a web application program which uses a mixture of: HTML/CSS/Javascript.
 
-The program's aim is, after the user has first entered a number to check;       
+The program's aim is, after the user has entered a number to check, first;       
 then, the program checks to see if the number entered was either prime/or, not?   
 Next, it prints out the following type of 'output' message:  
 
