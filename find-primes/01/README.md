@@ -5,14 +5,16 @@ This is a 'web application' program which uses a mixture of: HTML/CSS/Javascript
 The program's aim is, after the user has first entered a number to check into the textbox;      
 then, clicked on button: [Check if number is prime?];  
 
-next, the program checks to see if the number entered was either prime/or, not;   
+Next, the program checks to see if the number entered was either prime/or, not;   
 it does this by using a for loop/together with the mod % maths operator symbol  
 to carry out a series of calculations.
 
-Basically, if the number can be divided, evenly, result: 0; and, without leaving any remainder;
+Basically, if the number can be divided, evenly, with result: 0;   
+and, without leaving any remainder;  
 then, that means the number found is a factor.
 
-If the number of factors found is just merely, 2/...as opposed to less than 2/or, more than 2...;  
+If the number of factors found is just merely, 2/  
+...as opposed to less than 2/or, more than 2...;  
 then, the number found is a 'prime number'.
      
 When all of the calculations are done; finally, it prints the following 'output' message:      
