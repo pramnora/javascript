@@ -112,9 +112,9 @@ then, people might need to go and find/download that particular software
 which is necessary in order to make the program run.
 
 Writing Javascript code; therefore, has tremendous advantages/benefits;  
-with it being used 'universally' by nearly everyone on the whole entire planet;      
+with it being 'universally' used by nearly everyone on this whole entire planet;      
 therefore, there is no need to go and find/download anything further at all.
 
 With Javascript you, simply: write/test/debug/upload/run  
-(with universal access inside of all web browsers)
+(and, with universal access inside of all web browsers).
 
