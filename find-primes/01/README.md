@@ -79,7 +79,7 @@ for example, I have written the same code -so far to date- using...
 
 ...and, I do fully intend to write more...including a C, C++, TK/Inter, -etc. versions.
 
-## SOME FURTHER NOTES: JAVASCRIPT IS THE MOST WIDELY USED PROGRAMMING LANGUAGE, NOW-A-DAYS; WITH POPULARITY 2ND TO NONE!
+## SOME FURTHER NOTES: JAVASCRIPT IS THE MOST WIDELY USED PROGRAMMING LANGUAGE, NOW-A-DAYS; WITH POPULARITY THAT'S 2ND TO NONE!
 
 When I first learned to write web page code: HTML/CSS, somewhere way back in the 1990's - 2000;  
 I recall writing web page code using mainly either: Javascript/or, VBScript;  
@@ -105,11 +105,11 @@ I just use -(present tense)- those languages in 'offline' mode, instead.
 - Visual BASIC.net, can be used for OOP/Object Oriented Programming/web development  
 - etc.
 
-If I had written this same program using: QBASIC/Pascal/C/C++/-etc.;  
+If I had written this same program using: QBASIC/Pascal/C/C++/Python/-etc.;  
 then, people might need to go and find/download that particular software
 which is necessary in order to make the program run.
 
-Writing Javascript code; therefore, has tremendous advantages/benefits;
+Writing Javascript code; therefore, has tremendous advantages/benefits;  
 with it being used 'universally' by nearly everyone on the whole entire planet;    
 therefore, there is no need to go and find/download anything further at all.
 
