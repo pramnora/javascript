@@ -2,9 +2,13 @@
 
 This is a web application program which uses a mixture of: HTML/CSS/Javascript.
 
-The program's aim is, after the user has entered a number to check, first;       
-then, the program checks to see if the number entered was either prime/or, not?   
+Enter number: 7 [Check if number is prime?]
+
+The program's aim is, after the user has entered a number to check, first;    
+and, clicked on button: [Check if number is prime?];  
+then, the program checks to see if the number entered was either prime/or, not?     
 Next, it prints out the following type of 'output' message:  
+(the output will, of course, vary...depending on which number the user chose to type in)
 
 Number: 7  
 Factors: 1 7  
