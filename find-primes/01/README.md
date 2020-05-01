@@ -79,7 +79,7 @@ for example, I have written the same code -so far to date- using...
 
 ...and, I do fully intend to write more...including a C, C++, TK/Inter, -etc. versions.
 
-## SOME FURTHER NOTES: JAVASCRIPT IS A WIDELY USED, AND, MOST POPULAR PROGRAMMING LANGUAGE, NOW-A-DAYS
+## SOME FURTHER NOTES: JAVASCRIPT IS THE MOST WIDELY USED PROGRAMMING LANGUAGE, NOW-A-DAYS; WITH POPULARITY 2ND TO NONE!
 
 Javascript, is 'the' main programming language which runs inside of nearly all web browers, now-a-days;  
 so, it is a very good idea to write programs using, Javascript;  
