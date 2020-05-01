@@ -81,13 +81,35 @@ for example, I have written the same code -so far to date- using...
 
 ## SOME FURTHER NOTES: JAVASCRIPT IS THE MOST WIDELY USED PROGRAMMING LANGUAGE, NOW-A-DAYS; WITH POPULARITY 2ND TO NONE!
 
-Javascript, is 'the' main programming language which runs inside of nearly all web browers, now-a-days;  
-so, it is a very good idea to write programs using, Javascript;  
-because, then, as many people as possible will be able to gain access to it;  
-once the program is already written/tested...; then, you can, immediately, publish it straight up onto the web.  
+When I first learned to write web page code: HTML/CSS, somewhere way back in the 1990's - 2000;  
+I recall writing web page code using mainly either: Javascript/or, VBScript;  
+(occassionally, I might try experimenting by writing web page code using, PerlScript).
 
-If I had written this same program using: QBASIC/C/C++/-etc.; then, people might need to go and find/download  
-that particular software in order to make the program run.
+Because my own programming history is, in fact, related to having learned BASIC programming;    
+therefore, I much preferred writing web browser code using VBScript/Visual BASIC Script, instead of Javascript.
 
-However, because Javascript is being used 'universally' inside of nearly all web browers, now-a-days;  
-therefore, these is no need to go and find/download anything further at all.
+However, as time moved on...Javascript, seemed to have won the web browser popularity contest;  
+as being the main programming language that was most universally accepted for use inside of web browsers.
+
+-(I think, that's mainly because VBScript code only ran inside of Microsoft Internet Explorer web browser, alone;    
+  unless, you were to download/add a web browser plug-in...for it to work inside of 'other' web browsers.)-
+
+Eventually, I stopped writing VBScript code to use inside of web browers, anymore;
+and, mostly, used Javascript to write inside of the web browser, instead.
+
+But, I did not completely give up on using the BASIC family of programming languages, altogether;    
+I just use -(present tense)- those languages in 'offline' mode, instead.  
+
+- VBScript, is a very good language to use on Windows Desktop  
+- QBASIC, is a very good language to use for CLI/Command Line Interface development
+- Visual BASIC.net, can be used for OOP/Object Oriented Programming/web development  
+- etc.
+
+If I had written this same program using: QBASIC/Pascal/C/C++/-etc.;  
+then, people might need to go and find/download that particular software
+which is necessary in order to make the program run.
+
+Writing Javascript code; therefore, has tremendous advantages/benefits;
+with it being used 'universally' by nearly everyone on the whole entire planet;    
+therefore, there is no need to go and find/download anything further at all.
+
