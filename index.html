@@ -3,45 +3,81 @@
 <html lang="en">
 
  <head>
-  
-   <meta charset="utf-8">
 
-   <title>GitHub/Netlify web page server...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <style type="text/css">
-    
-    /* links */
-    
-    a:link{color:blue;text-decoration:none;}
-    a:active{color:red;}
-    a:visited{color:purple;}
-    a:hover{color:red;text-decoration:underline;}
+  <title>GitHub/Netlify (web page server)</title>
 
-    /* body */
-    
-    body{margin:100px;}
+  <style>
 
-    /* header */
+   a:link{color:blue;text-decoration:none;}
+   a:active{color:red;}
+   a:visited{color:purple;}
+   a:hover{color:red;text-decoration:underline;background-color:rgba(255,255,0,0.6);}
 
-    h1{text-align:center;}
+   body{background-color:rgba(255,255,0,0.6);colour:white;}
 
-    /* footer */
-  
-    p{text-align:right;}
-    #idCopyrightMessage{background-color:black;color:white;font-weight:bold;}
+   header, main, footer{
+    width:75%;margin-left:auto;margin-right:auto;
+   }
+
+   h1{
+    background-color:red;color:yellow;text-align:center;padding:50px;background:linear-gradient(red,yellow);text-shadow:5px 5px 5px black;
+   }
+
+   header h2{
+    background-color:black;color:white;text-align:center;
+   }  
+
+  main{
+   background-color:white;color:black;font-size:larger;padding:50px;margin-bottom:25px;
+  }
+
+  main,.clsCopyrightMessage{
+   border-radius:10px;
+  }
+
+  main p{text-align:center;border:1px dotted black;padding:10px;margin-left:30%;margin-right:30%;font-weight:normal;}
+
+  h3{
+   text-align:center;border:1px dashed black;padding:10px;
+  }
+ 
+  footer{
+   background-color:red;color:black;text-align:center;padding:15px;background:linear-gradient(yellow,black);
+  }
+
+  .clsCopyrightMessage{
+   font-weight:bold;background-color:white;color:black;padding:5px;
+  }
+
+  .clsTimeDateStamp{
+   font-style:italic;color:white;font-size:smaller;
+  }
 
   </style>
 
+  <script>
+
+  </script>
+
  </head>
- 
+
  <body>
-  
-  <h1>GitHub/Netlify web page server</h1>
-  
-  <hr>
-  
-  <h2>Table of contents:-</h2>
-  
+
+  <header>
+   <h1>GitHub/Netlify
+    <br>(web page server)
+   </h1>
+   <h2>Repository: Javascript</h2>
+  </header>
+
+  <main>
+
+   <h3>Table of contents:-</h3>
+ 
   <ul>
    <li><a href="add-numbers-01.html">add-numbers-01.html</a>   
    <li><a href="add-numbers-02.html">add-numbers-02.html</a>   
@@ -66,24 +102,34 @@
    <li><a href=""></a>
    web page template/end-->
   </ul>
-  
-  <hr>
-  
-  <p>
-   URL:
-   <a href="https://epic-hodgkin-ce3d37.netlify.app/">
-    https://epic-hodgkin-ce3d37.netlify.app/
-   </a>
-   <br>
-   <span id="idCopyrightMessage">
+
+   <p>
+    URL:
+    <a href="https://epic-hodgkin-ce3d37.netlify.app/">
+     https://epic-hodgkin-ce3d37.netlify.app/
+    </a>
+   </p>
+
+  </main>
+
+  <footer>
+   <p>
+    <span class="clsCopyrightMessage">
     &copy;2020-, Mr. Paul Ramnora./All rights reserved.
-   </span>
-   <br>
-   Page created: <i>300420 16:10</i>
-   <br>
-   Last updated: <i>300420 19:00</i>
-  </p>
-  
+    </span>
+    <br><br> 
+    Page created: 
+    <span class="clsTimeDateStamp">
+     02:22 01/05/2020
+    </span>
+    <br>
+    Last updated: 
+    <span class="clsTimeDateStamp">
+     02:22 01/05/2020
+    </span>
+   </p>
+  </footer>
+
  </body>
- 
+
 </html>
