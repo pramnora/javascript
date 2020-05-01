@@ -9,10 +9,10 @@ next, the program checks to see if the number entered was either prime/or, not;
 it does this by using a for loop/together with the mod % maths operator symbol  
 to carry out a series of calculations.
 
-Basically, if the number can be divided evenly...without leaving any remainder;
+Basically, if the number can be divided, evenly, result: 0; and, without leaving any remainder;
 then, that means the number found is a factor.
 
-If the number of factors found is just 2/...as opposed to less that 2/or, more than 2...;  
+If the number of factors found is just merely, 2/...as opposed to less than 2/or, more than 2...;  
 then, the number found is a 'prime number'.
      
 When all of the calculations are done; finally, it prints the following 'output' message:      
@@ -50,7 +50,7 @@ There are 3 interlinked but entirely separate program files:-
 5 - find-primes-01b.png  (printout of the program working in actual 'real life' action/the program finds a prime number: 7)   
 6 - find-primes-01c.png  (printout out of the program working in actual 'real life' action/the program finds a non prime number: 10)  
 
-7 - README.md (which is this explnatory file)  
+7 - README.md (which is this explanatory file)  
 
 ## HOW TO USE IT
 
