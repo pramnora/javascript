@@ -106,7 +106,7 @@ I just use -(present tense)- those languages in 'offline' mode, instead.
 - etc.
 
 If I had written this same program using: QBASIC/Pascal/C/C++/Python/-etc.;  
-then, people might need to go and find/download that particular software
+then, people might need to go and find/download that particular software  
 which is necessary in order to make the program run.
 
 Writing Javascript code; therefore, has tremendous advantages/benefits;  
