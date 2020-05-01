@@ -78,3 +78,16 @@ for example, I have written the same code -so far to date- using...
 -etc.  
 
 ...and, I do fully intend to write more...including a C, C++, TK/Inter, -etc. versions.
+
+## SOME FURTHER NOTES: JAVASCRIPT IS A WIDELY USED, AND, MOST POPULAR PROGRAMMING LANGUAGE, NOW-A-DAYS
+
+Javascript, is 'the' main programming language which runs inside of nearly all web browers, now-a-days;  
+so, it is a very good idea to write programs using, Javascript;  
+because, then, as many people as possible will be able to gain access to it;  
+once the program is already written/tested...; then, you can, immediately, publish it straight up onto the web.  
+
+If I had written this same program using: QBASIC/C/C++/-etc.; then, people might need to go and find/download  
+that particular software in order to make the program run.
+
+However, because Javascript is being used 'universally' inside of nearly all web browers, now-a-days;  
+therefore, these is no need to go and find/download anything further at all.
