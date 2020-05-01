@@ -105,11 +105,14 @@ I just use -(present tense)- those languages in 'offline' mode, instead.
 - Visual BASIC.net, can be used for OOP/Object Oriented Programming/web development  
 - etc.
 
-If I had written this same program using: QBASIC/Pascal/C/C++/Python/-etc.;  
+If I had written this same program using: QBASIC/Pascal/C/C++/Python/-etc.;    
 then, people might need to go and find/download that particular software  
 which is necessary in order to make the program run.
 
 Writing Javascript code; therefore, has tremendous advantages/benefits;  
-with it being used 'universally' by nearly everyone on the whole entire planet;    
+with it being used 'universally' by nearly everyone on the whole entire planet;      
 therefore, there is no need to go and find/download anything further at all.
+
+With Javascript you, simply: write/test/debug/upload/run  
+(with universal access inside of all web browsers)
 
