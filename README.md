@@ -125,7 +125,9 @@ Using this 2nd method is the 'correct' way of doing things. However, when I'm in
 
 **1.04 LINKS**
 
-Javascript code: Using the web browser console to send output by employing: 'console.log()' function.
+SEE/INTERACT WITH THE JAVASCRIPT CODE INSIDE OF THIS REPOSITORY
+
+https://epic-hodgkin-ce3d37.netlify.app/  
 
 WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
