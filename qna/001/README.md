@@ -53,5 +53,6 @@ makes it feel a lot more like playing a 'game'.
 
 ## Links
 
-Here is the link to where this web page can be see/interacted with 'live'...  
-https://prg-javascript.netlify.app/qna/001/index.html
+Here is the link to where this web page can be seen/interacted with 'live'...  
+
+- https://prg-javascript.netlify.app/qna/001/index.html
