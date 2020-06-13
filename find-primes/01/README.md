@@ -60,7 +60,7 @@ There are 2 different ways...
 
 A> Online: If you are currently online; then, either click on the following link/or else, type into your web browser the following URL address; now, you can both 'see/interact' with the code running 'live' from inside of your own web browser:
 
-https://epic-hodgkin-ce3d37.netlify.app/find-primes/01/find-primes.html
+https://prg-javascript.netlify.app/find-primes/01/find-primes.html
 
 B> Offline: If you wish to use the code 'offline'...to learn and experiment with; then, go and download the 3 main files onto your computer...; making sure that all of these files are kept stored in one same place together...such as inside of 'one' same folder (as opposed to being located inside of different folders); then, click on the file called: [find-primes.html]...and, now, the code should automatically launch inside of your own web browser...so that you can run/re-run/test.
 
