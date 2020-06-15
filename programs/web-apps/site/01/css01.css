@@ -4,17 +4,22 @@ body{
  font-family:arial,verdana,sans-serif;
 }
 /* Navigation menu */
+nav {
+ /* border:3px solid green; */
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: green;
 }
 nav li {
     float: left;
 }
 nav li a {
+    border:2px solid white;
+    margin:5px;
     display: block;
     color: white;
     text-align: center;
@@ -27,6 +32,8 @@ nav li a:hover {
     border:2px solid gray;
 }
 .clsSelected{
+    border:2px solid yellow;
+    margin:5px;
  background-color:red;
  color:black;
  font-weight:bold;
@@ -77,4 +84,9 @@ footer{
 .clsTimeDateStamp{
  font-style:italic;
  color:red;
+}
+main{
+ background-color:white;
+ width:50%;
+ margin:auto;
 }
