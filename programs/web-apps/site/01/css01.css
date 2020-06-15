@@ -1,0 +1,80 @@
+/* body */
+body{
+ background-color:white;
+ font-family:arial,verdana,sans-serif;
+}
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: yellow;
+    color:black;
+    border:2px solid gray;
+}
+.clsSelected{
+ background-color:red;
+ color:black;
+ font-weight:bold;
+ font-size:larger;
+ font-style:italic;
+ padding:16px;
+}
+/* Links */
+footer a{text-decoration:none;}
+footer a:hover{color:red;text-decoration:underline;}
+main a:link{color:blue;text-decoration:none;}
+main a:active{color:purple;}
+main a:visited{color:purple;}
+main a:hover{color:red;text-decoration:underline;}
+/* Main */
+header{
+ margin-top:80px;
+ margin-bottom:40px;
+ text-align:center;
+ background-color:yellow; 
+}
+#idNameText,#idWebSiteText{
+ padding:20px;
+}
+#idH1Text{
+ padding:40px;
+ background-color:green;
+ color:white; 
+}
+main p.clsPara{
+ text-indent:1cm;
+}
+/* Footer */
+footer{
+ text-align:center;
+}
+.clsCopyright{
+ margin-top:50px;
+ margin-bottom:40px;
+ background-color:green;
+}
+#idCopyrightMessage{
+ background-color:red;
+ font-weight:bold;
+ color:white;
+ padding:15px;
+}
+.clsTimeDateStamp{
+ font-style:italic;
+ color:red;
+}
