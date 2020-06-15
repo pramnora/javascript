@@ -18,10 +18,14 @@
     var sumTotal=0; 
     div1 = document.getElementById("div1"); 
     for (var x = 1; x <= num; x++){  
-       sumTotal += x;  out += "" + x;  
+       sumTotal += x;
+       out += "" + x;  
        if (x != num-1) {   
-          out += " + ";  } 
-       else {   out += " = ";
+          out += " + ";  
+       } 
+       else 
+       {
+         out += " = ";
        } 
     } 
     out += sumTotal; div1.innerHTML = out;
