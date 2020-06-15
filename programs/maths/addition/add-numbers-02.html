@@ -2,10 +2,26 @@
 <html lang="en-gb">
  <head>
   <meta charset="utf-8">
-  <meta name="page-created" content="11:24 14/11/2017">  <meta name="last-updated" content="11:24 14/11/2017">
+  <meta name="page-created" content="11:24 14/11/2017">
+  <meta name="last-updated" content="11:24 14/11/2017">
   <title>Test web page</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script>function write(){ num = document.frm1.txtNum.value;  var out=""; var sumTotal=0; div1 = document.getElementById("div1"); for (var x = 1; x <= num; x++){  sumTotal += x;  out += "" + x;  if (x != num-1) {   out += " + ";  } else {   out += " = ";  } } out += sumTotal; div1.innerHTML = out;}  </script>
+  <script>
+ function write(){ 
+    num = document.frm1.txtNum.value;
+    var out=""; 
+    var sumTotal=0; 
+    div1 = document.getElementById("div1"); 
+    for (var x = 1; x <= num; x++){  
+       sumTotal += x;  out += "" + x;  
+       if (x != num-1) {   
+          out += " + ";  } 
+       else {   out += " = ";
+       } 
+    } 
+    out += sumTotal; div1.innerHTML = out;
+ }  
+  </script>
  </head>
  <body>
   <header>
