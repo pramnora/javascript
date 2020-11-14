@@ -1,0 +1,46 @@
+/*
+This CSS/Cascading Style Sheet code,
+is used to add decorative effects to the web page; 
+controlling such things as: text colourbackground colour/heading colours/
+font size/font style/margins/text allignment/-etc.
+*/
+
+/* HTML selectors: html, body,h1,h2,h3,footer */
+
+html{
+margin:10%;
+background-color:black;
+}
+
+body{
+font-family: 'Yanone Kaffeesatz', sans-serif, arial,verdana;
+background-color:white;
+}
+
+h1, h2, h3, #js-output, #webPageUpdateMsg,#divJQuery{
+text-align:center;
+}
+
+h2, h3{
+background-color:silver;
+}
+
+footer{
+display:none;
+}
+
+/* CSS ID selectors start with a hash symbol: # before name... */
+
+#webPageUpdateMsg{
+border:1px solid black;
+margin-left:25%;
+margin-right:25%;
+font-size: small;
+}
+
+/* CSS class selectors start with a period dot symbol: (.) before name... */
+
+.timeDateStamp{
+font-style:italic;
+color:red;
+}
