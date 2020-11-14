@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Javascript test</title>
+
+<!--link to FREE google fonts: needs online connection to work, properly-->
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+
+<!--link to an external stylesheet file-->
+<link rel="stylesheet" type="text/css" href="js-write.css" />
+
+<!--linking to an external javascript file-->
+<script language="javascript" type="text/javascript" src="js-write.js"> 
+</script>
+
+<!--javascript being written inside of the document head section-->
+<script> 
+alert("Javascript message box alert.\n\nDemo: Javascript being written inside of the document HEAD-/HEAD section!");
+</script>
+
+</head>
+
+<body onLoad="javascript:showMessage();">
+
+<header>
+
+<h1>Javascript code demo</h1>
+<h2>How to display Javascript text messages inside of an HTML web page</h2>
+
+</header>
+
+<div id="main">
+
+<p>
+This document shows 6 different methods of using Javascript to output text messages from inside of the HTML web page:-
+</p>
+
+<ol>
+<li>HEAD section, linking the (.html) web page document to an external (.js) file...displays an alert message box.</li>
+<li>HEAD section, use pair of script tags to display an alert message box.</li>
+<li>BODY section, use pair of script tags to write a mixture of 'plain text/HTML/CSS' directly into the (.html) web page document itself.</li>
+<li>BODY section, use pair of script tags to send text output to the web browser console.</li>
+<li>BODY section, use Javascript web page onLoad="" event to call/run an external file function to display an alert message box.</li>
+<li>BODY section, use an external JQuery file function call to both 'Show/Hide' a web page footer section.</li>
+</ol>
+
+<h3>Javascript output text...</h3>
+
+<!--javascript being written inside of the document body section-->
+
+<div id="js-output">
+
+<script>
+document.write("<p>Javascript: 'document.write()' method; being used to output a mixture of <span style='background-color:yellow;color:red;font-size:x-large;'>plain text/HTML/CSS</span> directly into the web page document itself.</p>");
+</script>
+
+</div><!--end of div section: js-output"-->
+
+<script>
+console.log("Javascript text output being sent to the web browser console.")
+</script>
+
+
+</div><!--end of div section: main-->
+
+<div id="divJQuery">
+
+<h3>JQuery</h3>
+
+<button id="btnShowHideFooter">Show/Hide Footer</button>
+
+</div>
+
+<footer>
+
+<p id="webPageUpdateMsg">
+Page created: <span class="timeDateStamp">16:43 11/03/2016</span>
+<br>
+Last updated: <span class="timeDateStamp">13:03 12/03/2016</span>
+</p>
+
+</footer>
+
+<!--link to JQuery CDN/Content Developer Network; needs online connection to work, proplerly-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<!--link to external jquery.js file-->
+<script src="jquery-write.js"></script>
+
+</body>
+
+</html>
