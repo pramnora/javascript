@@ -20,7 +20,7 @@
       -(The previous versions...
           Version I: included 2 fields: 'name, number'           (non searchable/list all)
          Version II: included 3 fields: 'category, name, number' (search by 'category' field, only)
-        Version III: includes 8 fields: 'category, name, number, mobile, address, url, email, notes
+        Version III: includes 9 fields: 'category, name, reference, number, mobile, address, url, email, notes
         ...therefore, I'm no longer calling Version III a 'phonebook' application, anymore;
         and, I've decided to call it a 'database' application, instead;
         as it no longer 'needs' to store phone numbers...the which value is entirely 'optional'.)-
@@ -37,13 +37,20 @@
           this would make searches far more highly 'specific';
           instead, of spilling out loads of unnecessary data. 
 
+      2c> It would be good to include 'location', too...inside of the category field;
+          as this would allow searching of any particular area
+
+      2d> Because, there can be multiple 'categories' for any one entry: CoOp, Brixton, Supermarket, -etc.
+          it would be nice if the search could target multiple fields, at once, in a single search term
+          'charity timebank'
+
       3> In order to add to the database entries;
          both fields: 'category, name' are, in fact, wholly mandatory/(meaning, cannot be left out);
          possibly, one could also make both these fields hold a 'null' value, too;
          then, one could inlude a 'template' entry containing only null fields/(to be filled in, later on).
 
-      4> Each database entry consists of a number of 'fixed length' fields...eg. 8 fields in length; 
-         for example, if I decided to add on a next field: 'Mobile2:nnnn'; (and, so, introducing a 9th field);
+      4> Each database entry consists of a number of 'fixed length' fields...eg. 9 fields in length; 
+         for example, if I decided to add on a next field: 'Mobile2:nnnn'; (and, so, introducing a 10th field);
          then, I would have to add a new matching empty field to every single database entry: 'Mobile2:null'
          for the program to continue working properly;
          this means, if there were 1000+ entries to change/update; 
@@ -71,7 +78,7 @@
 
    /* 
      Database format: A single array:[], which holds multiple objects inside: {}.
-            8 fields: category, name, number, mobile, address, url, email, notes 
+            9 fields: category, name, reference, number, mobile, address, url, email, notes 
  
               -(NOTE: If a particular field name is marked as having the value: null; 
                       then, this field name will NOT be displayed inside of the 'output' results.)-
@@ -79,8 +86,9 @@
 
    var phonebook = [
     {
-     category:"family, cousin", 
+     category:"geoff, family, cousin", 
      name:"Geoff", 
+     reference:null,
      number:"0208",
      mobile:null,
      address:null,
@@ -89,8 +97,9 @@
      notes:null
     },
     {
-     category:"friends, martial arts, tai chi, teacher", 
+     category:"david, friends, martial arts, tai chi, teacher", 
      name:"David",
+     reference:null,
      number:"0207",
      mobile:null,
      address:"123 Abc Road, Xyz City, London, XXX ZZZ.",
@@ -99,8 +108,9 @@
      notes:null
     },
     {
-     category:"business, finance, building society", 
+     category:"cheshire, business, finance, building society", 
      name:"Cheshire", 
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -109,8 +119,9 @@
      notes:null
     },
     {
-     category:"business, builder",
+     category:"zoltan, business, builder",
      name:"Zoltan",
+     reference:null,
      number:"0730",
      mobile:null,
      address:null,
@@ -121,6 +132,7 @@
     {
      category:"emergency, police, fire, ambulance",
      name:"Emergency",
+     reference:null,
      number:"999",
      mobile:null,
      address:null,
@@ -129,8 +141,9 @@
      notes:null
     },
     {
-     category:"emergency, doctor",
+     category:"medical centre, emergency, doctor",
      name:"Medical Centre",
+     reference:null,
      number:"0208",
      mobile:null,
      address:null,
@@ -139,8 +152,9 @@
      notes:null
     },
     {
-     category:"emergency, suicidal, chat",
+     category:"samaritans, emergency, suicidal, chat",
      name:"Samaritans",
+     reference:null,
      number:"0208",
      mobile:null,
      address:null,
@@ -149,8 +163,9 @@
      notes:null
     },
     {
-     category:"art, teacher, charity, pgtb, friend",
+     category:"lil sullivan, arts, entertainment, teacher, charity, pgtb, friend",
      name: "Lil Sullivan",
+     reference:null,
      number:"0207",
      mobile:null,
      address:null,
@@ -159,8 +174,9 @@
      notes:"(Met through charity: PGTB.)"
     },
     {
-     category:"business, finance, credit report",
+     category:"creditkarma, business, finance, credit report",
      name:"CreditKarma",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -169,8 +185,9 @@
      notes:null
     },
     {
-     category:"business, finance, credit report",
+     category:"clearscore, business, finance, credit report",
      name:"ClearScore",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -179,8 +196,9 @@
      notes:null
     },
     {
-     category:"business, finance, bank, debit card, pre-pay card, loan",
+     category:"pockit, business, finance, bank, debit card, pre-pay card, loan",
      name:"Pockit",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -189,8 +207,9 @@
      notes:null
     },
     {
-     category:"business, finance, bank, debit card, loan",
+     category:"barclays, business, finance, bank, debit card, loan",
      name:"Barclays",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -199,8 +218,9 @@
      notes:null
     },
     {
-     category:"business, finance, bank, debit card, loan",
+     category:"nat west, national westminister, business, finance, bank, debit card, loan",
      name:"Nat West",
+     reference:null,
      number:"0800 200 400",
      mobile:null,
      address:null,
@@ -209,8 +229,9 @@
      notes:null
     },
     {
-     category:"business, finance, bank, debit card, loan",
+     category:"cashplus, business, finance, bank, debit card, credit builder, loan",
      name:"Cashplus",
+     reference:null,
      number:"0330 024 0924",
      mobile:null,
      address:null,
@@ -219,8 +240,9 @@
      notes:null
     },
     {
-     category:"business, finance, credit builder, loan",
+     category:"loqbox, business, finance, credit builder, loan",
      name:"LoqBox",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -229,8 +251,9 @@
      notes:null
     },
     {
-     category:"business, finance, building society, debit card, loan",
+     category:"nationwide, business, finance, building society, debit card, loan",
      name:"Nationwide",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -239,7 +262,7 @@
      notes:null
     },
     {
-     category:"business, charity, timebank, pgtb",
+     category:"pgtb, paxton green time bank, timebank, business, charity, arts, entertainment",
      name:"PGTB/Paxton Green Time Bank",
      number:"0208 670 0990",
      mobile:null,
@@ -249,18 +272,20 @@
      notes:null
     },
     {
-     category:"personal, family",
-     name:"Myself",
+     category:"personal, family, west norwood",
+     name:"Personal",
+     reference:null,
      number:"0208",
-     mobile:null,
+     mobile:"0730",
      address:null,
      url:null,
      email:null,
      notes:null
     },
     {
-     category:"mail, email",
+     category:"yahoo, mail, email",
      name:"Yahoo",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -271,6 +296,7 @@
     {
      category:"mail, email",
      name:"Mail",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -279,8 +305,9 @@
      notes:"Alternative email service provider."
     },
     {
-     category:"web dev, web host, domain",
+     category:"namecheap, web dev, web host, domain",
      name:"NameCheap",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -289,8 +316,9 @@
      notes:"Buy your own domain name, web site hosting service."
     },
     {
-     category:"web dev, web host, domain",
-     name:"123reg.co.uk",
+     category:"123-reg, web dev, web host, domain",
+     name:"123-reg.co.uk",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -299,8 +327,9 @@
      notes:"Buy your own domain name, web site hosting service."
     },
     {
-     category:"web dev, web host, domain",
+     category:"bluehost, web dev, web host, domain",
      name:"BlueHost",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -309,8 +338,9 @@
      notes:"Buy your own domain name, web site hosting service."
     },
     {
-     category:"web dev, programming",
+     category:"w3schools, web dev, programming",
      name:"W3Schools",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -318,12 +348,104 @@
      email:null,
      notes:"Learn web development/programming."
     },
+    {
+     category:"thames water, utilities",
+     name:"Thames Water",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.thameswater.co.uk' target='_blank'>https://www.thameswater.co.uk</a>",
+     email:null,
+     notes:"£70.00 due/year: 2020."
+    },
+    {
+     category:"british gas, utilities",
+     name:"British Gas",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.britishgas.co.uk' target='_blank'>https://www.britishgas.co.uk</a>",
+     email:null,
+     notes:"£50.00 due/quarter: Sep/Dec 2020."
+    },
+    {
+     category:"tv licence, utilities",
+     name:"TV Licence",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.tvlicensing.co.uk' target='_blank'>https://www.tvlicensing.co.uk</a>",
+     email:null,
+     notes:"2020 all paid"
+    },
+    {
+     category:"talktalk, utilities, phone, broadband, internet, isp",
+     name:"TalkTalk",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.talktalk.co.uk' target='_blank'>https://www.talktalk.co.uk</a>",
+     email:null,
+     notes:"2020 all paid."
+    },
+    {
+     category:"halfords, bike, brixton",
+     name:"Halfords",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.halfords.com' target='_blank'>https://www.halfords.com</a>",
+     email:null,
+     notes:"<b>URGENT REMINDER</b>: Need to book a FREE bike service."
+    },
+    {
+     category:"tfl, transport for london, oyster, travel, public transport, bus, tube, train, tram",
+     name:"TFL/Transport For London",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.tfl.gov.uk' target='_blank'>https://www.tfl.gov.uk</a>",
+     email:null,
+     notes:"<b>URGENT REMINDER</b>: Need to top up my travel pass/(also, re-new discount pass)."
+    },
+    {
+     category:"tate gallery, arts, entertainment, free, subscription",
+     name:"Tate Gallery",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.tate.org.uk' target='_blank'>https://www.tate.org.uk</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"dulwich picture gallery, arts, entertainment, free, subscription",
+     name:"Dulwich Picture Gallery",
+     reference:null,
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.dulwichpicturegallery.org.uk' target='_blank'>https://www.dulwichpicturegallery.org.uk</a>",
+     email:null,
+     notes:null
+    },
+
+
+
 
 /* 
  ...new database entry template/start...
     {
      category:"",
      name:"",
+     reference:null,
      number:null,
      mobile:null,
      address:null,
@@ -372,15 +494,16 @@
    } //...end of function/search()
 
    function buildOutput(recNo,x){
-                  output += "<hr />" + recNo + "&gt;"
-                         + "<br /><b>Category</b>: " + phonebook[x].category
-                         + "<br /><b>Name</b>: "     + phonebook[x].name
-                         if (phonebook[x].number  != null)  {output += "<br /><b>Number</b>: "   + phonebook[x].number;} 
-                         if (phonebook[x].mobile  != null)  {output += "<br /><b>Mobile</b>: "   + phonebook[x].mobile;} 
-                         if (phonebook[x].url     != null)  {output += "<br /><b>URL</b>: "      + phonebook[x].url;}
-                         if (phonebook[x].address != null)  {output += "<br /><b>Address</b>: "  + phonebook[x].address;} 
-                         if (phonebook[x].email   != null)  {output += "<br /><b>Email</b>: "    + phonebook[x].email;} 
-                         if (phonebook[x].notes   != null)  {output += "<br /><b>NOTES</b>: "    + phonebook[x].notes;}
+    output += "<hr />" + recNo + "&gt;"
+                                                        + "<br /><b>Category</b>: " + phonebook[x].category
+           + "<br /><b>Name</b>: "                                                  + phonebook[x].name
+      if (phonebook[x].reference  != null)  {output += "<br /><b>Reference</b>: "   + phonebook[x].reference;} 
+      if (phonebook[x].number     != null)  {output += "<br /><b>Number</b>: "      + phonebook[x].number;} 
+      if (phonebook[x].mobile     != null)  {output += "<br /><b>Mobile</b>: "      + phonebook[x].mobile;} 
+      if (phonebook[x].url        != null)  {output += "<br /><b>URL</b>: "         + phonebook[x].url;}
+      if (phonebook[x].address    != null)  {output += "<br /><b>Address</b>: "     + phonebook[x].address;} 
+      if (phonebook[x].email      != null)  {output += "<br /><b>Email</b>: "       + phonebook[x].email;} 
+      if (phonebook[x].notes      != null)  {output += "<br /><b>NOTES</b>: "       + phonebook[x].notes;}
                          + "<hr />";    
                 return output;				
    }
@@ -434,7 +557,7 @@
     <button onclick="javascript:clearOutput();">Clear ALL</button>
     <br /><br />
     Enter search text for field name: <i>category</i>/being written in all 'lower case'.
-    <br />(Example/s: business, family, finance, friends, web dev, -etc.) 
+    <br />(Example/s: arts, entertainment, -etc.) 
     <br /><input type="text" size="20" id="inpSearchText" />
     <button onclick="javascript:search();">Search</button>
     <br /><br />
@@ -451,7 +574,7 @@
     <br />    
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
-    Last updated: <span class="clsTimeDateStamp">21:34 24/11/2020</span>
+    Last updated: <span class="clsTimeDateStamp">23:09 24/11/2020</span>
    </p>
   </footer>
 
