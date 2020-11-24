@@ -171,53 +171,49 @@
 
    function showAll(){
     showNoOfRecords();
-    var output = "";
+    output = "";
     for (var x = 0; x < phonebook.length; x++){
-     output += (x+1) + "&gt;<br /><b>Category</b>: " + phonebook[x].category
-                                                     + "<br />" 
-					             + phonebook[x].name
-                                            + " => " + phonebook[x].number 
-                                              + ", " + phonebook[x].mobile 
-                                              + ", " + phonebook[x].address 
-                                              + ", " + phonebook[x].url
-                                              + ", " + phonebook[x].email 
-                                                     + "<br /><b>NOTES</b>: " 
-                                                     + phonebook[x].notes 
-                                                     + "<hr />";
+     buildOutput(x+1,x);
     }
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/showALL()
 
    function clearOutput(){
-    var output = "";
+    output = "";
     document.getElementById("inpNoOfRecs").value = 0;
     document.getElementById("inpSearchText").value = "";
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/clearOutput()
 
    function search(){
-    var output = "";
+    output = "";
     var noOfRecordsFound = 0;
     var searchText = document.getElementById("inpSearchText").value;
     for (var x = 0; x < phonebook.length; x++){
      var n = (phonebook[x].category).includes(searchText);
      if (n) { 
-      output += ++noOfRecordsFound + "&gt;<br /><b>Category</b>: " + phonebook[x].category 
-                                                                   + "<br />" 
-								   + phonebook[x].name 
-                                                          + " => " + phonebook[x].number 
-                                  	                    + ", " + phonebook[x].mobile 
-                                                            + ", " + phonebook[x].address 
-                                                            + ", " + phonebook[x].url
-                                                            + ", " + phonebook[x].email 
-                                                            + "<br /><b>NOTES</b>: " 
-                                                                   + phonebook[x].notes 
-                                                                   + "<hr />";
+      buildOutput(++noOfRecordsFound,x);
      }
-    }  
+    }
     document.getElementById("inpNoOfRecs").value = noOfRecordsFound;
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/search()
+
+   function buildOutput(recNo,x){
+                  output += recNo
+                         + "&gt;"
+                         + "<br /><b>Category</b>: " + phonebook[x].category
+                         + "<br /><b>Name</b>: "     + phonebook[x].name
+                         + "<br /><b>Number</b>: "   + phonebook[x].number 
+                         + "<br /><b>Mobile</b>: "   + phonebook[x].mobile 
+                         + "<br /><b>Address</b>: "  + phonebook[x].address 
+                         + "<br /><b>URL</b>: "      + phonebook[x].url
+                         + "<br /><b>Email</b>: "    + phonebook[x].email 
+                         + "<br /><b>NOTES</b>: "    + phonebook[x].notes 
+                         + "<hr />";    
+                return output;				
+   }
+   
 
   </script>
   <!--javascript code/end-->
@@ -280,7 +276,7 @@
     <br />    
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
-    Last updated: <span class="clsTimeDateStamp">09:31 24/11/2020</span>
+    Last updated: <span class="clsTimeDateStamp">10:12 24/11/2020</span>
    </p>
   </footer>
 
