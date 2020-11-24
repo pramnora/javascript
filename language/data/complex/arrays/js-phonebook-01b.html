@@ -55,7 +55,7 @@
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/showALL()
 
-   function clearOutput(){
+   function clearAll(){
     var output = "";
     document.getElementById("inpNoOfRecs").value = 0;
     document.getElementById("inpSearchText").value = "";
@@ -123,8 +123,9 @@
     <button onclick="javascript:showAll();">Show ALL</button>
     <br />
     Enter search text(category): <input type="text" size="20" id="inpSearchText" />
-    <button onclick="javascript:search();">Search</button> /
-    <button onclick="javascript:clearOutput();">Clear</button>
+    <button onclick="javascript:search();">Search</button>
+    <br />      
+    <button onclick="javascript:clearAll();">Clear All</button>
    </div>
    <div id="divOutput"></div>
   </main>
