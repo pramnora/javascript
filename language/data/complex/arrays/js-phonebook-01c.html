@@ -33,19 +33,135 @@
    //*** database/8 fields: category, name, number, mobile, address, url, email, notes 
 
    var phonebook = [
-    {category:"family, cousin", name:"Geoff", number:"0208",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"friends, martial arts, tai chi, teacher", name:"David", number:"0207",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"business, finance, building society", name:"Cheshire", number:"0345",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"business, builder", name:"Zoltan", number:"0730",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"emergency, police, fire, ambulance", name:"Emergency", number:"999",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"emergency, doctor", name:"Medical Centre", number:"0208",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"emergency, suicidal, chat", name:"Samaritans", number:"0208",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"art, teacher, charity, friend", name:"Lil", number:"0207",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"business, finance, bank, debit card, loan", name:"Nat West", number:"0800",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"business, finance, bank, debit card, credit card, loan", name:"Cashplus", number:"0330",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"business, charity, timebank", name:"Paxton Green Time Bank", number:"0208",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"personal, family", name:"Myself", number:"0208",mobile:null,address:null,url:null,email:null,notes:null},
-    {category:"mail, email", name:"Yahoo", number:null,mobile:null,address:null,url:"<a href='https://www.yahoo.com' target='_blank'>Yahoo</a>",email:null,notes:"My main email service provider."},
+    {
+     category:"family, cousin", 
+     name:"Geoff", 
+     number:"0208",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"friends, martial arts, tai chi, teacher", 
+     name:"David",
+     number:"0207",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, building society", 
+     name:"Cheshire", 
+     number:"0345",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, builder",
+     name:"Zoltan",
+     number:"0730",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:"Paid him in full/disappeared/work still remains unfinished...?!"
+    },
+    {
+     category:"emergency, police, fire, ambulance",
+     name:"Emergency",
+     number:"999",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"emergency, doctor",
+     name:"Medical Centre",
+     number:"0208",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"emergency, suicidal, chat",
+     name:"Samaritans",
+     number:"0208",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"art, teacher, charity, pgtb, friend",
+     name:"Lil",
+     number:"0207",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:"(Met through charity: PGTB.)"
+    },
+    {
+     category:"business, finance, bank, debit card, loan",
+     name:"Nat West",
+     number:"0800",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, bank, debit card, credit card, loan",
+     name:"Cashplus",
+     number:"0330",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, charity, timebank, pgtb",
+     name:"PGTB/Paxton Green Time Bank",      number:"0208",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"personal, family",
+     name:"Myself",
+     number:"0208",
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+    {
+     category:"mail, email",
+     name:"Yahoo",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.yahoo.com' target='_blank'>Yahoo</a>",
+     email:null,
+     notes:"My main email service provider."
+    },
    ] //end of objects array, phonebook
 
    function showNoOfRecords(){
@@ -164,7 +280,7 @@
     <br />    
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
-    Last updated: <span class="clsTimeDateStamp">08:53 24/11/2020</span>
+    Last updated: <span class="clsTimeDateStamp">09:31 24/11/2020</span>
    </p>
   </footer>
 
