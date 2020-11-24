@@ -48,7 +48,7 @@
      name:"David",
      number:"0207",
      mobile:null,
-     address:null,
+     address:"123 Abc Road, Xyz City, London, XXX ZZZ.",
      url:null,
      email:null,
      notes:null
@@ -105,7 +105,7 @@
     },
     {
      category:"art, teacher, charity, pgtb, friend",
-     name:"Lil",
+     name: "Lil Sullivan",
      number:"0207",
      mobile:null,
      address:null,
@@ -114,32 +114,73 @@
      notes:"(Met through charity: PGTB.)"
     },
     {
-     category:"business, finance, bank, debit card, loan",
-     name:"Nat West",
-     number:"0800",
+     category:"business, finance, credit report",
+     name:"CreditKarma",
+     number:"",
      mobile:null,
      address:null,
-     url:null,
+     url:"<a href='https://www.clearscore.com' target='_blank'>CreditKarma</a>",
      email:null,
      notes:null
     },
     {
-     category:"business, finance, bank, debit card, credit card, loan",
-     name:"Cashplus",
-     number:"0330",
+     category:"business, finance, credit report",
+     name:"ClearScore",
+     number:"",
      mobile:null,
      address:null,
-     url:null,
+     url:"<a href='https://www.clearscore.com' target='_blank'>ClearScore</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, bank, debit card, pre-pay card, loan",
+     name:"Pockit",
+     number:"",
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.pockit.com' target='_blank'>Pockit</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, bank, debit card, loan",
+     name:"Barclays",
+     number:"",
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.barclays.com' target='_blank'>Barclays</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, bank, debit card, loan",
+     name:"Nat West",
+     number:"0800 200 400",
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.natwest.com' target='_blank'>NatWest</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, bank, debit card, loan",
+     name:"Cashplus",
+     number:"0330 024 0924",
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.cashplus.com' target='_blank'>CashPlus</a>",
      email:null,
      notes:null
     },
     {
      category:"business, charity, timebank, pgtb",
-     name:"PGTB/Paxton Green Time Bank",      number:"0208",
+     name:"PGTB/Paxton Green Time Bank",
+     number:"0208 670 0990",
      mobile:null,
      address:null,
      url:null,
-     email:null,
+     url:"<a href='https://www.paxtongreentimebank.org' target='_blank'>Paxton Green Time Bank</a>",
      notes:null
     },
     {
@@ -161,6 +202,56 @@
      url:"<a href='https://www.yahoo.com' target='_blank'>Yahoo</a>",
      email:null,
      notes:"My main email service provider."
+    },
+    {
+     category:"mail, email",
+     name:"Mail",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.mail.com' target='_blank'>Mail</a>",
+     email:null,
+     notes:"Alternative email service provider."
+    },
+    {
+     category:"web dev, web host, domain",
+     name:"NameCheap",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.namecheap.com' target='_blank'>NameCheap</a>",
+     email:null,
+     notes:"Buy your own domain name, web site hosting service."
+    },
+    {
+     category:"web dev, web host, domain",
+     name:"123reg.co.uk",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.123-reg.co.uk' target='_blank'>123-reg</a>",
+     email:null,
+     notes:"Buy your own domain name, web site hosting service."
+    },
+    {
+     category:"web dev, web host, domain",
+     name:"BlueHost",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.bluehost.com' target='_blank'>BlueHost</a>",
+     email:null,
+     notes:"Buy your own domain name, web site hosting service."
+    },
+    {
+     category:"web dev, programming",
+     name:"W3Schools",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.w3schools.com' target='_blank'>W3Schools</a>",
+     email:null,
+     notes:"Learn web development/programming."
     },
    ] //end of objects array, phonebook
 
@@ -200,16 +291,15 @@
    } //...end of function/search()
 
    function buildOutput(recNo,x){
-                  output += recNo
-                         + "&gt;"
+                  output += "<hr />" + recNo + "&gt;"
                          + "<br /><b>Category</b>: " + phonebook[x].category
                          + "<br /><b>Name</b>: "     + phonebook[x].name
-                         + "<br /><b>Number</b>: "   + phonebook[x].number 
-                         + "<br /><b>Mobile</b>: "   + phonebook[x].mobile 
-                         + "<br /><b>Address</b>: "  + phonebook[x].address 
-                         + "<br /><b>URL</b>: "      + phonebook[x].url
-                         + "<br /><b>Email</b>: "    + phonebook[x].email 
-                         + "<br /><b>NOTES</b>: "    + phonebook[x].notes 
+                         if (phonebook[x].number  != null)  {output += "<br /><b>Number</b>: "   + phonebook[x].number;} 
+                         if (phonebook[x].mobile  != null)  {output += "<br /><b>Mobile</b>: "   + phonebook[x].mobile;} 
+                         if (phonebook[x].url     != null)  {output += "<br /><b>URL</b>: "      + phonebook[x].url;}
+                         if (phonebook[x].address != null)  {output += "<br /><b>Address</b>: "  + phonebook[x].address;} 
+                         if (phonebook[x].email   != null)  {output += "<br /><b>Email</b>: "    + phonebook[x].email;} 
+                         if (phonebook[x].notes   != null)  {output += "<br /><b>NOTES</b>: "    + phonebook[x].notes;}
                          + "<hr />";    
                 return output;				
    }
@@ -276,7 +366,7 @@
     <br />    
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
-    Last updated: <span class="clsTimeDateStamp">10:12 24/11/2020</span>
+    Last updated: <span class="clsTimeDateStamp">19:29 24/11/2020</span>
    </p>
   </footer>
 
