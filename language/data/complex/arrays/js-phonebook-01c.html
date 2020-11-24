@@ -17,16 +17,25 @@
  -->  
  
  <!-- Javascript Phonebook application...version III;
-      allows searching through a list of various different 'categories';
-      this version includes multiple different field names...total: 8 fields.
-      -(The previous versions only included 2 fields: 'name, number'.)-
+      -(The previous versions...
+          Version I: included 2 fields: 'name, number'           (non searchable/list all)
+         Version II: included 3 fields: 'category, name, number' (search by 'category' field, only)
+        Version III: includes 8 fields: 'category, name, number, mobile, address, url, email, notes
+        ...therefore, I'm no longer calling Version III a 'phonebook' application, anymore;
+        and, I've decided to call it a 'database' application, instead;
+        as it no longer 'needs' to store phone numbers...the which value is entirely 'optional'.)-
  -->
  
  <!-- List of possible future improvements...
 
       1> The search is 'case sensitive'...and, should allow for 'mixed case' searching, as well. 
 
-      2> The search is 'one' field: category...but, should include 'all' fields. 
+      2a> The search is 'one' field: category...but, should include 'all' fields. 
+
+      2b> Because all field names are NOT searchable; 
+          I'm thinking of including the name inside of the 'category' list;
+          this would make searches far more highly 'specific';
+          instead, of spilling out loads of unnecessary data. 
 
       3> In order to add to the database entries;
          both fields: 'category, name' are, in fact, wholly mandatory/(meaning, cannot be left out);
@@ -40,6 +49,14 @@
          this means, if there were 1000+ entries to change/update; 
          I would have to add 1000+ 'Mobile2:null' fields..?!
          Perhaps, there could be found a way to have 'non fixed length fields' for each database entry. 
+
+      5> I'm not entirely happy with the UI-User Interface; 
+         written much clearer than before...; 
+         but, still not quite right, yet...?! 
+    
+      6> I wish to add 'secret' keys...
+         Such as press key: [h] for Help/'[s]' for show ALL/'[c]' for clear ALL/-etc.;
+         and, also, possibly, include combination key presses: '[ALT]+[a]'/-etc.
  -->
  
  <head><!--head section/start-->
@@ -84,7 +101,7 @@
     {
      category:"business, finance, building society", 
      name:"Cheshire", 
-     number:"0345",
+     number:null,
      mobile:null,
      address:null,
      url:null,
@@ -147,7 +164,7 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.clearscore.com' target='_blank'>https://www.clearscore.com</a>",
+     url:"<a href='https://www.creditkarma.com' target='_blank'>https://www.creditkarma.com</a>",
      email:null,
      notes:null
     },
@@ -198,6 +215,16 @@
      mobile:null,
      address:null,
      url:"<a href='https://www.cashplus.com' target='_blank'>https://www.cashplus.com</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, credit builder, loan",
+     name:"LoqBox",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.loqbox.com' target='_blank'>https://www.loqbox.com</a>",
      email:null,
      notes:null
     },
@@ -293,7 +320,7 @@
     },
 
 /* 
- ...new template/start...
+ ...new database entry template/start...
     {
      category:"",
      name:"",
@@ -304,7 +331,7 @@
      email:null,
      notes:null
     },
-  ...new template/end... 
+  ...new database entry template/end... 
 */
 
    ] //end of objects array, phonebook
@@ -404,9 +431,13 @@
    <div id="divButtons">
     No of records: <input type="text" size="3" id="inpNoOfRecs" />
     <button onclick="javascript:showAll();">Show ALL</button> /
-    Enter search text: <input type="text" size="20" id="inpSearchText" />
-    <button onclick="javascript:search();">Search</button> /
-    <button onclick="javascript:clearOutput();">Clear</button>
+    <button onclick="javascript:clearOutput();">Clear ALL</button>
+    <br /><br />
+    Enter search text for field name: <i>category</i>/being written in all 'lower case'.
+    <br />(Example/s: business, family, finance, friends, web dev, -etc.) 
+    <br /><input type="text" size="20" id="inpSearchText" />
+    <button onclick="javascript:search();">Search</button>
+    <br /><br />
    </div>
    <div id="divOutput"></div>
   </main>
@@ -420,7 +451,7 @@
     <br />    
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
-    Last updated: <span class="clsTimeDateStamp">20:37 24/11/2020</span>
+    Last updated: <span class="clsTimeDateStamp">21:34 24/11/2020</span>
    </p>
   </footer>
 
