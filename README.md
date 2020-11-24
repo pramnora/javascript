@@ -4,6 +4,10 @@ JAVASCRIPT CODE
 
 Here are some Javascript code snippets which you can freely study/learn from.
 
+SEE/INTERACT WITH THE JAVASCRIPT CODE INSIDE OF THIS REPOSITORY
+
+https://prg-javascript.netlify.app   
+
 -----
 
 Table Of Contents:-
@@ -124,10 +128,6 @@ Using this 2nd method is the 'correct' way of doing things. However, when I'm in
 -----
 
 **1.04 LINKS**
-
-SEE/INTERACT WITH THE JAVASCRIPT CODE INSIDE OF THIS REPOSITORY
-
-https://prg-javascript.netlify.app   
 
 WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
