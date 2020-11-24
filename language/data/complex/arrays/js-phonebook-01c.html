@@ -2,24 +2,46 @@
 
 <html lang="en"><!--html code/start-->
 
- <!--NOTE: This is a very simple example file...; where all code exists inside of 'one' single file: 
+ <!--NOTE: This is a very simple example file...; 
+           where all code is combined together inside of 'one' single file: 
            js-phonebook-01c.html
-           In an actual real life application, however, you would create 4 separate files
-           (and, then, link to these from the main HTML file):-
-           1> js-phonebook-01.html (stores the HTML codes/and, main UI-User interface)
-           2> js-phonebook-01.css  (stores the internal header stylesheet code)
-           3> js-phonebook-01.js (stores the main Javascript program script logic)
-           4> js-phonebook-01-data.js (stores the peoples data: names, numbers...using Javascript style data format)
+
+           In an actual real life application, however, 
+           you would create 4 entirely separate files
+           (and, then, link to each of these from the main HTML file):-
+
+           1> js-phonebook-01.html    - (stores the HTML codes/and, main UI-User interface)
+           2> js-phonebook-01.css     - (stores the internal header stylesheet code)
+           3> js-phonebook-01.js      - (stores the main Javascript program script logic)
+           4> js-phonebook-01-data.js - (stores the database: names, numbers, addresses, -etc.)
  -->  
  
  <!-- Javascript Phonebook application...version III;
-      allows searching through a list of different categories;
-      this version includes multiple different field names:
-      includes 8 different field names: 
-      category, name, number, mobile, address, url, email, notes
+      allows searching through a list of various different 'categories';
+      this version includes multiple different field names...total: 8 fields.
+      -(The previous versions only included 2 fields: 'name, number'.)-
  -->
  
+ <!-- List of possible future improvements...
 
+      1> The search is 'case sensitive'...and, should allow for 'mixed case' searching, as well. 
+
+      2> The search is 'one' field: category...but, should include 'all' fields. 
+
+      3> In order to add to the database entries;
+         both fields: 'category, name' are, in fact, wholly mandatory/(meaning, cannot be left out);
+         possibly, one could also make both these fields hold a 'null' value, too;
+         then, one could inlude a 'template' entry containing only null fields/(to be filled in, later on).
+
+      4> Each database entry consists of a number of 'fixed length' fields...eg. 8 fields in length; 
+         for example, if I decided to add on a next field: 'Mobile2:nnnn'; (and, so, introducing a 9th field);
+         then, I would have to add a new matching empty field to every single database entry: 'Mobile2:null'
+         for the program to continue working properly;
+         this means, if there were 1000+ entries to change/update; 
+         I would have to add 1000+ 'Mobile2:null' fields..?!
+         Perhaps, there could be found a way to have 'non fixed length fields' for each database entry. 
+ -->
+ 
  <head><!--head section/start-->
 
 
@@ -30,7 +52,13 @@
   <!--javascript code/start-->
   <script>
 
-   //*** database/8 fields: category, name, number, mobile, address, url, email, notes 
+   /* 
+     Database format: A single array:[], which holds multiple objects inside: {}.
+            8 fields: category, name, number, mobile, address, url, email, notes 
+ 
+              -(NOTE: If a particular field name is marked as having the value: null; 
+                      then, this field name will NOT be displayed inside of the 'output' results.)-
+   */
 
    var phonebook = [
     {
@@ -116,40 +144,40 @@
     {
      category:"business, finance, credit report",
      name:"CreditKarma",
-     number:"",
+     number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.clearscore.com' target='_blank'>CreditKarma</a>",
+     url:"<a href='https://www.clearscore.com' target='_blank'>https://www.clearscore.com</a>",
      email:null,
      notes:null
     },
     {
      category:"business, finance, credit report",
      name:"ClearScore",
-     number:"",
+     number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.clearscore.com' target='_blank'>ClearScore</a>",
+     url:"<a href='https://www.clearscore.com' target='_blank'>https://www.clearscore.com</a>",
      email:null,
      notes:null
     },
     {
      category:"business, finance, bank, debit card, pre-pay card, loan",
      name:"Pockit",
-     number:"",
+     number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.pockit.com' target='_blank'>Pockit</a>",
+     url:"<a href='https://www.pockit.com' target='_blank'>https://www.pockit.com</a>",
      email:null,
      notes:null
     },
     {
      category:"business, finance, bank, debit card, loan",
      name:"Barclays",
-     number:"",
+     number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.barclays.com' target='_blank'>Barclays</a>",
+     url:"<a href='https://www.barclays.co.uk' target='_blank'>https://www.barclays.co.uk</a>",
      email:null,
      notes:null
     },
@@ -159,7 +187,7 @@
      number:"0800 200 400",
      mobile:null,
      address:null,
-     url:"<a href='https://www.natwest.com' target='_blank'>NatWest</a>",
+     url:"<a href='https://www.natwest.com' target='_blank'>https://www.natwest.com</a>",
      email:null,
      notes:null
     },
@@ -169,7 +197,17 @@
      number:"0330 024 0924",
      mobile:null,
      address:null,
-     url:"<a href='https://www.cashplus.com' target='_blank'>CashPlus</a>",
+     url:"<a href='https://www.cashplus.com' target='_blank'>https://www.cashplus.com</a>",
+     email:null,
+     notes:null
+    },
+    {
+     category:"business, finance, building society, debit card, loan",
+     name:"Nationwide",
+     number:null,
+     mobile:null,
+     address:null,
+     url:"<a href='https://www.nationwide.co.uk' target='_blank'>https://www.nationwide.co.uk</a>",
      email:null,
      notes:null
     },
@@ -180,7 +218,7 @@
      mobile:null,
      address:null,
      url:null,
-     url:"<a href='https://www.paxtongreentimebank.org' target='_blank'>Paxton Green Time Bank</a>",
+     url:"<a href='https://www.paxtongreentimebank.org' target='_blank'>https://www.paxtongreentimebank.org</a>",
      notes:null
     },
     {
@@ -199,7 +237,7 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.yahoo.com' target='_blank'>Yahoo</a>",
+     url:"<a href='https://www.yahoo.com' target='_blank'>https://www.yahoo.com</a>",
      email:null,
      notes:"My main email service provider."
     },
@@ -209,7 +247,7 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.mail.com' target='_blank'>Mail</a>",
+     url:"<a href='https://www.mail.com' target='_blank'>https://www.mail.com</a>",
      email:null,
      notes:"Alternative email service provider."
     },
@@ -219,7 +257,7 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.namecheap.com' target='_blank'>NameCheap</a>",
+     url:"<a href='https://www.namecheap.com' target='_blank'>https://www.namecheap.com</a>",
      email:null,
      notes:"Buy your own domain name, web site hosting service."
     },
@@ -229,7 +267,7 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.123-reg.co.uk' target='_blank'>123-reg</a>",
+     url:"<a href='https://www.123-reg.co.uk' target='_blank'>https://www.123-reg.co.uk</a>",
      email:null,
      notes:"Buy your own domain name, web site hosting service."
     },
@@ -239,7 +277,7 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.bluehost.com' target='_blank'>BlueHost</a>",
+     url:"<a href='https://www.bluehost.com' target='_blank'>https://www.bluehost.com</a>",
      email:null,
      notes:"Buy your own domain name, web site hosting service."
     },
@@ -249,10 +287,26 @@
      number:null,
      mobile:null,
      address:null,
-     url:"<a href='https://www.w3schools.com' target='_blank'>W3Schools</a>",
+     url:"<a href='https://www.w3schools.com' target='_blank'>https://www.w3schools.com</a>",
      email:null,
      notes:"Learn web development/programming."
     },
+
+/* 
+ ...new template/start...
+    {
+     category:"",
+     name:"",
+     number:null,
+     mobile:null,
+     address:null,
+     url:null,
+     email:null,
+     notes:null
+    },
+  ...new template/end... 
+*/
+
    ] //end of objects array, phonebook
 
    function showNoOfRecords(){
@@ -366,7 +420,7 @@
     <br />    
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
-    Last updated: <span class="clsTimeDateStamp">19:29 24/11/2020</span>
+    Last updated: <span class="clsTimeDateStamp">20:37 24/11/2020</span>
    </p>
   </footer>
 
