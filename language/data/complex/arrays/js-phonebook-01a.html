@@ -1,26 +1,62 @@
 <!DOCTYPE html>
+
+<!--html code/start-->
 <html lang="en">
+ 
  <!--NOTE: This is a very simple example file...; where all code exists inside of 'one' single file: 
            js-phonebook-01a.html
+
            In an actual real life application, however, you would create 4 separate files
            (and, then, link to these from the main HTML file):-
-           1> js-phonebook-01.html (stores the HTML codes/and, main UI-User interface)
-           2> js-phonebook-01.css  (stores the internal header stylesheet code)
-           3> js-phonebook-01.js (stores the main Javascript program script logic)
-           4> js-phonebook-01-data.js (stores the peoples data: names, numbers...using Javascript style data format)
+
+           1> js-phonebook-01.html    (contains the HTML codes/and, main UI-User interface)
+           2> js-phonebook-01.css     (contains the internal header stylesheet code)
+           3> js-phonebook-01.js      (contains the main Javascript program script logic)
+           4> js-phonebook-01-data.js (contains the program's data: names, numbers)
  -->
- <head>
+ 
+ 
+ 
+ 
+ <head><!--head section/start-->
+
+  
+  <!--encoding character set-->
   <meta charset="utf-8" />
+  
+  <!--web page title heading text-->
   <title>Javascript Phonebook App</title>
+  
   <!--javascript code/start-->
   <script>
+   
    /* Very simple Javascript Phonebook application...;
       listing out all array data going from start to finish. */
+   
+   //*** database/start... 
+
+   /* NOTE(1): The following list of data base entries is really very short...;
+               consisting of merely just 3 database -purely fictional- entries, alone;
+               however, one is free to extend this list to be as many entries as you, please: 3/30/300/-etc.
+               so, although, a database may seem very straight forwards and simple to start out...;
+               one should never underestimate it's power and ability to grow.
+               
+      NOTE(2): Because this particular database has just one option...which is [Show ALL];
+               therefore, my suggestion is that entries should be added in strict Alphabetical order(A-Z/a-z);
+               and, it that way it should be much easier to find stuff when you are scrolling down, 
+               and, looking through the list...?
+   */   
+
    var phonebook = [
     {name:"Abe", number:"0208"},
     {name:"Brian", number:"0207"},
     {name:"Charlie", number:"0730"},
    ] //end of array, phonebook
+      
+   //*** ...database/end
+   
+   //*** Javascript functions/start...
+   
    function showAll(){
     var output = "";
     for (var x = 0; x < phonebook.length; x++){
@@ -28,8 +64,13 @@
     }
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/showALL()
+
+   //*** ...Javacript functions/end.
+
   </script>
   <!--javascript code/end-->
+  
+  
   <!--internal header based stylesheet/start-->
   <style>
    header{text-align:center;}
@@ -38,22 +79,37 @@
    #divOutput{border:1px solid black;padding:25px;}
   </style>
   <!--internal header based stylesheet/end-->
- </head>
- <body>
-  <header>
+
+  
+ </head><!--head section/end-->
+
+ 
+ 
+ 
+ <body><!--body section/start-->
+ 
+  <header><!--header section/start-->
    <h1>Javascript phonebook</h1>
    <h2>(name, number)</h2>
-  </header>
-  <main>
+  <header><!--header section/end-->
+
+  <main><!--main section/start-->
    <button onclick="javascript:showAll();">Show ALL</button>
    <div id="divOutput"></div>
-  </main>
-  <footer>
+  <main><!--main section/end-->
+
+  </footer><!--footer section/start-->
    <p>
     Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
     <br />
     Last updated: <span class="clsTimeDateStamp">08:37 24/11/2020</span>
    </p>
-  </footer>
- </body>
+  </footer><!--footer section/end-->
+
+ <body><!--body section/end-->
+ 
+  
+  
+  
+<!--html code/end-->  
 </html>
