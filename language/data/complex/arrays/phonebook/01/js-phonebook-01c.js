@@ -1,7 +1,9 @@
    function showNoOfRecords(){
     var noOfRecords = phonebook.length;
     document.getElementById("inpNoOfRecs").value = noOfRecords;
-   }   function showAll(){
+   }   
+
+   function showAll(){
     showNoOfRecords();
     output = "";
     for (var x = 0; x < phonebook.length; x++){
@@ -9,12 +11,14 @@
     }
     document.getElementById("divOutput").innerHTML = output;
    }
+
    function clearOutput(){
     output = "";
     document.getElementById("inpNoOfRecs").value = 0;
     document.getElementById("inpSearchText").value = "";
     document.getElementById("divOutput").innerHTML = output;
    }
+
    function search(){
     output = "";
     var noOfRecordsFound = 0;
@@ -28,6 +32,7 @@
     document.getElementById("inpNoOfRecs").value = noOfRecordsFound;
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/search()
+
    function buildOutput(recNo,x){
     output += "<hr />" + recNo + "&gt;"
                                                         + "<br /><b>Category</b>: " + phonebook[x].category
