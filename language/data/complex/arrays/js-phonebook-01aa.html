@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Javascript Phonebook App</title
+  <script>      
+   var phonebook = [
+    {name:"Abe", number:"0208"},
+    {name:"Brian", number:"0207"},
+    {name:"Charlie", number:"0730"},
+   ] 
+   function showAll(){
+    var output = "";
+    for (var x = 0; x < phonebook.length; x++){
+     output += phonebook[x].name + " => " + phonebook[x].number + "<br />"; 
+    }
+    document.getElementById("divOutput").innerHTML = output;
+   }   
+  </script>
+  <style>
+   header{text-align:center;}
+   footer{text-align:right;}
+   .clsTimeDateStamp{color:red;font-style:italic;}
+   #divOutput{border:1px solid black;padding:25px;}
+  </style>  
+ </head>
+ <body>
+  <header>
+   <h1>Javascript phonebook</h1>
+   <h2>(name, number)</h2>
+  <header>
+  <main>
+   <button onclick="javascript:showAll();">Show ALL</button>
+   <div id="divOutput"></div>
+  <main>
+  </footer>
+   <p>
+    Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
+    <br />
+    Last updated: <span class="clsTimeDateStamp">08:37 24/11/2020</span>
+   </p>
+  </footer>  
+ <body> 
+</html>
