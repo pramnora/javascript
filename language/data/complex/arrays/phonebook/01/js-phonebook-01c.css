@@ -1,0 +1,10 @@
+   a:link{color:blue;text-decoration:none;}
+   a:hover{color:red;text-decoration:underline;}
+   a:active{color:orange;}
+   a:visited{color:purple;}
+   header,footer{text-align:center;}
+   .clsTimeDateStamp{color:red;font-style:italic;}
+   #divButtons{text-align:center;}
+   #divOutput{border:1px solid black;padding:25px;}
+   #copyrightMessage{background-color:black;color:white;font-weight:bold;}
+ 
