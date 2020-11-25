@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Javascript Phonebook App</title>
+  <script language="javascript" type="text/javascript" src="js-phonebook-01c.js"></script>
+  <script language="javascript" type="text/javascript" src="js-phonebook-01c-data.js"></script>
+  <link rel="stylesheet" type="text/css" href="js-phonebook-01c.css" />
+ </head>
+ <body onload="javascript:showNoOfRecords();">
+  <header>
+   <h1>Javascript phonebook app.</h1>
+  </header>
+  <main>
+   <div id="divButtons">
+    No of records: <input type="text" size="3" id="inpNoOfRecs" />
+    <button onclick="javascript:showAll();">Show ALL</button> /
+    <button onclick="javascript:clearOutput();">Clear ALL</button>
+    <br /><br />
+    Enter search text for field name: <i>category</i>/being written in all 'lower case'.
+    <br />(Example/s: arts, entertainment, -etc.) 
+    <br /><input type="text" size="20" id="inpSearchText" />
+    <button onclick="javascript:search();">Search</button>
+    <br /><br />
+   </div>
+   <div id="divOutput"></div>
+  </main>
+  <footer>
+   <p>
+    Email: 
+    <a href="mailto:pramnora@yahoo.com">pramnora@yahoo.com</a>
+    <br />
+    <span id="copyrightMessage">&copy;2020, Mr. Paul Ramnora./All rights reserved.</span>
+    <br />    
+    Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
+    <br />
+    Last updated: <span class="clsTimeDateStamp">23:09 24/11/2020</span>
+   </p>
+  </footer>
+ </body>
+</html>
