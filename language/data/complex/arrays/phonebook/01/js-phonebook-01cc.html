@@ -1,89 +1,9 @@
 <!DOCTYPE html>
-
-<html lang="en"><!--html code/start-->
-
- <!--NOTE: This is a very simple example file...; 
-           where all code is combined together inside of 'one' single file: 
-           js-phonebook-01c.html
-
-           In an actual real life application, however, 
-           you would create 4 entirely separate files
-           (and, then, link to each of these from the main HTML file):-
-
-           1> js-phonebook-01.html    - (stores the HTML codes/and, main UI-User interface)
-           2> js-phonebook-01.css     - (stores the internal header stylesheet code)
-           3> js-phonebook-01.js      - (stores the main Javascript program script logic)
-           4> js-phonebook-01-data.js - (stores the database: names, numbers, addresses, -etc.)
- -->  
- 
- <!-- Javascript Phonebook application...version III;
-      -(The previous versions...
-          Version I: included 2 fields: 'name, number'           (non searchable/list all)
-         Version II: included 3 fields: 'category, name, number' (search by 'category' field, only)
-        Version III: includes 9 fields: 'category, name, reference, number, mobile, address, url, email, notes
-        ...therefore, I'm no longer calling Version III a 'phonebook' application, anymore;
-        and, I've decided to call it a 'database' application, instead;
-        as it no longer 'needs' to store phone numbers...the which value is entirely 'optional'.)-
- -->
- 
- <!-- List of possible future improvements...
-
-      1> The search is 'case sensitive'...and, should allow for 'mixed case' searching, as well. 
-
-      2a> The search is 'one' field: category...but, should include 'all' fields. 
-
-      2b> Because all field names are NOT searchable; 
-          I'm thinking of including the name inside of the 'category' list;
-          this would make searches far more highly 'specific';
-          instead, of spilling out loads of unnecessary data. 
-
-      2c> It would be good to include 'location', too...inside of the category field;
-          as this would allow searching of any particular area
-
-      2d> Because, there can be multiple 'categories' for any one entry: CoOp, Brixton, Supermarket, -etc.
-          it would be nice if the search could target multiple fields, at once, in a single search term
-          'charity timebank'
-
-      3> In order to add to the database entries;
-         both fields: 'category, name' are, in fact, wholly mandatory/(meaning, cannot be left out);
-         possibly, one could also make both these fields hold a 'null' value, too;
-         then, one could inlude a 'template' entry containing only null fields/(to be filled in, later on).
-
-      4> Each database entry consists of a number of 'fixed length' fields...eg. 9 fields in length; 
-         for example, if I decided to add on a next field: 'Mobile2:nnnn'; (and, so, introducing a 10th field);
-         then, I would have to add a new matching empty field to every single database entry: 'Mobile2:null'
-         for the program to continue working properly;
-         this means, if there were 1000+ entries to change/update; 
-         I would have to add 1000+ 'Mobile2:null' fields..?!
-         Perhaps, there could be found a way to have 'non fixed length fields' for each database entry. 
-
-      5> I'm not entirely happy with the UI-User Interface; 
-         written much clearer than before...; 
-         but, still not quite right, yet...?! 
-    
-      6> I wish to add 'secret' keys...
-         Such as press key: [h] for Help/'[s]' for show ALL/'[c]' for clear ALL/-etc.;
-         and, also, possibly, include combination key presses: '[ALT]+[a]'/-etc.
- -->
- 
- <head><!--head section/start-->
-
-
+<html lang="en">
+ <head>
   <meta charset="utf-8" />
-
   <title>Javascript Phonebook App</title>
-
-  <!--javascript code/start-->
   <script>
-
-   /* 
-     Database format: A single array:[], which holds multiple objects inside: {}.
-            9 fields: category, name, reference, number, mobile, address, url, email, notes 
- 
-              -(NOTE: If a particular field name is marked as having the value: null; 
-                      then, this field name will NOT be displayed inside of the 'output' results.)-
-   */
-
    var phonebook = [
     {
      category:"geoff, family, cousin", 
@@ -436,15 +356,9 @@
      email:null,
      notes:null
     },
-
-
-
-
-/* 
- ...new database entry template/start...
     {
-     category:"",
-     name:"",
+     category:null,
+     name:null,
      reference:null,
      number:null,
      mobile:null,
@@ -453,32 +367,24 @@
      email:null,
      notes:null
     },
-  ...new database entry template/end... 
-*/
-
-   ] //end of objects array, phonebook
-
+   ]
    function showNoOfRecords(){
     var noOfRecords = phonebook.length;
     document.getElementById("inpNoOfRecs").value = noOfRecords;
-   } //...end of function/showNoOfRecords()
-
-   function showAll(){
+   }   function showAll(){
     showNoOfRecords();
     output = "";
     for (var x = 0; x < phonebook.length; x++){
      buildOutput(x+1,x);
     }
     document.getElementById("divOutput").innerHTML = output;
-   } //...end of function/showALL()
-
+   }
    function clearOutput(){
     output = "";
     document.getElementById("inpNoOfRecs").value = 0;
     document.getElementById("inpSearchText").value = "";
     document.getElementById("divOutput").innerHTML = output;
-   } //...end of function/clearOutput()
-
+   }
    function search(){
     output = "";
     var noOfRecordsFound = 0;
@@ -492,7 +398,6 @@
     document.getElementById("inpNoOfRecs").value = noOfRecordsFound;
     document.getElementById("divOutput").innerHTML = output;
    } //...end of function/search()
-
    function buildOutput(recNo,x){
     output += "<hr />" + recNo + "&gt;"
                                                         + "<br /><b>Category</b>: " + phonebook[x].category
@@ -506,50 +411,24 @@
       if (phonebook[x].notes      != null)  {output += "<br /><b>NOTES</b>: "       + phonebook[x].notes;}
                          + "<hr />";    
                 return output;				
-   }
-   
-
+   }   
   </script>
-  <!--javascript code/end-->
-
-  <!--internal header based stylesheet/start-->
   <style>
-
-   /* links */
-
    a:link{color:blue;text-decoration:none;}
    a:hover{color:red;text-decoration:underline;}
    a:active{color:orange;}
    a:visited{color:purple;}
-
-   /* header and footer */
-
    header,footer{text-align:center;}
-
-   /* classes */
-
    .clsTimeDateStamp{color:red;font-style:italic;}
-
-   /* id's */
-
    #divButtons{text-align:center;}
    #divOutput{border:1px solid black;padding:25px;}
    #copyrightMessage{background-color:black;color:white;font-weight:bold;}
-   
   </style>
-  <!--internal header based stylesheet/end-->
-
-
- </head><!--head section/end-->
-
- 
- <body onload="javascript:showNoOfRecords();"><!--body section/start-->
-
-
+ </head>
+ <body onload="javascript:showNoOfRecords();">
   <header>
    <h1>Javascript phonebook app.</h1>
   </header>
-
   <main>
    <div id="divButtons">
     No of records: <input type="text" size="3" id="inpNoOfRecs" />
@@ -564,7 +443,6 @@
    </div>
    <div id="divOutput"></div>
   </main>
-
   <footer>
    <p>
     Email: 
@@ -577,10 +455,5 @@
     Last updated: <span class="clsTimeDateStamp">23:09 24/11/2020</span>
    </p>
   </footer>
-
-
- </body><!--body section/end-->
-
-
-<!--html code/end-->
+ </body>
 </html>
