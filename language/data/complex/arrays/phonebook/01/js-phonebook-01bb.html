@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><!--html code/start-->
+ <head>
+  <meta charset="utf-8" />
+  <title>Javascript Phonebook</title>
+  <script>
+   var phonebook = [
+    {category:"family, cousin", name:"Jim", number:"0208"},
+    {category:"friends, martial arts, tai chi, teacher", name:"David", number:"0207"},
+    {category:"business, finance, building society", name:"Cheshire", number:"0345"},
+    {category:"business, builder", name:"Fred", number:"0730"},
+    {category:"emergency, police, fire, ambulance", name:"Emergency", number:"999"},
+    {category:"emergency, doctor", name:"Medical Centre", number:"0208"},
+    {category:"emergency, suicidal, chat", name:"Samaritans", number:"0208"},
+    {category:"art, teacher, charity, friend", name:"Brenda", number:"0207"},
+    {category:"business, finance, bank, debit card, loan", name:"Lloyds bank", number:"0800"},
+    {category:"business, finance, bank, debit card, credit card, loan", name:"Cashplus", number:"0330"},
+    {category:"business, charity", name:"Oxfam", number:"0208"},
+    {category:"personal, family", name:"Myself", number:"0208"},
+    {category:"mail, email", name:"yahoo", number:"<a href='https://www.yahoo.com' target='_blank'>Yahoo</a>"},
+   ]  
+   function showNoOfRecords(){
+    var noOfRecords = phonebook.length;
+    document.getElementById("inpNoOfRecs").value = noOfRecords;
+   }
+   function showAll(){
+    showNoOfRecords();
+    var output = "";
+    for (var x = 0; x < phonebook.length; x++){
+     output += (x+1) + "&gt;<br /><b>Category</b>: " + phonebook[x].category + "<br />" + phonebook[x].name + " => " + phonebook[x].number + "<hr />";
+    }
+    document.getElementById("divOutput").innerHTML = output;
+   }   
+   function clearAll(){
+    var output = "";
+    document.getElementById("inpNoOfRecs").value = 0;
+    document.getElementById("inpSearchText").value = "";
+    document.getElementById("divOutput").innerHTML = output;
+   }
+   function search(){
+    var output = "";
+    var noOfRecordsFound = 0;
+    var searchText = document.getElementById("inpSearchText").value;
+    for (var x = 0; x < phonebook.length; x++){
+     var n = (phonebook[x].category).includes(searchText);
+     if (n) { 
+      output += ++noOfRecordsFound + "&gt;<br /><b>Category</b>: " + phonebook[x].category + "<br />" + phonebook[x].name + " => " + phonebook[x].number + "<hr />";
+     }
+    }  
+    document.getElementById("inpNoOfRecs").value = noOfRecordsFound;
+    document.getElementById("divOutput").innerHTML = output;
+   }
+  </script>
+  <style>
+   a:link{color:blue;text-decoration:none;}
+   a:hover{color:red;text-decoration:underline;}
+   a:active{color:orange;}
+   a:visited{color:purple;}
+   header,footer{text-align:center;}
+   .clsTimeDateStamp{color:red;font-style:italic;}
+   #divButtons{text-align:center;}
+   #divOutput{border:1px solid black;padding:25px;}
+   #copyrightMessage{background-color:black;color:white;font-weight:bold;}   
+  </style>
+ </head>
+ <body onload="javascript:showNoOfRecords();">
+  <header>
+   <h1>Javascript phonebook (name, number)</h1>
+  </header>
+  <main>
+   <div id="divButtons">
+    No of records: <input type="text" size="3" id="inpNoOfRecs" />
+    <button onclick="javascript:showAll();">Show ALL</button> /
+    <button onclick="javascript:clearAll();">Clear ALL</button>
+    <br /><br />Search by category: art, family, friends, business, personal, emergency, -etc.             
+    <br />Enter search text: <input type="text" size="20" id="inpSearchText" />
+    <button onclick="javascript:search();">Search</button>
+   </div>
+   <div id="divOutput"></div>
+  </main>
+  <footer>
+   <p>
+    Email: 
+    <a href="mailto:pramnora@yahoo.com">pramnora@yahoo.com</a>
+    <br />
+    <span id="copyrightMessage">&copy;2020, Mr. Paul Ramnora./All rights reserved.</span>
+    <br />    
+    Page created: <span class="clsTimeDateStamp">18:24 21/11/2020</span>
+    <br />
+    Last updated: <span class="clsTimeDateStamp">00:06 25/11/2020</span>
+   </p>
+  </footer>
+ </body>
+</html>
