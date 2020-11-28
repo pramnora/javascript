@@ -182,7 +182,7 @@
      mobile:null,
      address:null,
      url:null,
-     url:"<a href='https://www.paxtongreentimebank.org' target='_blank'>https://www.paxtongreentimebank.org</a>",
+     url:"<a href='https://www.pgtimebank.org' target='_blank'>https://www.pgtimebank.org</a>",
      notes:null
     },
     {
