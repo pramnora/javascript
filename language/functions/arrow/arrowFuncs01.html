@@ -1,6 +1,23 @@
 <script>
 
-//*** NOTE: The program output is only viewable inside of the web browser console.
+//*** (NOTE: The program output is only viewable inside of the web browser console.)
+  
+/* What is most noticable here is...; 
+   although the functions all have the same one name: printText;
+   but, each one contains a different argument list: 
+   empty: ()
+   single: (restOfMessage)
+   double: (msg1,msg2);  
+   ...yet still, the program manages to output the correct result in each seperate case.  
+*/  
+
+/*
+ The other thing worth noticing is...
+ I did not precede the printText function name with either...
+ var
+ let
+ const
+*/
 
 printText = () => 'Hello, world!(1)';
 console.log(printText()); //...function call without any arguments
