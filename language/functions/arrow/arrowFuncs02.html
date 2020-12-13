@@ -1,0 +1,20 @@
+<script>
+
+//*** (NOTE: This program output is only visible inside of the web browser console.)
+
+/* This programs demonstrates the use of Javascript arrow functions
+   being applied using numbers.
+
+   It also shows that an arrow function can be called either, seperately;
+   or else, being chained together in order to produce a more complex end result.
+*/
+
+
+addPlus1 = (n) => n + 1;
+add2nums = (n1,n2) => n1 + n2;
+
+console.log(addPlus1(1));            //...output: 2
+console.log(add2nums(1,2))           //...output: 3
+console.log(addPlus1(add2nums(1,2))) //...output: 4 - (chaining functions together)
+
+</script>
