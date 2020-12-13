@@ -1,0 +1,58 @@
+<script>
+
+/* Here, purely as an experiment...
+   I tried to implement a very simple calculator program...
+   which chains together a number of seperate arrow functions
+   each representing the main 4 mathematical operations: 
+
+   a> add
+   b> subtract
+   c> multiply
+   d> divide.
+
+   NOTE: Each function takes 2 arguments...
+         1 - the total number to start with
+         2 - a number representing the mathematical operation to be done
+             on that total number  
+*/
+
+//*** Create arrow functions...
+
+add      = (numTotal,numToAdd)      => numTotal + numToAdd;
+subtract = (numTotal,numToSubtract) => numTotal - numToSubtract;
+multiply = (numTotal,numToMultiply) => numTotal * numToMultiply;
+divide   = (numTotal,numToDivide)   => numTotal / numToDivide;
+
+//*** Initialise variables...
+
+n1 = 1;
+n2 = 2;
+
+//*** make function calls.../then, finally, display output...
+
+console.log(divide(multiply(subtract(add(n1,n2),1),2),2));
+
+/* Explaining the output...
+
+First, we added together...
+add(n1,n2)...1+2=3
+
+Second, we subtracted from that total... 
+subtract(total,1)...3-1=2 
+
+Third, we multiplied that total...
+multiply(total,2)...2x2=4
+
+Finally, we divided that total in half...
+divide(total,2)...4/2=2
+
+...and, thus, the final output answer is: 2
+
+The function chaining act, however, makes the code look to be very complex, indeed;
+it almost reminds me of seeing PROLOG code...with loads of endless brackets...?!
+
+Still the main point is to prove that doing this sort of thing is possible.
+
+*/
+
+</script>
