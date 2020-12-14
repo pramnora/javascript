@@ -1,0 +1,29 @@
+<script>
+
+/* The map function may be used to iterate through all array items...;
+   and, to produce another seperate array...
+
+   It may be written using 2 different forms...
+
+   - long form
+   - short form/(arrow function)
+
+   ...both of which methods are illustrated below.
+*/
+
+//*** map/long form...
+
+var araNumbers = [1,2,3];
+copiedArray1 = araNumbers.map(function(number){
+ return number;
+});
+console.log(copiedArray1);
+
+
+//*** map/short form/(arrow function)...
+
+var araNames = ["Tom","Dick","Harry"];
+copiedArray2 = araNames.map(name => name);
+console.log(copiedArray2);
+
+</script>
