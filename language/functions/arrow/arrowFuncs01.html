@@ -18,14 +18,14 @@
  const
 */
 
-printText = () => 'Hello, world!(1)';
-console.log(printText()); //...function call without any arguments
+printText = () => 'Hello, world!(1)';                     // () - an empty parameter list
+console.log(printText());                                 //...function call without any arguments
 
-printText = (restOfMessage) => 'Hello, ' + restOfMessage;
-console.log(printText('world!(2)')); //...function call with a single argument
+printText = (restOfMessage) => 'Hello, ' + restOfMessage; // (restOfMessage) - a single parameter list
+console.log(printText('world!(2)'));                      //...function call with a single argument
 
-printText = (msg1,msg2) => msg1 + msg2;
-console.log(printText('Hello, ','world!(3)')); //...function call with two separate arguments
+printText = (msg1,msg2) => msg1 + msg2;                   //...(msg1,msg2) - a two parameter list
+console.log(printText('Hello, ','world!(3)'));            //...function call with two separate arguments
 
 //*** program output...
   
