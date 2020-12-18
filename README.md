@@ -29,11 +29,12 @@ b> the use of a Javascript library/or, framework such as: JQuery, Bootstrap, Rea
 
 Javascript code can also be employed in the 'back end' by installing NodeJS  
 
-c> then, you can simply run Javascript code directly from the Windows Command Prompt/or, CLI/Command Line Interface.  
-d> alternatively, to the Windows Command Prompt...you could also use Windows Powershell to execute the Javascript code  
+c> then, you can simply run Javascript code directly from the Windows Command Prompt; also, commonly referred to as: CLI/Command Line Interface.    
+d> alternatively, instead of Windows Command Prompt...you could also use Windows Powershell to execute the Javascript code    
 
-...using either the Windows Command Prompt/or, Powershe...the command to execute Javscript code is:   
-Node filename.js
+...using either the Windows Command Prompt/or, Powershell...the command to execute Javscript code is:   
+
+C:\>node filename.js
 
 **WRITE/RUN PURE 100% JAVASCRIPT CODE**
 
@@ -47,10 +48,10 @@ Other text editors you can download and use for FREE are...
 
 -> Notepad++  
 -> SublimeText  
--> Atom
--> Visual Studio Code
--> Bracketts
--> -etc.
+-> Atom  
+-> Visual Studio Code  
+-> Bracketts  
+-> -etc.  
 
 ...these other text editors are by far preferable to using Windows Notepad plain text editor software; in that they often offer a much wider range of options:    
 
@@ -73,7 +74,9 @@ Other web browsers you can download and use for FREE are...
 -> Brave
 -> -etc.
 
-(**NOTE**: As a form of best practice, some developers like to test that both their web page/script code works correctly inside of 'multiple' different web browsers; before they release the final code...; as some browsers will accept what are the 'latest' additions to the Javascript language such as: ES6/ES7/ES8/ES9/-etc.; whilst older browsers won't be able to accept/understand what are those new additions at all...?!)     
+(**NOTE**: As a form of best practice, some developers like to test that both their web page/script code works correctly inside of 'multiple' different web browsers; before they release the final code...; as some browsers will accept what are the 'latest' additions to the Javascript language such as: ES6/ES7/ES8/ES9/-etc.; whilst older browsers won't be able to accept/understand what are those new additions at all...?!)       
+
+(**NOTE**: Javascript, is actually an application of ECMAScript/European Computer Manufacturer Association Script. There are other applications, also, known as: ActionScript/LiveScript/-etc. So, this is what the ES part represents in the abbreviation ES6/ECMAScript 6.)   
 
 WRITE/RUN/TEST JAVASCRIPT CODE DIRECTLY INSIDE OF GOOGLE CHROME WEB BROWSER
 
