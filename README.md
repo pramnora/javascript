@@ -25,7 +25,7 @@ Table Of Contents:-
 Javascript is, usually, the main 'front end' programming language that is used inside of web browsers, now-a-days; either in the form of...
 
 a> pure 100% Javascript code  
-b> JQuery, which is a Javascript related library of functions
+b> the use of a Javascript library/or, framework such as: JQuery, Bootstrap, React, Angular, Vue, Svelte/-etc.
 
 The really good thing about learning to write/run Javascript code...is there is absolutely nothing to either set up/or, download. In order to work with Javascript; then, you will need just 2 things, which tend to come already built in to any modern day operating system platform, namely:-
 
