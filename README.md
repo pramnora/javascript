@@ -27,13 +27,18 @@ Javascript is, usually, the main 'front end' programming language that is used i
 a> pure 100% Javascript code  
 b> the use of a Javascript library/or, framework such as: JQuery, Bootstrap, React, Angular, Vue, Svelte/-etc.
 
-The really good thing about learning to write/run Javascript code...is there is absolutely nothing to either set up/or, download. In order to work with Javascript; then, you will need just 2 things, which tend to come already built in to any modern day operating system platform, namely:-
+The really good thing about learning to write/run pure 100% Javascript code...is there is absolutely nothing to either set up/or, download. 
+
+In order to work successfully with Javascript; then, you will need just 2 things, which tend to come already built into any modern day operating system platform, namely:-
 
 1> A text editor...I usually use the built in Windows Notepad. 
 
 Other text editors you can download for FREE are...    
 -> Notepad++  
 -> SublimeText  
+-> Atom
+-> Visual Studio Code
+-> Bracketts
 -> -etc.
 
 2> A web browser software...most Operating System platforms now-a-days already come with 'web browser' software built-in; in the case of Windows plaforms it usually comes with IE-Internet Explorer web browser. 
@@ -48,6 +53,19 @@ Other web browsers you can download for FREE are...
 -> -etc.
 
 (Some developers like to test that both their web page/script code works correctly inside of 'multiple' different web browsers.) 
+
+WRITE/RUN/TEST JAVASCRIPT CODE DIRECTLY INSIDE OF GOOGLE CHROME WEB BROWSER
+
+It might also be well worthwhile noting that...; I often tend to use Google Chrome web browser; -(which a lot of web developers tend to recommend over using other web browsers as offering the best development platform)-; it is possible to 'write/test/run' Javascript code directly inside of the Chrome web browser itself. 
+
+Inside of Chrome web browser...
+
+1> Just press function key: [F12] to open up Chrome's set of web development tools 
+2> next, select the Console tab
+3> then, type in your Javascript code
+4> press [Enter] key; and, the code should, automatically, execute
+
+**NOTE**: Pressing the 'up/down' arrow keys will take you through any previous commands you may have typed; (so, you don't need to type that same code in, again) 
 
 -----
 
