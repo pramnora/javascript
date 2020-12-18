@@ -24,16 +24,27 @@ Table Of Contents:-
 
 Javascript is, usually, the main 'front end' programming language that is used inside of web browsers, now-a-days; either in the form of...
 
-a> pure 100% Javascript code  
-b> the use of a Javascript library/or, framework such as: JQuery, Bootstrap, React, Angular, Vue, Svelte/-etc.
+a> pure 100% Javascript code (HTML web page: internal Javascript - head/body section; or, external Javascript file: [.js])      
+b> the use of a Javascript library/or, framework such as: JQuery, Bootstrap, React, Angular, Vue, Svelte/-etc. (there are, quite literally, 100's of these available)    
+
+Javascript code can also be employed in the 'back end' by installing NodeJS  
+
+c> then, you can simply run Javascript code directly from the Windows Command Prompt/or, CLI/Command Line Interface.  
+d> alternatively, to the Windows Command Prompt...you could also use Windows Powershell to execute the Javascript code  
+
+...using either the Windows Command Prompt/or, Powershe...the command to execute Javscript code is:   
+Node filename.js
+
+**WRITE/RUN PURE 100% JAVASCRIPT CODE**
 
 The really good thing about learning to write/run pure 100% Javascript code...is there is absolutely nothing to either set up/or, download. 
 
 In order to work successfully with Javascript; then, you will need just 2 things, which tend to come already built into any modern day operating system platform, namely:-
 
-1> A text editor...I usually use the built in Windows Notepad. 
+1> A text editor...I usually use the built in Windows Notepad; (which is mainly due to long term 'bad' habit!).  
 
-Other text editors you can download for FREE are...    
+Other text editors you can download and use for FREE are...    
+
 -> Notepad++  
 -> SublimeText  
 -> Atom
@@ -41,18 +52,28 @@ Other text editors you can download for FREE are...
 -> Bracketts
 -> -etc.
 
+...these other text editors are by far preferable to using Windows Notepad plain text editor software; in that they often offer a much wider range of options:    
+
+- MDI/Multiple Document Interface, meaning you can open, all at once, within the same editor multiple files, including: HTML/CSS/Javascript  
+- Other editors give you 'syntax highlighting'...; this makes finding errors much easier to spot before runnning the code  
+- Other editors include: intellisense...this gives you hints as to what valid keywords you should type, next...as you are typing code in on the fly; thus, making the web development process...not just faster/but, also, a lot more accurate, as well  
+- Other editors also have loads of add in's...automatic code formatting  
+- Other editors can include 'syntax highlighting' for other programming languages, too...such as: Python, C, -etc.  
+
 2> A web browser software...most Operating System platforms now-a-days already come with 'web browser' software built-in; in the case of Windows plaforms it usually comes with IE-Internet Explorer web browser. 
 
 Your web browser software already contains a built-in Javascript code interpeter program...which both knows how to read Javascript codes/and, so display the Javascript output, effectively.
 
-Other web browsers you can download for FREE are...  
--> Google Chrome  
+Other web browsers you can download and use for FREE are...
+  
+-> Google Chrome  (highly recommended for use by most web developers)    
 -> Mozilla Firefox  
 -> Apple Safari  
 -> Opera  
+-> Brave
 -> -etc.
 
-(Some developers like to test that both their web page/script code works correctly inside of 'multiple' different web browsers.) 
+(**NOTE**: As a form of best practice, some developers like to test that both their web page/script code works correctly inside of 'multiple' different web browsers; before they release the final code...; as some browsers will accept what are the 'latest' additions to the Javascript language such as: ES6/ES7/ES8/ES9/-etc.; whilst older browsers won't be able to accept/understand what are those new additions at all...?!)     
 
 WRITE/RUN/TEST JAVASCRIPT CODE DIRECTLY INSIDE OF GOOGLE CHROME WEB BROWSER
 
@@ -60,10 +81,10 @@ It might also be well worthwhile noting that...; I often tend to use Google Chro
 
 Inside of Chrome web browser...
 
-1> Just press function key: [F12] to open up Chrome's set of web development tools 
-2> next, select the Console tab
-3> then, type in your Javascript code
-4> press [Enter] key; and, the code should, automatically, execute
+1> Just press function key: [F12] to open up Chrome's set of web development tools   
+2> next, select the Console tab  
+3> then, type in your Javascript code  
+4> press [Enter] key; and, the code should, automatically, execute  
 
 **NOTE**: Pressing the 'up/down' arrow keys will take you through any previous commands you may have typed; (so, you don't need to type that same code in, again) 
 
@@ -76,13 +97,14 @@ Javascript, is generally written to run inside of web pages in one of 2 differen
 1> Inside of the HTML web page itself; where the Javascript code may be included inside of either...
 
 a> the HEAD-/HEAD tags, at the top of the web page  
-b> the BODY-/BODY tags; at the bottom of the page...that way the entire page can finish loading before the script runs.
-
-2> In the HEAD-/HEAD section of the web page you can include a link to an external Javascript file.
+b> the BODY-/BODY tags; at the bottom of the page...that way the entire page can finish loading before the script runs.  
+c> as inline code...that is included inside of the HTML tag itself  
+ 
+2> In the HEAD-/HEAD section of the web page you can include a link to an external Javascript file: [.js]...  
 
 (<)script type="text/javascript" src="js01.js(>)(<)/script(>)    
 
-NOTE: Please, take out the pair of curly brackets: () that you see being written inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
+**NOTE**: Please, take out the pair of curly brackets: () that you see being inserted inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
 
 -----
 
@@ -90,13 +112,16 @@ NOTE: Please, take out the pair of curly brackets: () that you see being written
 
 If your script is not enclosed inside of a function; then, it will run instantly, right away.
 
-alert(0);
+alert(0);  
 
-If your script is enclosed inside of a function...; then, nothing runs until when the function name actually gets called: 
+If your script is enclosed inside of a function...; then, nothing runs until when the function name actually gets called:  
 
+// function declaration block...  
 function test(){  
  alert(0);  
 }
+
+test(); // function call  
 
 Sometimes, the start BODY tag will add something like the following to start the scripts running when the web page has already finished loading...
 
