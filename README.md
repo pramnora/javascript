@@ -76,7 +76,7 @@ Other web browsers you can download and use for FREE are...
 
 (**NOTE**: As a form of best practice, some developers like to test that both their web page/script code works correctly inside of 'multiple' different web browsers; before they release the final code...; as some browsers will accept what are the 'latest' additions to the Javascript language such as: ES6/ES7/ES8/ES9/-etc.; whilst older browsers won't be able to accept/understand what are those new additions at all...?!)       
 
-(**NOTE**: Javascript, is actually an application of ECMAScript/European Computer Manufacturer Association Script. There are other applications, also, known as: ActionScript/LiveScript/-etc. So, this is what the ES part represents in the abbreviation ES6/ECMAScript 6.)   
+(**NOTE**: Javascript, is actually an application of ECMAScript/European Computer Manufacturer Association Script. There are other applications, also, known as: ActionScript/LiveScript/Microsoft JScript/-etc. So, this is what the ES part represents in the abbreviation ES6/ECMAScript 6.)   
 
 WRITE/RUN/TEST JAVASCRIPT CODE DIRECTLY INSIDE OF GOOGLE CHROME WEB BROWSER
 
