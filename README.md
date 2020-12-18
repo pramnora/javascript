@@ -78,7 +78,7 @@ Other web browsers you can download and use for FREE are...
 
 (**NOTE**: Javascript, is actually an application of ECMAScript/European Computer Manufacturer Association Script. There are other applications, also, known as: ActionScript/LiveScript/Microsoft JScript/-etc. So, this is what the ES part represents in the abbreviation ES6/ECMAScript 6.)   
 
-WRITE/RUN/TEST JAVASCRIPT CODE DIRECTLY INSIDE OF GOOGLE CHROME WEB BROWSER
+**WRITE/RUN/TEST JAVASCRIPT CODE DIRECTLY INSIDE OF GOOGLE CHROME WEB BROWSER**
 
 It might also be well worthwhile noting that...; I often tend to use Google Chrome web browser; -(which a lot of web developers tend to recommend over using other web browsers as offering the best development platform)-; it is possible to 'write/test/run' Javascript code directly inside of the Chrome web browser itself. 
 
