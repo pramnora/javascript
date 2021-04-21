@@ -181,13 +181,12 @@ https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript?WT.mc_id=beginne
 WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
 http://codepen.io/  
-http://codepen.io
-http://codesandbox.io
+http://codesandbox.io  
 http://jsbin.com  
 http://jsconsole.com      
 http://jsfiddle.net  
 http://www.jscompress.com  
-http://playcode.io
+http://playcode.io  
 http://www.w3schools.com/js  
 
 
