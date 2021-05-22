@@ -1,0 +1,50 @@
+<script>
+
+/* 
+   This program illustrates 3 different ways to write Javascript functions...
+   1> function add01(x,y){}          - Normal function...uses a function name 
+   2> var add02 = function(x,y){}    - Anonymous function...uses a variable name
+   3> add03 = (x,y) => x+y           - Arrow function...uses fat arrow: =>
+*/   
+
+//---------------------------------------------------------------------------------------- 
+
+// Method: 1 - Named function...
+
+function add01(x,y){   // function header/start of function...;
+                       // use 'function' keyword/
+                       // declare a function name: add/
+                       // together with a comma separated parameter list of arguments: (x,y)
+
+ return x+y;           // function body/evaluates sum total of: x+y; then, returns this total back to the function call
+
+}                      // ...function tail/end of function.
+
+alert(add01(1,2));     // make function call
+
+//---------------------------------------------------------------------------------------- 
+
+// Method: 2 - Anonymous function...
+
+var add02 = function(x,y){   // function header/start of function...;
+                             // use 'function' keyword/
+                             // declare a function name: add/
+                             // together with a comma separated parameter list of arguments: (x,y)
+
+ return x+y;                 // function body/evaluates sum total of: x+y; then, returns this total back to the function call
+
+}                            // ...function tail/end of function.
+
+alert(add02(3,4));           // make function call
+   
+//---------------------------------------------------------------------------------------- 
+ 
+// Method: 3 - Arrow function...
+
+add03 = (x,y) => x+y; //    add - is the function name; 
+                      //  (x,y) - are the function arguments to be passed in; 
+                      // => x+y - is the -(expression/or, sum total)- part which gets returned to the function call
+
+alert(add03(5,6));    //...function call (evaluates sum/then, outputs total inside of a standard windows dialog output box)
+ 
+</script>
