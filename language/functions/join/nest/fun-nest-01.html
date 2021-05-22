@@ -1,0 +1,26 @@
+<script>
+
+//*** This file demonstrates how it's possible to nest 2 separate Javascript functions together...
+  
+//*** variable declarations...  
+
+var n1=1;
+var n2=2;
+
+//*** First, create 2 seperate functions: one used to add 2 numbers/the other used to subtract 2 numbers...
+ 
+function add(n1,n2){ //...function declaration
+  return n1+n2; 
+}
+console.log(add(n1,n2)); //...function call...output: 3
+
+function subtract(n1,n2){ //...function declaration
+  return n1-n2; 
+}
+console.log(subtract(n1,n2)); //...function call...output: -1
+
+//*** Now, nest the 2 functions together...
+
+console.log(subtract(add(n1,n2),n2)); //...output: 1  
+     
+</script>
