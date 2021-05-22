@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Javascript/CSS - Example 02</title>
+ </head>
+ <body>
+  <h1>Paul</h1>
+  <script>  
+   /* 
+    This Javascript program demonstrates how to use CSS to colour in a selected HTML element...
+    -        text color : color=''
+    - background colour : backgroundColour=''
+    -        align text : textAlign='left/center/right'
+   */
+   var elem = document.querySelector('h1'); 
+   elem.style.color='red';
+   elem.style.backgroundColor='green';  
+   elem.style.textAlign='center';
+  </script>
+ </body>
+</html>
+
