@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>biu.html</title>
+ </head>
+ <script>
+  //*** NOTE: This script isn't working, properly...?!
+ 
+  //    When I tried using... 
+  //   document.getElementById("text").value="<b>"+text+"</b>";
+  //   ...it worked; in that the value inside of the textbox
+  //   was replaced with the string: 
+  //   <b>whateverTextTheUserTypedIn</b> 
+  //   but, then, the HTML code was NOT evaluated
+  //   inside of the 'input' box element;
+  //   just showing as being plain text. 
+
+  //   when I tried using...
+  //   document.getElementById("text").innerHTML="<b>"+text+"</b>";
+  //   ...there was no response...including no error message!
+  //   I looked in the browser 'console'...nothing;
+  //   I looked inside the browser 'source code'...nothing.
+  //   So, I'm not sure if the 'input' box element does not 
+  //   allow for HTML codes interpretation...; which might mean,
+  //   I would have to send the output elsewhere, instead;
+  //   such as to an output div.
+
+  //   ----------------------------------------------
+
+  //   The next part of this code is to figure out how to select
+  //   certain specific characters; and, then, only apply text
+  //   effects to those selected characters, alone.
+
+  function b(){
+   text=document.getElementById("text").value;
+   divOutput=document.getElementById("divOutput");
+   divOutput.innerHTML="<b>"+text+"</b>";
+  }
+  function i(){
+   text=document.getElementById("text").value;
+   divOutput=document.getElementById("divOutput");
+   divOutput.innerHTML="<i>"+text+"</i>";
+  }
+  function u(){
+   text=document.getElementById("text").value;
+   divOutput=document.getElementById("divOutput");
+   divOutput.innerHTML="<u>"+text+"</u>";
+  }
+ </script>
+ <body>
+  <header>
+   <h1>
+    biu
+   </h1>
+  </header>
+  <hr>
+  <div>
+   <input type="text" name="text" id="text" value="">
+   <br>
+   <input type="button" name="b" id="b" value="b" onclick="b()">
+   <input type="button" name="i" id="i" value="i" onclick="i()">
+   <input type="button" name="u" id="u" value="u" onclick="u()">
+  </div>
+  <hr> 
+  <div id="divOutput"></div>
+  <hr>
+  <footer>
+   <p>
+    Page created: <i></i>
+    <br>
+    Last updated: <i></i>
+   </p>
+  </footer>   
+ </body>
+</html>
