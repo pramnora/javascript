@@ -1,0 +1,39 @@
+/* Stylesheet for web page app: 12 x Tables...
+
+   Created: 22:06 29/10/2021
+   Updated: 22:06 29/10/2021
+*/
+
+/* links */
+
+a:link{text-decoration:none;}
+a:hover{text-decoration:underline;color:red;}
+a:active{color:orange;}
+a:visited{color:purple;}
+
+/* body */
+
+input,body{
+    font-family:arial,verdana,"sans serif";
+    text-align:center;
+}   
+   
+/* ID's */
+
+#idDisplayTimesTables{
+    margin-top:10px;
+    border:dashed 1px black;
+}
+   
+#idCopyrightMessage{
+    background-color:black;
+    color:white;
+    font-weight:bold;
+}
+
+/* Classes */
+   
+.clsTimeDateStamp{
+    font-style:italic;
+    color:red;
+}
