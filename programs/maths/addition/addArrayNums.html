@@ -1,0 +1,34 @@
+<button onClick="addArrayNums();">addArrayNums()</button>
+<script>
+
+function addArrayNums(){ //---javascript function/start... 
+
+	//*** Javascript program used to add up a list of array numbers...
+
+	//---declare an array of numbers... 
+	//---with each number being separated by a comma... 
+
+	let nums = [1,2,3,4];  
+
+	//---declare a variable used to store the sum total... 
+
+	let total = 0; 
+
+	//---use for loop to cycle through each number item inside of the array... 
+
+	for (const eachNum in nums){ //---for loop/start...   
+
+	//---add up the total numbers inside of the array...each, one at a time; 
+	//---storing the overall sum total inside of the variable called: total 
+ 
+ 	  total += nums[eachNum]; 
+
+	} //---for loop/...end
+
+	//---print out the contents of variable total into an alert dialog message box... 
+
+	alert(total) //---output: 10 
+
+} //---javascript function/end
+
+</script>
