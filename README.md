@@ -6,7 +6,7 @@ Here are some Javascript code snippets which you can freely study/learn from.
 
 SEE/INTERACT WITH THE JAVASCRIPT CODE INSIDE OF THIS REPOSITORY
 
-https://prg-javascript.netlify.app   
+- https://prg-javascript.netlify.app   
 
 -----
 
@@ -180,13 +180,13 @@ https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript?WT.mc_id=beginne
 
 WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
-http://codepen.io/  
-http://codesandbox.io  
-http://jsbin.com  
-http://jsconsole.com      
-http://jsfiddle.net  
-http://www.jscompress.com  
-http://playcode.io  
-http://www.w3schools.com/js  
+- http://codepen.io/  
+- http://codesandbox.io  
+- http://jsbin.com  
+- http://jsconsole.com      
+- http://jsfiddle.net  
+- http://www.jscompress.com  
+- http://playcode.io  
+- http://www.w3schools.com/js  
 
 
