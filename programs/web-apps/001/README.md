@@ -55,6 +55,8 @@ this top level folder directory is called:
 
 -----
 
+**The structural arrangement of each [.html] file...concerning the body - /body section...** 
+
 Each [.html] web page...inside of the [body - /body] element tags section...is divided up into being 4 separate sub sections...
 
 - nav - /nav
