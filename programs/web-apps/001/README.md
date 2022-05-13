@@ -47,8 +47,15 @@ this top level folder directory is called:
 - js -> [js01.js]
 
 ...inside, of the 'css' directory folder there is one file, called: [css01.css]  
-...inside of the 'js' directory folder there is one file, called: [js01.js]  
 ...inside of the 'images' directory folder there are 3 further sub-directory folders, called: 'drawings/digital/mspaint'...   
 ...inside of the mspaint directory folder there are 2 image files, called: [1.png]/[2.png]  
+...inside of the 'js' directory folder there is one file, called: [js01.js]  
 
 -----
+
+Each HTML web page...inside of the [body - /body] tags section...contains 4 x sub sections to each page...
+
+- nav - /nav
+- header - /header
+- main - /main
+- footer - /footer
