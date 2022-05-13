@@ -64,8 +64,8 @@ Each [.html] web page...inside of the [body - /body] element tags section...is d
 
 ...the nav - /nav tags...is where the Main Menu will be written by calling a Javascript function: showMainMenu();  
 ...the header - /header tags...is where the sites main title heading will be written using Javascript function: writeH1HeaderText();  
-...the header - /header tags...also, displays the h2 - /h2 page title heading text...so, that users can know exactly what page it is they're, currently, seeing...;  
-...the main - /main tags...shows the pages main content...which is variable.  
+...the header - /header tags...also, displays the h2 - /h2 page title heading text...so, that users can know exactly what page it is they're, currently, visiting seeing...;  
+...the main - /main tags...shows the pages main content...which is, of course, variable...going from separate page to page.    
 ...the footer - /footer tags...shows such details as: email/url/copyright/page created/last updated messages.  
 
 -----
