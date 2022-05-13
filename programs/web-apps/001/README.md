@@ -70,6 +70,23 @@ Each [.html] web page...inside of the [body - /body] element tags section...is d
 ...the main - /main tags...shows the pages main content...which is, of course, variable...going from separate page to page.    
 ...the footer - /footer tags...shows such details as: email/url/copyright/page created/last updated messages.  
 
--(**NOTE:** Because, this web site template relies entirely on *Javascript* code for it's navigation...; therefore, the end user **must** have Javascript 'turned on' inside of their web browser for it to work...; otherwise, the site won't work properly as it should; and, you might just see only just 'one' page, alone...not the rest...?!)-   
+-----
+
+*NOTES:*
+
+**NOTE(1):** Because, this web site template relies entirely on *Javascript* code for it's navigation...; therefore, the end user **must** have Javascript 'turned on' inside of their web browser for it to work...; otherwise, the site won't work properly as it should; and, you might just see only just 'one' page, alone...and, not any of the rest of the pages...?!
+
+**NOTE(2):** I've included a number of 'screenshots'...; so, that the end user can see for themselves exactly how the...
+
+- folder/file structure should be arranged...  
+- as well as, be able to view what is the result of each web page output...
+
+...without actually needing to go download anything.
+
+**NOTE(3):** I will also provide a clickable link...    
+which allows the end user to go and actually 'test' the site code...  
+by running it inside of their own web browser...;   
+again, without needing to go download anything.  
+(this link will be given, later on...)  
 
 -----
