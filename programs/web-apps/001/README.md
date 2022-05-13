@@ -72,7 +72,7 @@ Each [.html] web page...inside of the [body - /body] element tags section...is d
 
 -----
 
-*NOTES:*
+**NOTES:**
 
 **NOTE(1):** Because, this web site template relies entirely on *Javascript* code for it's navigation...; therefore, the end user **must** have Javascript 'turned on' inside of their web browser for it to work...; otherwise, the site won't work properly as it should; and, you might just see only just 'one' page, alone...and, not any of the rest of the pages...?!
 
