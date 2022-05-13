@@ -70,6 +70,6 @@ Each [.html] web page...inside of the [body - /body] element tags section...is d
 ...the main - /main tags...shows the pages main content...which is, of course, variable...going from separate page to page.    
 ...the footer - /footer tags...shows such details as: email/url/copyright/page created/last updated messages.  
 
--(**NOTE:** Because, this web site template rely's entirely on *Javscript* code for it's navigation; therefore, the end user must have Javascript 'turned on' inside of their web browser for it to work...; otherwise, the site won't work properly as it should; and, you might just see 'one' page, alone.)-   
+-(**NOTE:** Because, this web site template rely's entirely on *Javascript* code for it's navigation...; therefore, the end user **must** have Javascript 'turned on' inside of their web browser for it to work...; otherwise, the site won't work properly as it should; and, you might just see 'one' page, alone.)-   
 
 -----
