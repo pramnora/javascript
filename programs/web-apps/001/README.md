@@ -12,8 +12,10 @@ This web site template contains:
 - 8 folder directories/
 - 7 x [.html] files/
 - 1 x [.css] stylesheet file/
-- 1 x [.js] javascript file.
-- 2 x [.png] image files/(mouse drawings).
+- 1 x [.js] javascript file/
+- 2 x [.png] image files/(mouse drawings)
+
+...so, altogether this makes a total of 11 files/plus, 8 folders.
 
 -----
 
@@ -53,7 +55,7 @@ this top level folder directory is called:
 
 -----
 
-Each HTML web page...inside of the [body - /body] tags section...contains 4 x sub sections to each page...
+Each [.html] web page...inside of the [body - /body] tags section...contains 4 x sub sections to each page...
 
 - nav - /nav
 - header - /header
