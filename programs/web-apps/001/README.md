@@ -1,6 +1,6 @@
 **How to use these web site template files...**
 
-What I've done is to create an anonymous web site template...; 
+What I've done is to create an *anonymous* web site template...; 
 which can be modified and used by anyone for whatever purpose they please.
 
 -----
