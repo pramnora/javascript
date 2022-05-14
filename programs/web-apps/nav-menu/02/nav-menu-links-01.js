@@ -10,7 +10,7 @@
  For it to work, properly, you have to call it from each individual web page as follows...
 
 1> Change the following line...to page names used in your actual web site...
- var strArrayPageName = ["index","page1","page2","page3"];
+ var strArrayPageName = ["index","page1","page2","page3","page4"];
 
 2> Save this page as being an external script file called:
 nav-menu-links-01.js
