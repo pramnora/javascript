@@ -6,7 +6,7 @@ From my GitHub Javascript repository...
 https://github.com/pramnora/javascript/tree/master/programs/web-apps/nav-menu/02
 
 ...downloaded file...  
-nav-menu-links01.js  
+nav-menu-links-01.js  
 ...in order to go test it out.
 
 Next, I went and created: 4 x separate web pages...
@@ -26,7 +26,7 @@ writeNavMenuLinks("pageName")
 
 ...and, so the menu gets written out as...  
 
-home|page 1|page 2|page 3|page 4  
+*home*|page 1|page 2|page 3|page 4  
 
 ...with the particular page you are on being 'highlighted'...as italic text.  
 
