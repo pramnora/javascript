@@ -1,6 +1,19 @@
 Created: 17:36 14/05/2022  
 Updated: 17:36 14/05/2022
---------------------------------------------------------------------------------------
+-----
+
+17:36 14/05/2022
+
+As any experienced programmer knows...; 
+if you haven't been working on code for a long while...;  
+then, one tends to completely forget what that code, actually, does...?
+
+When I visted this repository...I found only 1 x file being included there...   
+nav-menu-links-01.js  
+...so, I next decided to find out for myself exactly 'how' this file works.
+
+-----
+
 From my GitHub Javascript repository...
 
 https://github.com/pramnora/javascript/tree/master/programs/web-apps/nav-menu/02
