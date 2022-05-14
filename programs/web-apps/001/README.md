@@ -84,10 +84,16 @@ Each [.html] web page...inside of the [body - /body] element tags section...is d
 ...without actually needing to go download anything.
 
 **NOTE(3):** I will also provide a clickable link...    
-which allows the end user to go and actually 'test' the site code...  
-by running it inside of their own web browser...;   
+which allows the end user to both 'view/test' the site code...  
+by seeing it actually up and running inside of their own web browser...;   
 again, without needing to go download anything.  
 
 https://prg-js.netlify.app/programs/web-apps/001/index.html
+
+**NOTE(4):** Finally here is the link to my GitHub Javascript repository...;   
+where you can download all of the files...;   
+to go and use -or, rewrite/rebuild- however you please at home.  
+
+https://github.com/.../tree/master/programs/web-apps/001  
 
 -----
