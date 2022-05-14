@@ -97,7 +97,7 @@ https://prg-js.netlify.app/programs/web-apps/001/index.html
 where you can download all of the files...;   
 to go and use -or, rewrite/rebuild- however you please at home.  
 
-https://github.com/.../tree/master/programs/web-apps/001  
+https://github.com/pramnora/javascript/tree/master/programs/web-apps/001
 
 **NOTE(5):** A mention of my name as being the 'original' author.../  
 or, link back to this *README* page...would be greatly appreciated.
