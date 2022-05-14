@@ -27,7 +27,7 @@ nav-menu-links-01.js
 
 function writeNavMenuLinks(strSelectedPageName){
 
- var strArrayPageName = ["index","page1","page2","page3"];
+ var strArrayPageName = ["index","page1","page2","page3","page4"];
 
  document.write("<p>");
 
