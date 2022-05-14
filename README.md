@@ -6,7 +6,7 @@ Here are some Javascript code snippets which you can freely study/learn from.
 
 SEE/INTERACT WITH THE JAVASCRIPT CODE INSIDE OF THIS REPOSITORY
 
-- https://prg-javascript.netlify.app   
+- https://prg-js.netlify.app   
 
 -----
 
