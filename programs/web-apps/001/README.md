@@ -27,6 +27,9 @@ this top level folder directory is called:
 
 - main
 
+-(**NOTE:** You don't have to call the top level folder: main/you could choose to all it: myWebSite/or, indeed, any name you please.  
+However, for the rest of the folders/files to work correctly...; then, you will have to use their strict name, instead.)- 
+
 ...then, inside of the main folder directory...there are 7 [.html] files
 
 - diary.html
