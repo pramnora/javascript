@@ -44,6 +44,9 @@ writeNavMenuLinks("pageName")
 ...with the particular page you are on being 'highlighted'...as italic text.  
 
 I also created/updated the Netlify GitHub [index.html] file...  
-which allows you to view/test all files in the Javascript repository.
+which allows you to view/test all files being found inside of this Javascript repository.
 
 https://prg-js.netlify.app/ 
+
+-(**NOTE:** The Netlify/GitHub [index.html] file...still needs to be further updated;    
+as no all links are ready...or, fully up and working, yet.)-
