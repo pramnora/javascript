@@ -99,4 +99,7 @@ to go and use -or, rewrite/rebuild- however you please at home.
 
 https://github.com/.../tree/master/programs/web-apps/001  
 
+**NOTE:** A mention of my name as being the 'original' author.../  
+or, link back to this *README* page...would be greatly appreciated.
+
 -----
