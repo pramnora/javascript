@@ -34,49 +34,95 @@
   
   <script>
 
-   //*** Variable declarations...
+//*** Variable declarations...
 
-   var output=document.getElementById("divOutput");
+var output = document.getElementById("divOutput");
 
-   //*** Initialise database with values.../an array of objects...
-   var phoneObj = [
-                   {mainCategory: "Business",  subCategory: "Finance",  name: "Nat West",                   number:"0800 200 400"},
-                   {mainCategory: "Business",  subCategory: "Finance",  name: "Cashplus",                   number:"0330 024 0924"},
-                   {mainCategory: "Friend",    subCategory: "Art",      name: "Lil",                        number:"222 2222 2222"},
-                   {mainCategory: "Family",    subCategory: "Sport",    name: "Carol",                      number:"333 3333 3333"},
-                   {mainCategory: "Emergency", subCategory: "General",  name: "Ambulance, Fire, Police",    number:"999"},
-                   {mainCategory: "Emergency", subCategory: "General",  name: "Doctor",                     number:"111"}
-                  ];
+//*** Initialise database with values.../an array of objects...
+var phoneObj = [
+  {
+    mainCategory: "Business",
+    subCategory: "Finance",
+    name: "Nat West",
+    number: "0800 200 400"
+  },
+  {
+    mainCategory: "Business",
+    subCategory: "Finance",
+    name: "Cashplus",
+    number: "0330 024 0924"
+  },
+  {
+    mainCategory: "Friend",
+    subCategory: "Art",
+    name: "Lil",
+    number: "222 2222 2222"
+  },
+  {
+    mainCategory: "Family",
+    subCategory: "Sport",
+    name: "Carol",
+    number: "333 3333 3333"
+  },
+  {
+    mainCategory: "Emergency",
+    subCategory: "General",
+    name: "Ambulance, Fire, Police",
+    number: "999"
+  },
+  {
+    mainCategory: "Emergency",
+    subCategory: "General",
+    name: "Doctor",
+    number: "111"
+  }
+];
 
-   //*** Search objects database...
-   function doSearch(){
-    var searchText=document.getElementById("search").value;
-    var outString="";
-    for (var x=0;x<phoneObj.length;x++){
-     //*** Make the comparison all lower case...; so, that the search is case insensitive...
+//*** Search objects database...
+function doSearch() {
+  var searchText = document.getElementById("search").value;
+  var outString = "";
+  for (var x = 0; x < phoneObj.length; x++) {
+    //*** Make the comparison all lower case...; so, that the search is case insensitive...
 
-     if ((searchText.toLowerCase() == phoneObj[x].mainCategory.toLowerCase()) ||
-         (searchText.toLowerCase() == phoneObj[x].subCategory.toLowerCase()) || 
-         (searchText.toLowerCase() == phoneObj[x].name.toLowerCase())) 
-     {
-          outString += phoneObj[x].mainCategory + ", " + phoneObj[x].subCategory + ", " + phoneObj[x].name + ", " + phoneObj[x].number + "<br>";
-     } 
+    if (
+      searchText.toLowerCase() == phoneObj[x].mainCategory.toLowerCase() ||
+      searchText.toLowerCase() == phoneObj[x].subCategory.toLowerCase() ||
+      searchText.toLowerCase() == phoneObj[x].name.toLowerCase()
+    ) {
+      outString +=
+        phoneObj[x].mainCategory +
+        ", " +
+        phoneObj[x].subCategory +
+        ", " +
+        phoneObj[x].name +
+        ", " +
+        phoneObj[x].number +
+        "<br>";
     }
-    output.innerHTML = outString;
-   }
+  }
+  output.innerHTML = outString;
+}
 
-   //*** print ALL database values into the web page 'output' section...
-   function showAllData(){
-    clearOutputDisplay();
-    for (var i=0; i<phoneObj.length; i++){
-     output.innerHTML += phoneObj[i].mainCategory + ", " + phoneObj[i].subCategory + ", " + phoneObj[i].name + ", " + phoneObj[i].number + "<br>";
-    }
-   }
+//*** print ALL database values into the web page 'output' section...
+function showAllData() {
+  clearOutputDisplay();
+  for (var i = 0; i < phoneObj.length; i++) {
+    output.innerHTML +=
+      phoneObj[i].mainCategory +
+      ", " +
+      phoneObj[i].subCategory +
+      ", " +
+      phoneObj[i].name +
+      ", " +
+      phoneObj[i].number +
+      "<br>";
+  }
+}
 
-   function clearOutputDisplay(){
-    output.innerHTML = "";
-   }
-
+function clearOutputDisplay() {
+  output.innerHTML = "";
+}
   </script>
 
  </body>
