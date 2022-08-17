@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
  <head>
   <meta charset="utf-8" />
-  <title>Javascript phonebook application 01</title>
-  <script>
-  //*** Create a pair of parallel arrays...
-   var pName = new Array();
-   var pNumber = new Array();
-   //*** Initialise the parallel arrays with values...
-   pName[0]="Abe";
-   pNumber[0]="111 1111 1111";
-   pName[1]="Brian";
-   pNumber[1]="222 2222 2222";
-   pName[2]="Carol";
-   pNumber[2]="333 3333 3333";
-   /* print out parallel array values into the web page 'output' section...
-       NOTE: All this program does is to output the array values into a tables chart...when you click on the button: ['Show ALL];
-             so, there is no search option involved.
-   */
-   function showAllData(){
-    output=document.getElementById("divOutput");
-    output.innerHTML = "<table border='1' width='50%'><tr style='background-color:black;color:white;'><th width='50%'>Name</th><th width='50%'>Number</th></tr></table>";
-    for (var i=0; i<pName.length; i++){
-     output.innerHTML += "<table border='1' width='50%'><tr align='center'><td width='50%'>" + pName[i] + "</td><td width='50%'>" + pNumber[i] + "</td></tr></table>";
-    }
-   }
-  </script>
+  <meta name="viewport" content="width=device-width,
+  <title>Javascript phonebook app</title>
  </head>
+ 
  <body>
-  <h1>Javascript Phonebook App 01</h1>
-  <input type="button" value="Show ALL" onClick="javascript:showAllData();" />   
+  <h1>Javascript Phonebook App</h1>
+  <form>
+   <input type="text" id="search" name="search">
+   <input type="button" value="Search" onClick="javascript:doSearch();">
+   <input type="button" value="Show ALL" onClick="javascript:showAllData();">   
+  </form> 
   <hr />
   <div id="divOutput"></div>
+  
+  <script>
+
+   //*** Variable declarations...
+
+   var output=document.getElementById("divOutput");
+
+   //*** Initialise database with values.../an array of objects...
+   var phoneObj = [
+                   {name: "Abe",  number:"111 1111 1111"},
+                   {name: "Brian",number:"222 2222 2222"},
+                   {name: "Carol",number:"333 3333 3333"}
+                  ];
+
+   //*** Search objects database...
+   function doSearch(){
+    var searchText=document.getElementById("search").value;
+    var outString="";
+    for (var x=0;x<phoneObj.length;x++){
+     //*** Make the comparison all lower case...; so, that the search is case insensitive...
+     if (searchText.toLowerCase() == phoneObj[x].name.toLowerCase()){
+      outString += phoneObj[x].name + " " + phoneObj[x].number;
+     } 
+    }
+    output.innerHTML = outString;
+   }
+
+   //*** print ALL database values into the web page 'output' section...
+   function showAllData(){
+    clearOutputDisplay();
+    for (var i=0; i<phoneObj.length; i++){
+     output.innerHTML += phoneObj[i].name + " " + phoneObj[i].number + "<br>";
+    }
+   }
+
+   function clearOutputDisplay(){
+    output.innerHTML = "";
+   }
+
+  </script>
+
  </body>
 </html>
