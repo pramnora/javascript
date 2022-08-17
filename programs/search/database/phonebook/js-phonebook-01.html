@@ -26,9 +26,9 @@
 
    //*** Initialise database with values.../an array of objects...
    var phoneObj = [
-                   {name: "Abe",  number:"111 1111 1111"},
-                   {name: "Brian",number:"222 2222 2222"},
-                   {name: "Carol",number:"333 3333 3333"}
+                   {category: "Business", name: "Abe",   number:"111 1111 1111"},
+                   {category: "Friend",   name: "Brian", number:"222 2222 2222"},
+                   {category: "Family",   name: "Carol", number:"333 3333 3333"}
                   ];
 
    //*** Search objects database...
@@ -37,7 +37,8 @@
     var outString="";
     for (var x=0;x<phoneObj.length;x++){
      //*** Make the comparison all lower case...; so, that the search is case insensitive...
-     if (searchText.toLowerCase() == phoneObj[x].name.toLowerCase()){
+
+     if ((searchText.toLowerCase() == phoneObj[x].category.toLowerCase()) || (searchText.toLowerCase() == phoneObj[x].name.toLowerCase())) {
       outString += phoneObj[x].name + " " + phoneObj[x].number;
      } 
     }
@@ -48,7 +49,7 @@
    function showAllData(){
     clearOutputDisplay();
     for (var i=0; i<phoneObj.length; i++){
-     output.innerHTML += phoneObj[i].name + " " + phoneObj[i].number + "<br>";
+     output.innerHTML += phoneObj[i].category + " " + phoneObj[i].name + " " + phoneObj[i].number + "<br>";
     }
    }
 
