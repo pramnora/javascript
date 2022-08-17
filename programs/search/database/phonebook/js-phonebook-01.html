@@ -26,12 +26,12 @@
 
    //*** Initialise database with values.../an array of objects...
    var phoneObj = [
-                   {mainCategory: "Business",    name: "Nat West",   number:"0800 200 400"},
-                   {mainCategory: "Business",    name: "Cashplus",   number:"0330 024 0924"},
-                   {mainCategory: "Friend",      name: "Brian",      number:"222 2222 2222"},
-                   {mainCategory: "Family",      name: "Carol",      number:"333 3333 3333"},
-                   {mainCategory: "Emergency",   name: "Doctor",     number:"999"},
-                   {mainCategory: "Emergency",   name: "Doctor",     number:"111"}
+                   {mainCategory: "Business",  subCategory: "Finance",  name: "Nat West",                   number:"0800 200 400"},
+                   {mainCategory: "Business",  subCategory: "Finance",  name: "Cashplus",                   number:"0330 024 0924"},
+                   {mainCategory: "Friend",    subCategory: "Art",      name: "Lil",                        number:"222 2222 2222"},
+                   {mainCategory: "Family",    subCategory: "Sport",    name: "Carol",                      number:"333 3333 3333"},
+                   {mainCategory: "Emergency", subCategory: "General",  name: "Ambulance, Fire, Police",    number:"999"},
+                   {mainCategory: "Emergency", subCategory: "General",  name: "Doctor",                     number:"111"}
                   ];
 
    //*** Search objects database...
@@ -41,8 +41,11 @@
     for (var x=0;x<phoneObj.length;x++){
      //*** Make the comparison all lower case...; so, that the search is case insensitive...
 
-     if ((searchText.toLowerCase() == phoneObj[x].mainCategory.toLowerCase()) || (searchText.toLowerCase() == phoneObj[x].name.toLowerCase())) {
-      outString += phoneObj[x].mainCategory + ", " + phoneObj[x].name + ", " + phoneObj[x].number + "<br>";
+     if ((searchText.toLowerCase() == phoneObj[x].mainCategory.toLowerCase()) ||
+         (searchText.toLowerCase() == phoneObj[x].subCategory.toLowerCase()) || 
+         (searchText.toLowerCase() == phoneObj[x].name.toLowerCase())) 
+     {
+          outString += phoneObj[x].mainCategory + ", " + phoneObj[x].subCategory + ", " + phoneObj[x].name + ", " + phoneObj[x].number + "<br>";
      } 
     }
     output.innerHTML = outString;
@@ -52,7 +55,7 @@
    function showAllData(){
     clearOutputDisplay();
     for (var i=0; i<phoneObj.length; i++){
-     output.innerHTML += phoneObj[i].mainCategory + ", " + phoneObj[i].name + ", " + phoneObj[i].number + "<br>";
+     output.innerHTML += phoneObj[i].mainCategory + ", " + phoneObj[i].subCategory + ", " + phoneObj[i].name + ", " + phoneObj[i].number + "<br>";
     }
    }
 
