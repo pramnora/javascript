@@ -10,7 +10,10 @@
                    {name: "Brian",number:"222 2222 2222"},
                    {name: "Carol",number:"333 3333 3333"}
                   ];
-   //*** print ALL database values into the web page 'output' section...
+   /* print ALL database values into the web page 'output' section...
+      The program merely dumps out all of the array values into a HTML Table...when one clicks on the button: [Show ALL];
+      so, there is no search involved.
+   */
    function showAllData(){
     output=document.getElementById("divOutput");
     output.innerHTML = "<table border='1' width='50%'><tr style='background-color:black;color:white;'><th width='50%'>Name</th><th width='50%'>Number</th></tr></table>";
