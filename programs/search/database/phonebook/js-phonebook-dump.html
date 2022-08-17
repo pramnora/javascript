@@ -25,7 +25,9 @@
    */
    function showAllData(){
     output=document.getElementById("divOutput");
+    //*** Show table category headings...
     output.innerHTML = "<table border='1' width='50%'><tr style='background-color:black;color:white;'><th width='50%'>Name</th><th width='50%'>Number</th></tr></table>";
+    //*** Show phone number details...
     for (var i=0; i<phoneObj.length; i++){
      output.innerHTML += "<table border='1' width='50%'><tr align='center'><td width='50%'>" + phoneObj[i].name + "</td><td width='50%'>" + phoneObj[i].number + "</td></tr></table>";
     }
