@@ -173,12 +173,12 @@ Using this 2nd method is the 'correct' way of doing things. However, when I'm in
 
 -----
 
-**1.04 LINKS**
+## **1.04 LINKS**
 
 Microsoft (FREE/just register)...  
 - https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript?WT.mc_id=beginner-c9-niner  
 
-WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
+## WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
 - http://codepen.io/  
 - http://codesandbox.io  
@@ -188,5 +188,14 @@ WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 - http://www.jscompress.com  
 - http://playcode.io  
 - http://www.w3schools.com/js  
+
+## YouTube Videos
+
+JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours  
+- https://www.youtube.com/watch?v=EfAl9bwzVZk&t=2819s
+
+
+
+
 
 
