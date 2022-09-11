@@ -191,8 +191,22 @@ Microsoft (FREE/just register)...
 
 ## YouTube Videos
 
-JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours  
-- https://www.youtube.com/watch?v=EfAl9bwzVZk&t=2819s
+JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours  - (Channel: Dave Gray)    
+- https://www.youtube.com/watch?v=EfAl9bwzVZk&t=2819s  
+
+JavaScript Programming All-in-One Tutorial Series (9 HOURS!) - (Channel: Caleb Curry)   
+- https://www.youtube.com/watch?v=9M4XKi25I2M&t=361s    
+
+JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022)  - (Channel: Clever Programmer)  
+- https://www.youtube.com/watch?v=lI1ae4REbFM&t=12919s  
+
+Learn JavaScript by Building 7 Games - Full Course - (Channel: FreeCodeCamp.org)  
+- https://www.youtube.com/watch?v=ec8vSKJuZTk  
+
+
+
+
+
 
 
 
