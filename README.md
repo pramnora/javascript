@@ -204,6 +204,13 @@ Learn JavaScript by Building 7 Games - Full Course - (Channel: FreeCodeCamp.org)
 - https://www.youtube.com/watch?v=ec8vSKJuZTk  
 
 
+-----
+
+
+HTML CSS JS projects (Beginner): 16 projects using HTML CSS and JavaScript - (Channel: JavaScript King)  
+- https://www.youtube.com/watch?v=EWv2jnhZErc&t=121s  
+
+
 
 
 
