@@ -178,6 +178,10 @@ Using this 2nd method is the 'correct' way of doing things. However, when I'm in
 Microsoft (FREE/just register)...  
 - https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript?WT.mc_id=beginner-c9-niner  
 
+### Resources
+
+- https://www.babbleio.js  
+
 ## WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
 - http://codepen.io/  
