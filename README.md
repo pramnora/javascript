@@ -4,6 +4,10 @@ JAVASCRIPT CODE
 
 Here are some Javascript code snippets which you can freely study/learn from.
 
+**Document last modified**: *Sat 19th Aug 2023 15:20 PM GMT*
+
+-----
+
 SEE/INTERACT WITH THE JAVASCRIPT CODE INSIDE OF THIS REPOSITORY
 
 - https://prg-js.netlify.app   
