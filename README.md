@@ -180,7 +180,7 @@ Microsoft (FREE/just register)...
 
 ### Resources
 
-- https://www.babbekjs.io  
+- https://www.babbeljs.io  
 
 ## WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
