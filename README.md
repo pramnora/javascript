@@ -180,7 +180,8 @@ Microsoft (FREE/just register)...
 
 ### Resources
 
-- https://babeljs.io/
+- https://babeljs.io/  
+- https://caniuse.com/  
 
 ## WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
