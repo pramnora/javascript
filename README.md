@@ -185,7 +185,8 @@ Microsoft (FREE/just register)...
 ### Resources
 
 - https://babeljs.io/  
-- https://caniuse.com/  
+- https://caniuse.com/
+- https://www.ecma-international.org/ecma-262/6.0/  
 
 ## WRITE/RUN JAVASCRIPT CODE INSIDE OF YOUR OWN WEB BROWSER ONLINE
 
