@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <title>Javascript Form: Add successive numbers...</title>
+ </head>
+
+ <style>
+  div{text-align:center;}
+ </style>
+
+ <body>
+
+  <div>
+
+   <h1>FORM: Javascript</h1>
+   <h2>Add up successive numbers...</h2>
+   <h3>(Eg. 1+2+3...)</h3>
+
+   <form id="form1" name="form1" method="get" action="javascript:addNums()">
+
+   <!--when I tried allowing for the use of 'negative' numbers...; the end sum result just said: 0...?!
+    <input type="number" name="number" id="number"> 
+   -->
+
+   <!-- this code controls both the min/max values that can be entered into the form...
+    <input type="number" name="number" id="number" min="1" max="10">
+   --> 
+ 
+    <!--this code allows only positive numbers to be entered into the form...going from 1 upwards...-->
+    <input type="number" name="number" id="number" min="1"> 
+
+
+    <input type="submit" value="submit">
+   </form>
+
+   <div id="output"></div>
+
+  </div>
+
+  <script>
+
+  /* -----------------------------------------------------------------------------
+   PROGRAM: AddNums, Version: 1.0.01
+            The program uses a single loop to 
+            add up each successive number going from 1 up to 10;
+            -(user may choose to add up larger numbers as of their own choice)-;
+            and, then, dumps/outputs the end result into the web page.
+
+  COMPUTER: Home based PC
+  LANGUAGE: Javascript
+        OS: Linux Mint
+   BROWSER: Firefox
+
+   CREATED: Thu 21 Dec 2023 18:58 PM GMT
+   UPDATED: Thu 21 Dec 2023 18:58 PM GMT 
+  -----------------------------------------------------------------------------*/
+
+
+   function addNums(){
+    var intMaxNum=document.form1.number.value;
+
+    var intTotal=0;
+    for (intEachNum=1;intEachNum<=intMaxNum;intEachNum++){
+        intTotal+=intEachNum;
+    }
+    var x=document.getElementById("output");
+    x.innerHTML="<br><hr width='50%'><br>The total of all successive numbers going from 1 up to " + intMaxNum + " is: <br><br>" + intTotal; //...display final number total as output
+   }
+
+  </script>
+
+ </body>
+
+</html>
