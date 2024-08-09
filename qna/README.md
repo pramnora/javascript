@@ -38,4 +38,19 @@ Ideas for coming Q&A projects...
 
 -----
 
-** Project 2**:  
+**Project 2**:  
+
+Create a QNA which presents a Javscript drop down list of options;     
+these options allow you to load in different sorts of tests...   
+For example:-  
+
+- Foreign Languages...  
+- French   
+- Japanese  
+- Maths...  
+- Fractions  
+- English...    
+- Grammar  
+
+...then, the test is administered...  
+according to how many questions/answers there are in that particular database.    
