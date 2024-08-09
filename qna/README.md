@@ -40,7 +40,7 @@ Ideas for coming Q&A projects...
 
 **Project 2**:  
 
-Create a QNA which presents a Javscript drop down list of options;     
+Create a QNA which presents a Javascript drop down list of options;     
 these options allow you to load in different sorts of tests...   
 For example:-  
 
