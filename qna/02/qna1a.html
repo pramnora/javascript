@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<!--
+  This code, orginally, borrowed from...
+  https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide
+  ...then, was further changed/adapted by me: paulramnora/(pramnora@yahoo.com) 
+  -----------------------------------------
+  page created: Fri 9 Aug 2024 15:33 PM GMT
+  last updated: Fri 9 Aug 2024 15:33 PM GMT  
+-->
+<body onload="clearAnswers();">
+<h1>Q & A test</h1>
+<hr>
+
+<h2>Q1: What is 1 + 1?</h2>
+<form name="form1" id="form1">
+     <input type="radio" name="rad1" id="rad1">one
+ <br><input type="radio" name="rad1" id="rad1">two
+ <br><input type="radio" name="rad1" id="rad1">eleven
+ <br><input type="radio" name="rad1" id="rad1">1/2
+</form>
+<p><strong>A1</strong>: <span id="a1">two</span></p>
+<button type="button" onclick="document.getElementById('a1').style.display='inline'">
+ Show
+</button>
+<button type="button" onclick="document.getElementById('a1').style.display='none'">
+ Hide
+</button>
+
+<hr>
+
+<h2>Q2: How do you say red in French?</h2>
+<form name="form2" id="form2">
+     <input type="radio" name="rad2" id="rad2">rouge
+ <br><input type="radio" name="rad2" id="rad2">route
+ <br><input type="radio" name="rad2" id="rad2">rapide
+ <br><input type="radio" name="rad2" id="rad2">rousseau
+</form>
+<p><strong>A2</strong>: <span id="a2">rouge</span></p>
+<button type="button" onclick="document.getElementById('a2').style.display='inline'">
+ Show
+</button>
+<button type="button" onclick="document.getElementById('a2').style.display='none'">
+ Hide
+</button>
+
+<hr>
+
+<h2>Q2: BASIC programming: 
+    <br>A=1 : B=2 : C=A+B
+    <br>What value does C hold?</h2>
+<form name="form3" id="form3">
+     <input type="radio" name="rad3" id="rad3">1
+ <br><input type="radio" name="rad3" id="rad3">2
+ <br><input type="radio" name="rad3" id="rad3">12
+ <br><input type="radio" name="rad3" id="rad3">3
+</form>
+<p><strong>A3</strong>: <span id="a3">3</span></p>
+<button type="button" onclick="document.getElementById('a3').style.display='inline'">
+ Show
+</button>
+<button type="button" onclick="document.getElementById('a3').style.display='none'">
+ Hide
+</button>
+
+<hr>
+
+<script>
+ function clearAnswers(){
+  document.getElementById('a1').style.display='none';
+  document.getElementById('a2').style.display='none';
+  document.getElementById('a3').style.display='none';
+ } 
+</script>
+
+</body>
+</html> 
