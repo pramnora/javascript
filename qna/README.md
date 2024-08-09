@@ -7,13 +7,18 @@ Q&A
 
 Why Q&A's...?
 
-I like to both learn/and, too, teach.  
+a> Creating Q&A's is a good way to practice doing some programming;    
+I will, usually, create Q&A programs using whatever programming language I am...     
+- either still in the process of learning  
+- or else, am already most famliar with having learned, already.    
+
+b>I like to both learn/and, too, teach.  
 
 One of the best ways to show you 'know' something...;    
 is to try and teach it to somebody else who doesn't yet know...???        
 For this reason Q&A tests are a very good way to both 'teach/learn'.    
 
-**NOTE**: It's also a very good way of practicing doing 'revision', as well;  
+c> It's also a very good way of practicing doing 'revision', as well;  
 as many times my memory is rather poor; and, therefore, I tend to forget an awful lot...?!    
 Doing Q&A's helps to remind me...
 
