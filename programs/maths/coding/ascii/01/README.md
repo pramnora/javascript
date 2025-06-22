@@ -18,3 +18,10 @@ A = 01, the first letter of the alphabet
 B = 02, the second letter of the alphabet  
 C = 03, the third letter of the alphabet  
 -etc.  
+
+-----
+
+The code can be viewed/interacted with 'live' online at:  
+
+- prg-ascii-encoder.netlify.app
+
