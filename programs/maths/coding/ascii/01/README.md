@@ -23,5 +23,5 @@ C = 03, the third letter of the alphabet
 
 The code can be viewed/interacted with 'live' online at:  
 
-- pr-ascii-encoder.netlify.app
+- https://pr-ascii-encoder.netlify.app
 
