@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+ <head>
+   
+  <!--meta tags-->
+  <meta charset="utf-8">
+  <meta charset="page-created" content="Wed 18th June 2025 22:10 PM GMT">
+
+  <!--head title text-->
+  <title>Test Web Form</title>
+
+  <!--link to external CSS stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css01.css">
+   
+  <!--link to external Javascript file-->
+  <script type="text/javascript" src="js01.js">
+  </script>
+
+ </head>
+
+<body>
+   
+  <header>
+    
+   <h1>ASCII Encoder</h1>
+    
+   <p>
+    (<strong>A</strong>merican <strong>S</strong>tandard <strong>C</strong>ode for <strong>I</strong>nformation <strong>I</strong>nterchange)
+   </p>
+
+   <h2>Symmetrical Ciphers</h2>
+    
+   <p>
+    (meaning, in order to <em>decode</em>...; 
+     <br>it's, quite simply, a matter of <strong>reversing</strong> the steps which were used to <em>encode</em>.
+     <br>Eg. Encode: A=01/Decode: 01=A.)
+   </p>
+    
+  </header>
+   
+  <main>
+
+   <h2>1a. Substitution cipher: 
+       <br>A=01/B=02/.../Z=26
+       <br>Enter some data to be encoded(A-Z):
+   </h2>
+
+   <form id="frm1" name="frm1" method="get" action="javascript:asciiEncoder()">
+    <label for="txt1">Input data: </label>
+    <input type="text" name="txt1" id="txt1" value="" size="80">
+    <input type="submit" value="Encode">
+   </form>
+   
+   <div id="idDivOutput">
+   </div>
+ 
+  </main>
+   
+  <footer>
+    
+   <p>
+     
+    Email:
+    <a href="mailto:pramnora@yahoo.com">
+     pramnora@yahoo.com
+    </a>
+     
+    <br>
+     
+    URL:
+    <a href="https://pr-ascii-encoder.netlify.app">
+     https://pr-ascii-encoder.netlify.app 
+    </a>
+
+    <br>
+     
+    <span id="idCopyright">
+     Copyright: &copy;2025-./Mr.Paul Ramnora./All rights reserved.
+    </span>
+     
+    <br>
+     
+    Document last updated:
+    <br>
+    <span class="clsDateTimeStamp">
+     Sat 21st June 2025 10:19 AM GMT  
+    </span>
+     
+   </p>
+    
+  </footer>
+   
+ </body>
+  
+</html>
