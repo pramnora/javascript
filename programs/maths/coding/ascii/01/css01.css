@@ -1,0 +1,87 @@
+/*
+ Stylesheet for: test-web-page.html
+
+ Created: Wed 18th June 2025 22:15 PM GMT
+ Updated: Sat 21st June 2025 11:07 AM GMT  
+*/
+
+/* ------------------------------------------- */
+
+/* links */
+
+a:link{color:blue;text-decoration:none;}
+a:hover{color:red;text-decoration:underline;}
+a:visited{color:purple;}
+a:active{color:orange;}
+
+/* ------------------------------------------- */
+
+body{
+ font-family:arial,verdana,sans-serif;
+ margin:1cm;
+}
+
+header,footer{
+ text-align:center;
+ padding:10px;
+}
+
+header{
+ background-color:gray;
+ color:white;
+}
+
+h2,form{text-align:center;}
+
+footer{
+ margin-top:30px;
+ background-color:silver;
+}
+
+/* ------------------------------------------- */
+
+/* table */
+
+table{
+ border:1px solid black;
+} 
+
+td{
+ border:1px solid black;
+}
+
+
+/* ------------------------------------------- */
+
+/* classes */
+
+.clsPara{
+ text-indent:1cm;
+}
+
+.clsDateTimeStamp{
+ background-color:white;
+ color:red;
+ font-style:italic;
+ padding:1px;
+ border-radius:5px;
+}
+
+/* ------------------------------------------- */
+
+/* ID's */
+
+#idDivOutput{
+ background-color:pink;
+ padding:10px;
+ text-align:center;
+}
+
+#idCopyright{
+ font-weight:bold;
+ background-color:black;
+ color:white;
+ border-radius:5px;
+}
+
+/* ------------------------------------------- */
