@@ -193,10 +193,12 @@ Microsoft (FREE/just register)...
 - https://babeljs.io/  
 - https://caniuse.com/
 - https://www.ecma-international.org/ecma-262/6.0/  
-- https://kangax.github.io/compat-table/es6/  
+- https://kangax.github.io/compat-table/es6/
+  
 - https://plnkr.co/  
 - https://plnkr.co/plunk/L8WVwONiAuinKJaz  (ASCII spinning doughnut)  
-
+- https://plnkr.co/plunk/kFFBOPgH0HHNWUvr  (Geometric Art Generator)  
+  
 -----
 
 ## Tutorials
