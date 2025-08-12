@@ -82,6 +82,7 @@ footer{
 }
 
 #idCopyrightMsg{
+ border-radius:2px; 
  font-weight:bold;
  background-color:black;
  color:white;
