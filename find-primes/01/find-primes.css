@@ -43,12 +43,7 @@ body{
  background-color:white;
  color:black;
  font-family:arial,verdana,sans-serif;
-}
-
-/* header and footer * /
-
-header,footer{
-  text-align:center;
+ text-align:center;
 }
 
 /* header */
