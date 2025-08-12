@@ -1,13 +1,13 @@
 /*
  Created: Tue 12 Aug 2025 15:04 PM GMT
- Updated: Tue 12 Aug 2025 18:53 PM GMT
+ Updated: Tue 12 Aug 2025 19:11 PM GMT
 */
 
 body{
  font-family:arial,verdana,sans-serif;
 }
 
-header,footer{
+header,footer,#idParaFinalResult{
  text-align:center;
 }
 
@@ -39,8 +39,14 @@ footer{
 
 /* ID's */
 
+hr#idHRShort{
+ width:50%;
+}
+
 #idDivFinalResultsScore{
  background-color:yellow;
  padding:10px;
  text-align:center;
+ width:50%;
+ margin:auto;
 }
