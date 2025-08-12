@@ -50,13 +50,11 @@ body{
 header{
   border-radius: 10px 10px 0px 0px;
   text-align:center;
-  background-color:black;
-  color:white;
 }
 
 h1{
- background-color:silver;
- color:black;
+  background-color:black;
+  color:white;
 }
 
 h2{
