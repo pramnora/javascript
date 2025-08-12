@@ -11,7 +11,7 @@
 COPYRIGHT: (c)2020-, Mr. Paul Ramnora./All rights reserved.
 
   CREATED: 23:17 29/04/2020
-  UPDATED: 23:18 29/04/2020
+  UPDATED: 11:57 12/08/2025
 */
 
 function checkIfPrime(){
@@ -43,7 +43,7 @@ function checkIfPrime(){
 
  strOutput = strOutput + "<p><b>Total factors</b>: " + intCount + " " + "</p>";
 
- strOutput = strOutput + "<p><b>Prime</b>: " + strYesNo + "</p>";
+ strOutput = strOutput + "<p><b>Prime</b>: " + strYesNo + "</p>" + "<hr>";
 
  divOutput.innerHTML=strOutput;
 
