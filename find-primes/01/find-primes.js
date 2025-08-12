@@ -43,7 +43,7 @@ function checkIfPrime(){
 
  strOutput = strOutput + "<p><b>Total factors</b>: " + intCount + " " + "</p>";
 
- strOutput = strOutput + "<p><b>Prime</b>: " + strYesNo + "</p>" + "<hr>";
+ strOutput = strOutput + "<p><b>Prime</b>: " + strYesNo + "</p>" + "<hr width='50%'><br>";
 
  divOutput.innerHTML=strOutput;
 
