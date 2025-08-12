@@ -1,27 +1,48 @@
 <!DOCTYPE html>
+
 <html lang="en">
+ 
  <head>
   <meta charset="UTF-8">
   <title>Javascript: Objects</title>
  </head>
+
  <body>
+  
   <header>
    <h1>Javascript: Objects</h2>
   </header>
+
   <script>
+
+   // * create function to create a Person object... 
+
    function Person(name,age){
     this.name=name;
     this.age=age;
    }
+
+   // * create 2 people: person1, person2...
+
    person1=new Person("Jack","12");
    person2=new Person("Jill","13");
+
+   // * output person1's details: name/age...
+
    document.write("Person name: " + person1.name)
    document.write("<br>");
    document.write("Person age: " + person1.age); 
+
    document.write("<hr>");
+   
+   // * output person2's details: name/age...
+
    document.write("Person name: " + person2.name)
    document.write("<br>");
    document.write("Person age: " + person2.age); 
+   
   </script> 
+
  </body>
+
 </html>
