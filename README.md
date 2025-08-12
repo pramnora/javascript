@@ -4,7 +4,7 @@ JAVASCRIPT CODE
 
 Here are some Javascript code snippets which you can freely study/learn from.
 
-**Document last modified**: *Tue 12th Aug 2025 00:12 PM GMT*
+**Document last modified**: *Tue 12th Aug 2025 14:17 PM GMT*
 
 -----
 
@@ -187,6 +187,7 @@ Microsoft (FREE/just register)...
 #### Mozilla
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript  
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview  
 
 #### Plnkr.co
