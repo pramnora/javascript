@@ -1,6 +1,6 @@
 /*
  Created: Tue 12 Aug 2025 15:04 PM GMT
- Updated: Tue 12 Aug 2025 17:59 PM GMT
+ Updated: Tue 12 Aug 2025 18:53 PM GMT
 */
 
 body{
@@ -35,4 +35,12 @@ footer{
 .clsDateTime{
  color:red;
  font-style:italic;
+}
+
+/* ID's */
+
+#idDivFinalResultsScore{
+ background-color:yellow;
+ padding:10px;
+ text-align:center;
 }
