@@ -48,11 +48,11 @@ body{
 /* header */
 
 header{
-  border-radius: 10px 10px 0px 0px;
   text-align:center;
 }
 
 h1{
+  border-radius: 10px 10px 0px 0px;
   background-color:black;
   color:white;
 }
