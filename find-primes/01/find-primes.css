@@ -64,12 +64,16 @@ h1{
 
 /* main */
 
-hr{
- width:50%;
-}
-
 main{
  color:black;
+}
+
+div{
+ background-color:pink;
+}
+
+hr{
+ width:50%;
 }
 
 /* footer */
