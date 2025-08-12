@@ -46,6 +46,13 @@ body{
  text-align:center;
 }
 
+/* header & footer */
+
+header,footer{
+ width:50%;
+ margin:auto;
+}
+
 /* header */
 
 h1{
