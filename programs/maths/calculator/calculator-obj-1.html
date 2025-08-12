@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="utf-8">
+  <meta name="page-created" content="Tue 12 Aug 2025 07:38 AM GMT">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+
+  <title>Calculator</title>
+
+  <style>
+   body{font-family:arial,verdana,sans-serif;}
+   header,main,footer{text-align:center;}
+   .clsDateTime{color:red;font-style:italic;}
+  </style>
+
+ </head>
+
+ <body>
+
+  <header>
+   <h1>
+    Javascript: Calculator
+   </h1>
+  </header>
+
+  <main>
+   <div id="divOutput">
+   </div>
+  </main>
+
+  <footer>
+   <p>
+    Document last modified:
+    <br>
+    <span class="clsDateTime">
+     Tue 12 Aug 2025 08:23 AM GMT
+    </span>
+   </p>
+  </footer>
+
+  <script>
+
+   // * get where to send output... 
+
+   output = document.getElementById("divOutput");
+
+   // * create a calculator object...
+
+   let calculator={
+        add: (num1,num2) => output.innerText += num1 + " + " + num2 + " = " + (num1 + num2) + "\n",
+   subtract: (num1,num2) => output.innerText += num1 + " - " + num2 + " = " + (num1 - num2) + "\n",
+   multiply: (num1,num2) => output.innerText += num1 + " x " + num2 + " = " + (num1 * num2) + "\n",
+     divide: (num1,num2) => output.innerText += num1 + " / " + num2 + " = " + (num1 / num2) + "\n"
+   }    
+
+   // * call calculator functions...
+
+   calculator.add(3,3);
+   calculator.subtract(3,3);
+   calculator.multiply(3,3);
+   calculator.divide(3,3);
+
+  </script>
+
+ </body>
+
+</html>
