@@ -37,7 +37,7 @@ function checkIfPrime(){
   strYesNo = "N";
  }
 
- strOutput = strOutput + "<hr><p><b>Number</b>: " + intMaxNo + "</p>";
+ strOutput = strOutput + "<p><b>Number</b>: " + intMaxNo + "</p>";
 
  strOutput = strOutput + "<p><b>Factors</b>: " + strFactors + "</p>" 
 
