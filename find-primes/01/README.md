@@ -24,6 +24,8 @@ then, the number found is a 'prime number'.
 When all of the calculations are done; finally, it prints the following 'output' message:      
 (as the examples show, the output will, in fact, vary...depending on which number the user did choose to enter)
 
+-----
+
 ### PROGRAM RUN 1/Prime number found...
 
 > Enter number: [7] [Check if number is prime?]
@@ -32,6 +34,8 @@ When all of the calculations are done; finally, it prints the following 'output'
 > Factors: 1 7  
 > Total factors: 2  
 > Prime: Y  
+
+-----
 
 ### PROGRAM RUN 2/No prime number found...
 
@@ -42,6 +46,8 @@ When all of the calculations are done; finally, it prints the following 'output'
 > Total factors: 4  
 > Prime: N  
 
+-----
+
 ## FILE LISTING
 
 There are 3 interlinked but entirely separate program files/plus, one README file:-
@@ -50,6 +56,8 @@ There are 3 interlinked but entirely separate program files/plus, one README fil
 2 - find-primes.css  (adds decorative effects such as colour/font type/-etc. to the web page UI)  
 3 - find-primes.js   (the computer program which calculates if a number is either prime or not)  
 4 - README.md (which is this explanatory file)  
+
+-----
 
 ## HOW TO USE IT
 
@@ -64,6 +72,8 @@ B> Offline: If you wish to use the code 'offline'...to learn and experiment with
 1> find-primes.html (the web page UI/User Interface)  
 2> find-primes.css  (adds decorative effects such as colour/font type/-etc. to the web page UI)  
 3> find-primes.js   (the computer program which calculates if a number is either prime or not)  
+
+-----
 
 ## REASONS AS TO WHY I DECIDED TO WRITE THIS PROGRAM
 
