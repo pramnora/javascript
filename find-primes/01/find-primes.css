@@ -11,7 +11,7 @@
 COPYRIGHT: (c)2020-, Mr. Paul Ramnora./All rights reserved.
 
   CREATED: 23:26 29/04/2020
-  UPDATED: 23:27 29/04/2020
+  UPDATED: 11:05 12/08/2025
 */
 
 /* links */
@@ -48,6 +48,7 @@ body{
 /* header */
 
 header{
+  border-radius: 10px 10px 0px 0px;
   text-align:center;
 }
 
@@ -69,6 +70,7 @@ main{
 /* footer */
 
 footer{
+ border-radius: 0px 0px 10px 10px;
  background-color:silver;
  color:black;
  text-align:right;
