@@ -188,12 +188,11 @@ Microsoft (FREE/just register)...
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript  
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview  
-- 
 
 - https://babeljs.io/  
 - https://caniuse.com/
 - https://www.ecma-international.org/ecma-262/6.0/  
-- https://kangax.github.io/compat-table/es6/
+- https://kangax.github.io/compat-table/es6/  
   
 - https://plnkr.co/  
 - https://plnkr.co/plunk/L8WVwONiAuinKJaz  (ASCII spinning doughnut)  
