@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,iniial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="page-created" content="Tue 12 Aug 2025 15:02 PM GMT">
+
+  <title>App.: Quiz</title>
+
+  <link rel="stylesheet" type="text/css" href="css01.css">
+ 
+  <script type="text/javascript" src="js01.js">
+  </script>
+
+ </head>
+
+ <body onload="init()">
+
+  <header>
+   <h1>App.: Quiz</h1>
+  </header>
+
+  <hr>
+
+  <main>
+
+   <table>
+
+    <caption>Display Totals:-</caption>
+
+    <tr>
+     <td>
+      No of questions: 
+     </td> 
+     <td>
+      <div id="idDivTotalQuestions"></div>
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      Current question: 
+     </td> 
+     <td>
+      <div id="idDivCurrentQuestion"></div>
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      Correct: 
+     </td> 
+     <td>
+      <div id="idDivCorrectScore"></div>
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      Wrong: 
+     </td> 
+     <td>
+      <div id="idDivWrongScore"></div>
+     </td>
+    </tr>
+
+   </table>
+
+   <hr>
+
+   <form method="get" action="javascript:check(1)">
+
+    <p><strong>Q1</strong>: What is the capital of England called?</p>
+
+    <label for="selQ1"">Choose a city: </label>
+    <select id="selQ1">
+     <option value="Southampton">Southampton</option>
+     <option value="Liverpool">Liverpool</option>
+     <option value="Manchester">Manchester</option>
+     <option value="London">London</option>
+    </select>       
+
+    <br><br>
+
+    <input type="submit" value="Mark response">
+
+   </form>
+
+   <hr>
+
+   <form method="get" action="javascript:check(2)">
+
+    <p><strong>Q2</strong>: What is England's currently reigning monarch called?</p>
+
+    <label for="selQ2"">Choose a name: </label>
+    <select id="selQ2">
+     <option value="Charles">Charles</option>
+     <option value="Elizabeth">Elizabeth</option>
+     <option value="Victoria">Victoria</option>
+     <option value="William">William</option>
+    </select>       
+
+    <br><br>
+
+    <input type="submit" value="Mark response">
+
+   </form>
+
+   <hr>
+
+   <form method="get" action="javascript:check(3)">
+
+    <p><strong>Q3</strong>: Which of these is NOT a country inside of the UK?</p>
+
+    <label for="selQ3"">Choose a country:</label>
+    <select id="selQ3">
+     <option value="Wales">Wales</option>
+     <option value="Scotland">Scotland</option>
+     <option value="Ireland">Ireland</option>
+     <option value="France">France</option>
+    </select>       
+
+    <br><br>
+
+    <input type="submit" value="Mark response">
+
+   </form>
+
+   <hr>
+
+   <form method="get" action="javascript:check(4)">
+
+    <p><strong>Q4</strong>: How old does one have to be  to drink alcohol in England?</p>
+
+    <label for="selQ4"">Choose an age:</label>
+    <select id="selQ4">
+     <option value="16">16</option>
+     <option value="17">17</option>
+     <option value="18">18</option>
+     <option value="21">21</option>
+    </select>       
+
+    <br><br>
+
+    <input type="submit" value="Mark response">
+
+   </form>
+
+  </main>
+
+  <hr>
+
+  <footer>
+   <p>
+    Document last modified:
+    <br>
+    <span class="clsDateTime">
+     Tue 12 Aug 2025 17:57 PM GMT
+    </span>
+   </p>
+  </footer>
+
+ </body>
+
+</html>
