@@ -1,6 +1,6 @@
 /* 
   Created: Tue 12 Aug 2025 15:06 PM GMT
-  Updated: Tue 12 Aug 2025 18:55 PM GMT
+  Updated: Tue 12 Aug 2025 19:13 PM GMT
 */
 
 // variable declarations...
@@ -84,7 +84,7 @@ function check(num){
 function printFinalScore(){
   if (currentQuestion > totalQuestions) {
    x=document.getElementById("idDivFinalResultsScore"); 
-   x.innerHTML="<strong>-End of quiz!-</strong><br>Your score is: " + correct + " out of a possible " + totalQuestions + " correct answers.";
+   x.innerHTML="Your score is: <strong>" + correct + "</strong> out of a possible <strong>" + totalQuestions + "</strong> correct answers.";
   }
  }
 
