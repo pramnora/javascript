@@ -64,6 +64,10 @@ h1{
 
 /* main */
 
+hr{
+ width:50%;
+}
+
 main{
  color:black;
 }
