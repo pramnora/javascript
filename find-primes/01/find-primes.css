@@ -72,8 +72,9 @@ main{
 
 footer{
  border-radius: 0px 0px 10px 10px;
- background-color:silver;
+ background-color: silver;
  color:black;
+ padding:10x; 
 }
 
 #idCopyrightMsg{
