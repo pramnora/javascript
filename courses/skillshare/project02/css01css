@@ -1,0 +1,38 @@
+/*
+ Created: Tue 12 Aug 2025 15:04 PM GMT
+ Updated: Tue 12 Aug 2025 17:59 PM GMT
+*/
+
+body{
+ font-family:arial,verdana,sans-serif;
+}
+
+header,footer{
+ text-align:center;
+}
+
+table>caption{
+ font-weight:bold;
+ border:2px solid red;
+ background-color:black;
+ color:white;
+}
+
+header{
+
+}
+
+main{
+
+}
+
+footer{
+
+}
+
+/* Classes */
+
+.clsDateTime{
+ color:red;
+ font-style:italic;
+}
