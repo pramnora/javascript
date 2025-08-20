@@ -1,34 +1,53 @@
 <!DOCTYPE html>
+
 <html lang="en">
+ 
  <head>
+  
   <meta charset="utf-8">
+  
   <title>Form test</title>
+  
   <style>
    h1,p.footer{text-align:center;}
   </style>
+  
   <!--This HTML web page shows how it's possible to use 
       2 x HTML forms which connect to running Javascript code/functions.
 
       NOTE: Although both forms have: name=""/id="" properties/
-            neither of these are actually used here.
+            neither of these is actually used here.
    --> 
+  
  </head>
+ 
  <body>
+  
   <h1>Form testing</h1>
+
   <hr>
+  
   <h2>Form 1</h2>
+  
   <p>Use form get method to run javascript being written inside of action...</p>
+  
   <!--the javascript outputs 2 alert box messages-->
   <form name="frm1" id="frm1" method="get" action="javascript:alert('alert 1');alert('alert 2')">
    <input type="submit" value="Submit">
   </form>
+  
   <hr>
+  
   <h2>Form 2</h2>
+  
   <p>Use form get method to call a script which contains a function...</p>
+  
   <form name="frm2" id="frm2" method="get" action="javascript:test1()">
    <input type="submit" value="Submit">
   </form>
+  
   <hr>
+  
   <p class="footer">
    Document last modified:
    <br>
@@ -36,15 +55,22 @@
     Wed 20 Aug 2025 12:51 PM GMT
    </em>
   </p>
+  
   <script>
+   
    // This test1() function calls test2() function...
+   
    function test1(){
     alert("test1");
     test2();
    }
+   
    function test2(){
     alert("test2");
    }
+   
   </script>
+  
  </body>
+ 
 </html>
