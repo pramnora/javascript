@@ -30,12 +30,13 @@
      this runs a Javascript function called: goToURL();
      ...which, in turn, goes to the selected URL address. 
      ---
-     NOTE: The current window gets replaced by a 'new' one...; 
-           which is not something I wanted to happen;
-           so, this code still remains being a bit buggy in this sense.
-           Each time I tried to fix this by adding in: 
-           target='_blank';
-           ...to the Javascript...; then, the code refused to work, anymore...?!
+     BUG(1): The current window gets replaced by a 'new' one...; 
+             which is not something I wanted to happen;
+             so, this code still remains being a bit buggy in this sense.
+
+             Each time I tried to fix this by adding in: 
+             target='_blank';
+             ...to the Javascript...; then, the code refused to work, anymore...?!
      ---
      CREATED: Wed 20 Aug 2025 17:42 PM GMT
      UPDATED: Wed 20 Aug 2025 17:42 PM GMT  
@@ -53,22 +54,22 @@
    <form id="frm1" name="frm1" method="get" action="javascript:goToURL()">
     <label for="sel1">Choose a search engine: </label>
     <select id="sel1">
-     <!--doing a web search...I found there are 3 possible options: 
-         selected disabled hidden
+     <!--BUG(2): Doing a web search...I found there are 3 possible options: 
+                 selected disabled hidden
 
-         selected - didn't work, meaning that option was NOT selected
-         I also tried using: selected="selected"
-         ...but, that didn't work, neither.
+                 selected - didn't work, meaning that option was NOT selected
+                 I also tried using: selected="selected"
+                 ...but, that didn't work, neither.
       
-         hidden - didn't show any text at all...?!
+                 hidden - didn't show any text at all...?!
 
-         disabled - meant that option couldn't be selected;
-         however, it also printed the text out really 'faint'...
-         so, that it was almost unreadable.
+                 disabled - meant that option couldn't be selected;
+                 however, it also printed the text out really 'faint'...
+                 so, that it was almost unreadable.
 
-         in the end, as a work around, I just decided to add the words:
-         'Choose a search engine: '
-         ...as being the label text, instead.
+                 in the end, as a work around, I just decided to add the words:
+                 'Choose a search engine: '
+                 ...as being the label text, instead.
         
      -->
      <!--
