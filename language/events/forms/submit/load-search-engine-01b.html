@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="page-created" content="Wed 20 Aug 2025 11:51 AM GMT"> 
+
+  <title>Links</title>
+
+  <style>
+   body{font-family:arial,verdana,sans-serif;}
+   header,main,footer{text-align:center;}
+   header>h1{color:red;}
+   hr{width:50%;padding:10px;background-color:blue;border:5px solid white;border-radius:10px;}
+   .clsDateTimeStamp{color:red;font-style:italic;}
+  </style>
+
+ </head>
+
+ <!--This code displays a drop down menu list of search engine options:
+     AskJeeves
+     Google
+     Yahoo
+     ...the user selects the particular search engine they wish to use;
+     then, hit's the [Submit] button;
+     this runs a Javascript function called: goToURL();
+     ...which, in turn, goes to the selected URL address. 
+     ---
+     NOTE: The current window gets replaced by a 'new' one...; 
+           which is not something I wanted to happen;
+           so, this code still remains being a bit buggy in this sense.
+           Each time I tried to fix this by adding in: 
+           target='_blank';
+           ...to the Javascript...; then, the code refused to work, anymore...?!
+     ---
+     CREATED: Wed 20 Aug 2025 17:42 PM GMT
+     UPDATED: Wed 20 Aug 2025 17:42 PM GMT  
+ -->  
+ 
+ <body>
+
+  <header>
+   <h1>Links</h1>
+  </header>
+
+  <hr>
+
+  <main>
+   <form id="frm1" name="frm1" method="get" action="javascript:goToURL()">
+    <label for="sel1">Choose a search engine: </label>
+    <select id="sel1">
+     <!--doing a web search...I found there are 3 possible options: 
+         selected disabled hidden
+
+         selected - didn't work, meaning that option was NOT selected
+         I also tried using: selected="selected"
+         ...but, that didn't work, neither.
+      
+         hidden - didn't show any text at all...?!
+
+         disabled - meant that option couldn't be selected;
+         however, it also printed the text out really 'faint'...
+         so, that it was almost unreadable.
+
+         in the end, as a work around, I just decided to add the words:
+         'Choose a search engine: '
+         ...as being the label text, instead.
+        
+     -->
+     <!--
+     <option value="" selected disabled hidden>Choose a search engine...</option>
+     -->
+     <option value="askjeeves">AskJeeves</option>
+     <option value="google">Google</option>
+     <option value="yahoo">Yahoo</option>
+    </select>
+    <input type="submit" value="Submit">
+   </form>
+  </main>
+
+  <hr>
+
+  <footer>
+   <p>
+    Document last modified;
+    <br>
+    <span class="clsDateTimeStamp">
+     Wed 20 Aug 2025 23:14 PM GMT
+    </span>
+   </p>
+  </footer>
+
+  <script>
+   function goToURL(){
+    name=document.getElementById("sel1").value;
+    URLaddress="https://www."+ name + ".com";
+    window.location=URLaddress;
+   }
+  </script>
+
+ </body>
+
+</html>
