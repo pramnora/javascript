@@ -30,14 +30,6 @@
      this runs a Javascript function called: goToURL();
      ...which, in turn, goes to the selected URL address. 
      ---
-     BUG(1): The current window gets replaced by a 'new' one...; 
-             which is not something I wanted to happen;
-             so, this code still remains being a bit buggy in this sense.
-
-             Each time I tried to fix this by adding in: 
-             target='_blank';
-             ...to the Javascript...; then, the code refused to work, anymore...?!
-     ---
      CREATED: Wed 20 Aug 2025 17:42 PM GMT
      UPDATED: Wed 20 Aug 2025 17:42 PM GMT  
  -->  
@@ -99,7 +91,7 @@
    function goToURL(){
     name = document.getElementById("sel1").value;
     URLaddress = "https://www."+ name + ".com";
-    window.location = URLaddress;
+    window.open(URLaddress,"_blank");
    }
   </script>
 
