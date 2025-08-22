@@ -17,8 +17,7 @@
 
      DATA Storage: 
         Both 'names/phone numbers'...
-        are all written/stored inside of the 
-        HTML drop down list select object.
+        are all written/stored inside of the HTML drop down list select object.
         (This is the 'simplest'..; though, probably, NOT the most 'efficient' way to both 'store/retrieve' data.)
 
      CODE CREATION:
