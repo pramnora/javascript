@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="page-created" content="Fri 22 Aug 2025 19:51 PM GMT">
+  <title>App.: Javascript Phonebook</title>
+  <style>
+   main{font-family:arial,verdana,sans-serif;border:1px dashed black;}
+   header,footer,main{text-align:center;width:50%;margin:auto;padding:10px;}
+   header{background:black;border-radius:10px 10px 0px 0px;}
+   h1{color:white;}
+   hr{width:50%;}
+   h2{color:yellow;}
+   h3{color:lime;}
+   footer{background:gray;color:black;border-radius:0px 0px 10px 10px;}
+   #idDivDisplay{background:pink;color:red;padding:10px;}
+   .clsDateTimeStamp{background:white;color:red;font-style:italic;border-radius:10px;}
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1></h1>Javascript Phonebook app.</h1> 
+   <hr>
+   <h2>USER INSTRUCTIONS:</h2>
+   <h3>
+    First, select a name...; 
+    <br>then, 'click' button to retrieve their phone number.
+   </h3>
+  </header>
+  <main>
+   <br>
+   <select id="idObjSel1">
+    <option value="" selected>Please, choose a name...</option>
+    <option value="">------------------------------------</option>
+    <option value="">Friends</option>
+    <option value="">------------------------------------</option>
+    <option value="0207 111 1111">Jack</option>
+    <option value="0208 222 2222">Jill</option>
+    <option value="">------------------------------------</option>
+    <option value="">Finance</option>
+    <option value="">------------------------------------</option>
+    <option value="0330 024 0924">Cashplus</option>
+    <option value="0800 200 400">Nat West</option>
+   </select>
+   <button onclick="showPhoneNo()">Phone number</button>
+   <br><br>
+   <div id="idDivDisplay"></div>
+   <br>
+  </main>
+  <script>
+   function showPhoneNo(){
+    display = document.getElementById('idDivDisplay')
+    phoneNo = document.getElementById('idObjSel1').value;
+    if (phoneNo] == "") { // * check value isn't an empty choice...
+     alert("Invalid choice! Please, choose a name.");
+    } else {        // * display phone number...
+     display.innerText = phoneNo;
+    }
+   } 
+  </script>
+  <footer>
+   <p>
+    Document last updated:
+    <br>
+    <span class="clsDateTimeStamp">
+     Fri 22 Aug 2025 21:51 PM GMT
+    </span>
+   </p>
+  </footer>
+ </body>
+</html>
