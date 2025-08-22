@@ -1,0 +1,54 @@
+# PHONEBOOK APP
+
+I wanted to be able to **test** my WebDev skills  
+to see just how *fast* I could build a: Javascript phonebook application;  
+of the type where you...  
+- select name  
+- then, click a button to retrieve phone number.  
+...to be honest, I didn't the exercise to be particular easy.  
+
+At first, I thought it would take me just 1/2 an hour or less...  
+- keep all HTML/CSS/Javascript code together inside of one single web page.  
+- develop the UI  
+...then, hours later...I found myself still working on it...trying to fix bugs...???  
+Also, having to re-write the application...so that it works...  
+- not just on the surface UI-User Interface level  
+- but, also, that the underlying 'source code' was laid out clear/and, is well commented.  
+ 
+**CREATED**: *Fri 22 Aug 2025 22:59 AM GMT*  
+**UPDATED**: *Fri 22 Aug 2025 22:59 AM GMT*  
+
+-----
+
+# APPLICATION DESIGN  
+ 
+The overall application design is really quite simple, and, straight forwards enough...  
+- HTML drop down list select object (which, also, is used to store both 'name/phone numbers' data).    
+- Javascript, used to get form name/and, also, retrieve the corresponding name's phone number.    
+- Javascript, used to get the div display object name...; and, send the retrieved phone number output there.
+
+-----
+
+# There are 3 separate versions of this code...
+
+1> CodePen.io
+- https://codepen.io/paulramnora/pen/KwdRJWR
+
+**NOTE**: I started off by trying to build the project at CodePen.io;   
+but, found a number of bugs...; so, later on, decided to work on fixing all the bugs offline. 
+
+Later on, I returned back to work on the code at CodePen.io...until when I had a fully working application.  
+
+2> GitHub source code  
+
+When I had finished working on the version I'd created offline...; 
+then, I uploaded that 'source code' my GitHub online a/c.: Javascript repository:
+- https://github.com/pramnora/javascript/blob/master/programs/search/database/phonebook/js/object/js-phonebook-01.html
+
+3> Next, I created a separate stand alone version of the code which is being stored inside of my Netlify a/c.:
+- https://pr-phonebook.netlify.app/
+  
+  
+
+    
+
