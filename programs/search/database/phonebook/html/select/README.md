@@ -1,23 +1,25 @@
 # Phonebook app.
 
 **CREATED**: *Fri 22 Aug 2025 22:59 AM GMT*  
-**UPDATED**: *Fri 22 Aug 2025 23:31 AM GMT*  
+**UPDATED**: *Fri 22 Aug 2025 23:41 AM GMT*  
 
 -----
 
 ## Introduction
 
 I wanted to be able to **test** my WebDev skills  
-to see just how *fast* I could build a: Javascript phonebook application;  
+to see just how *fast* I could build a simple and straight forwards:  
+Javascript phonebook application;  
 of the type where you...  
 - select name  
-- then, click a button to retrieve phone number.  
-...to be honest, I didn't the exercise to be particular easy.  
+- then, click a button to retrieve phone number  
+...to be honest, I didn't find this exercise to be particularly easy.  
 
 At first, I thought it would take me just 1/2 an hour or less...  
-- keep all HTML/CSS/Javascript code together inside of one single web page.  
-- develop the UI  
-...then, hours later...I found myself still working on it...trying to fix bugs...???  
+- keep all 'HTML/CSS/Javascript' code being located together inside of 'one' single web page file    
+- develop the UI    
+- test the Javascript works  
+...then, hours later on...I found myself still working away on it...trying to fix bugs...???    
 Also, having to re-write the application...so that it works...  
 - not just on the surface UI-User Interface level  
 - but, also, that the underlying 'source code' was laid out clear/and, is well commented.  
@@ -27,10 +29,18 @@ Also, having to re-write the application...so that it works...
 
 # App. design  
  
-The overall application design is really quite simple, and, straight forwards enough...  
-- HTML drop down list select object (which, also, is used to store both 'name/phone numbers' data).    
-- Javascript, used to get form name/and, also, retrieve the corresponding name's phone number.    
-- Javascript, used to get the div display object name...; and, send the retrieved phone number output there.
+The overall application design is really quite simple, and, straight forwards enough...;    
+basiclaly, there are just 2 objects:  
+
+1. A HTML select drop down list object,    
+   (used to store all of the 'names/phone numbers' data)    
+       
+2. A div id object,  
+   (used for outputting the found data)  
+
+3. Javascript code,    
+   (used to get the selected form name/phone number;  
+   and, to display taht phone number inside of the div object)  
 
 -----
 
