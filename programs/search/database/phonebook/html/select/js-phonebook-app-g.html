@@ -1,0 +1,12 @@
+<select id="idObjSel1">
+ <option value="0207 111 1111">Jack</option>
+</select>
+<button onclick="showPhoneNo()">Phone number</button>
+<div id="idDivDisplay"></div>
+<script>
+ function showPhoneNo(){
+  display = document.getElementById('idDivDisplay')
+  phoneNo = document.getElementById('idObjSel1').value;
+  display.innerText = phoneNo;
+ } 
+</script>
