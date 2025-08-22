@@ -1,0 +1,26 @@
+   <select id="idObjSel1">
+    <option value="" selected>Please, choose a name...</option>
+    <option value="">------------------------------------</option>
+    <option value="">Friends</option>
+    <option value="">------------------------------------</option>
+    <option value="0207 111 1111">Jack</option>
+    <option value="0208 222 2222">Jill</option>
+    <option value="">------------------------------------</option>
+    <option value="">Finance</option>
+    <option value="">------------------------------------</option>
+    <option value="0330 024 0924">Cashplus</option>
+    <option value="0800 200 400">Nat West</option>
+   </select>
+   <button onclick="showPhoneNo()">Phone number</button>
+   <div id="idDivDisplay"></div>
+  </main>
+  <script>
+   function showPhoneNo(){
+    display = document.getElementById('idDivDisplay')
+    phoneNo = document.getElementById('idObjSel1').value;
+    if (phoneNo == "") { // * check value isn't an empty choice...
+     alert("Invalid choice! Please, choose a name.");
+    } else {        // * display phone number...
+     display.innerText = phoneNo;
+    }
+   } 
