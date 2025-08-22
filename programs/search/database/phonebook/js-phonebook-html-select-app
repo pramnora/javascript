@@ -7,16 +7,33 @@
      The user is presented with a HTML drop down list object...
      from which they are able to select a name.
 
-     Then, when they 'click' on the corresponding button:
+     Then, when they 'click' on the button:
      [Phone number]
      ...the program displays what is the 'selected' name phone number.
 
      ----
 
-     NOTE: DATA Storage: Both 'names/phone numbers'...
-           are all written/stored inside of the 
-           HTML drop down list select object.
-  -->
+     NOTE(S): 
+
+     DATA Storage: 
+        Both 'names/phone numbers'...
+        are all written/stored inside of the 
+        HTML drop down list select object.
+        (This is the 'simplest'..; though, probably, NOT the most 'efficient' way to both 'store/retrieve' data.)
+
+     CODE CREATION:
+        There are, in fact, two versions of this program...
+
+        I first started developing this app. inside of CodePen.io:
+
+        - https://codepen.io/paulramnora/pen/KwdRJWR
+
+        ...then, finding a number of bugs there...decided it might be far better working offline, instead.
+        Later on, I returned back to develop the app at CodePen.io...until when I had a fully working application.
+
+        Next, I continued working offline...until the offline application worked, too;
+        finally, I decided to upload the 'source code' into my GitHub online a/c.: Javascript repository.
+ -->
 
  <head>
 
