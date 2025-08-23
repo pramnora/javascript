@@ -1,7 +1,7 @@
 # Phonebook app.
 
 **CREATED**: *Fri 22 Aug 2025 22:59 PM GMT*  
-**UPDATED**: *Sat 23 Aug 2025 02:12 AM GMT*  
+**UPDATED**: *Sat 23 Aug 2025 02:35 AM GMT*  
 
 -----
 
@@ -85,10 +85,10 @@ When I looked at what was the original 'source code'...I noticed that it consist
 
 When I removed...  
 
-- unnecessary code comment lines   
-- unnecessary blank vertical space lines  
+- all unnecessary code comment lines   
+- all unnecessary blank vertical space lines  
    
-...then, I very quickly discovered the line was, in fact, halved.  
+...then, I very quickly discovered these lines were, in fact, halved.  
 -(Not entirely a huge surprise to me...; as I'd experienced such things before.)-        
     
 But, what if it was possible to compress that code down even further...;  
