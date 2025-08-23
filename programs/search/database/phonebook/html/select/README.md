@@ -1,7 +1,7 @@
 # Phonebook app.
 
 **CREATED**: *Fri 22 Aug 2025 22:59 PM GMT*  
-**UPDATED**: *Sat 23 Aug 2025 02:35 AM GMT*  
+**UPDATED**: *Sat 23 Aug 2025 02:47 AM GMT*  
 
 -----
 
@@ -88,8 +88,8 @@ When I removed...
 - all unnecessary code comment lines   
 - all unnecessary blank vertical space lines  
    
-...then, I very quickly discovered these lines were, in fact, halved.  
--(Not entirely a huge surprise to me...; as I'd experienced such things before.)-        
+...then, I very quickly discovered these lines were, in fact, 'halved'.  
+-(Not entirely a huge surprise to me...; as I've experienced seeing such things many times before.)-        
     
 But, what if it was possible to compress that code down even further still...;  
 with the ultimate aim of compressing it down to reach what is it's ultimate 'limit'...???       
@@ -108,9 +108,9 @@ Naturally, of course, the more you copy and paste:
 option="value"...;       
 ...then, the longer the code gets...; or, rather the database just grows.   
 
-The final compressed version of the code is here:  
+The final 4 line compressed version of the code is here:  
 
 - https://github.com/pramnora/javascript/blob/master/programs/search/database/phonebook/html/select/js-phonebook-app-j.html  
 
-...though, I have to admit...one can never really state that any code is final...;  
-when there are endless possible versions of it one can produce...???  
+...though, I have to admit...one can never really state that any code is, in fact, final...;  
+when there are endless possible versions of it which one can produce...???  
