@@ -1,7 +1,7 @@
 # Phonebook app.
 
 **CREATED**: *Fri 22 Aug 2025 22:59 PM GMT*  
-**UPDATED**: *Sat 23 Aug 2025 01:23 AM GMT*  
+**UPDATED**: *Sat 23 Aug 2025 01:39 AM GMT*  
 
 -----
 
@@ -47,7 +47,7 @@ basically, there are just 2 objects:
 
 -----
 
-# There are 3 separate versions of this code...
+# There are 4 separate versions of this code...
 
 -----
 
@@ -76,12 +76,14 @@ then, I uploaded that 'source code' my GitHub online a/c.: Javascript repository
 
 - https://pr-phonebook.netlify.app/
   
+
+4> (The very highly 'compressed' version...; read below.)
   
 ## Code compression
 
-When I looked at what was the original code...I noticed that it consisted of 182 lines in length.  
-Then, I had the idea to try and compress the code down...eventually, getting it to become just 8 lines in length.  
+When I looked at what was the original 'source code'...I noticed that it consisted of 182 lines in length;    
+next, I had the idea to try and compress the code down...eventually, getting it to become just 4 lines in length.  
 
-Of course, this very highly compressed code does no longer function exactly the same as did the original full blown version;  
-however, it is the same code still functioning as before. You just have to add further select 'option="value" by 'copy and paste'.  
+Of course, this very highly compressed code does no longer functions exactly the same as did the original full blown version;  
+however, it is the same code still functioning as before. You just have to add further select: option="value", by using 'copy and paste'.  
 
