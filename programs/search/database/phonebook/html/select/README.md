@@ -78,15 +78,27 @@ then, I uploaded that 'source code' my GitHub online a/c.: Javascript repository
 
 -----
 
-4> (The very highly 'compressed' version...; read below.)
+4> 
   
 ## Code compression
 
-When I looked at what was the original 'source code'...I noticed that it consisted of 182 lines in length;    
-next, I had the idea to try and compress the code down...eventually, getting it to become just 4 lines in length.  
+When I looked at what was the original 'source code'...I noticed that it consisted of 182 lines in length.  
 
-Of course, this very highly compressed code does no longer function exactly the same as did the original full blown version;  
-however, it is essentially the same code as was there before. 
+When I deleted the unnecessary code comment lines/and, also, removed the unnecessary blank vertical space lines;  
+then, I very quickly discovered the code line was, in fact, halved.  
+    
+But, what if it was possible to compress that code down even further...;  
+with the ultimate aim of compressing it down to reach what is it's ultimate limit...???       
+Well, eventually, I was able to compress it down to become just 4 lines in length...!    
 
-You just have to add further select: option="value" statements...by using 'copy and paste'.  
+Of course, this very highly compressed code does no longer function exactly the same as did the original full blown version;      
+however, it is essentially the same code as was there before.   
+You select a name/click the button: [Phone number]/and, the corresponding phone number of that name appears.  
+
+You just have to add further select:   
+option="value"  
+...statements...by using 'copy and paste'. 
+
+Natually, of course, the more you copy and paste: option="value"...;     
+then, the longer the code gets...; or, rather the database grows.   
 
