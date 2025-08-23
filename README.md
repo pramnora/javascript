@@ -109,7 +109,9 @@ c> as inline code...that is included inside of the HTML tag itself
  
 2> In the HEAD-/HEAD section of the web page you can include a link to an external Javascript file: [.js]...  
 
-> <script type="text/javascript" src="js01.js></script>    
+> <script type="text/javascript" src="js01.js>
+> ...javascript code is written inside here...
+> </script>    
 
 **NOTE**: Please, take out the pair of curly brackets: () that you see being inserted inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
 
