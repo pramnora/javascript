@@ -93,9 +93,10 @@ When I removed...
     
 But, what if it was possible to compress that code down even further...;  
 with the ultimate aim of compressing it down to reach what is it's ultimate limit...???       
-Well, eventually, I was able to compress it down to become just 4 lines in length...!    
+Well, eventually, I was able to compress 182 lines down to become just 4 lines in length...!    
 
-Of course, this very highly compressed code does no longer function exactly the same as did the original full blown version;      
+Of course, this very highly 'compressed' code version...  
+does no longer function exactly the same as did the original full blown version;        
 however, it is essentially the same code as was there before.   
 You select a name/click the button: [Phone number]/and, the corresponding phone number of that name appears.  
 
