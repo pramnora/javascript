@@ -85,6 +85,8 @@ then, I uploaded that 'source code' my GitHub online a/c.: Javascript repository
 When I looked at what was the original 'source code'...I noticed that it consisted of 182 lines in length;    
 next, I had the idea to try and compress the code down...eventually, getting it to become just 4 lines in length.  
 
-Of course, this very highly compressed code does no longer functions exactly the same as did the original full blown version;  
-however, it is the same code still functioning as before. You just have to add further select: option="value", by using 'copy and paste'.  
+Of course, this very highly compressed code does no longer function exactly the same as did the original full blown version;  
+however, it is essentially the same code as was there before. 
+
+You just have to add further select: option="value" statements...by using 'copy and paste'.  
 
