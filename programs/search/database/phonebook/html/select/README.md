@@ -67,8 +67,7 @@ Later on, I returned back to work on the code at CodePen.io...until when I had a
 When I had finished working on the version I'd created offline...;  
 then, I uploaded that same 'source code' into my GitHub online a/c. Javascript repository:   
 
-- [https://github.com/pramnora/javascript/blob/master/programs/search/database/phonebook/js/object/js-phonebook-01.html
-](https://github.com/pramnora/javascript/blob/master/programs/search/database/phonebook/html/select/js-phonebook-app-a.html)
+- https://github.com/pramnora/javascript/blob/master/programs/search/database/phonebook/html/select/js-phonebook-app-a.html
 
 -----
 
