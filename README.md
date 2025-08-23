@@ -109,11 +109,9 @@ c> as inline code...that is included inside of the HTML tag itself
  
 2> In the HEAD-/HEAD section of the web page you can include a link to an external Javascript file: [.js]...  
 
-> <script type="text/javascript" src="js01.js">    
-> ...javascript code is written inside here...    
-> </script>       
-
-**NOTE**: Please, take out the pair of curly brackets: () that you see being inserted inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
+> <script type="text/javascript" src="js01.js">      
+> ...javascript code is written inside here...      
+> </script>  
 
 -----
 
@@ -129,14 +127,11 @@ If your script is enclosed inside of a function...; then, nothing runs until whe
 > function test(){  
 > alert(0);  
 > }
-
 > test(); // function call  
 
 Sometimes, the start BODY tag will add something like the following to start the scripts running when the web page has already finished loading...
 
-(<)BODY onLoad="javascript:test();"(>)
-
-NOTE: Please, take out the pair of curly brackets: () that you see being written inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
+> <BODY onLoad="javascript:test();">  
 
 -----
 
