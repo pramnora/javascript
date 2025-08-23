@@ -1,7 +1,7 @@
 # Phonebook app.
 
 **CREATED**: *Fri 22 Aug 2025 22:59 PM GMT*  
-**UPDATED**: *Sat 23 Aug 2025 01:17 AM GMT*  
+**UPDATED**: *Sat 23 Aug 2025 01:23 AM GMT*  
 
 -----
 
@@ -33,7 +33,7 @@ Also, having to re-write the application...so that it works...
 # App. design  
  
 The overall application design is really quite simple, and, straight forwards enough...;    
-basiclaly, there are just 2 objects:  
+basically, there are just 2 objects:  
 
 1. A HTML select drop down list object,    
    (used to store all of the 'names/phone numbers' data)    
@@ -43,7 +43,7 @@ basiclaly, there are just 2 objects:
 
 3. Javascript code,    
    (used to get the selected form name/phone number;  
-   and, to display taht phone number inside of the div object)  
+   and, to display that phone number inside of the div object)  
 
 -----
 
