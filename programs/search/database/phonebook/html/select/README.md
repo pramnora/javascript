@@ -91,8 +91,8 @@ When I removed...
 ...then, I very quickly discovered these lines were, in fact, halved.  
 -(Not entirely a huge surprise to me...; as I'd experienced such things before.)-        
     
-But, what if it was possible to compress that code down even further...;  
-with the ultimate aim of compressing it down to reach what is it's ultimate limit...???       
+But, what if it was possible to compress that code down even further still...;  
+with the ultimate aim of compressing it down to reach what is it's ultimate 'limit'...???       
 Well, eventually, I was able to compress 182 lines down to become just 4 lines in length...!    
 
 Of course, this very highly 'compressed' code version...  
@@ -104,8 +104,9 @@ You just have to add further select:
 option="value"  
 ...statements...by using 'copy and paste'. 
 
-Naturally, of course, the more you copy and paste: option="value"...;     
-then, the longer the code gets...; or, rather the database grows.   
+Naturally, of course, the more you copy and paste:   
+option="value"...;       
+...then, the longer the code gets...; or, rather the database just grows.   
 
 The final compressed version of the code is here:  
 
