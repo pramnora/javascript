@@ -1,7 +1,7 @@
 # Phonebook app.
 
-**CREATED**: *Fri 22 Aug 2025 22:59 AM GMT*  
-**UPDATED**: *Fri 22 Aug 2025 23:41 AM GMT*  
+**CREATED**: *Fri 22 Aug 2025 22:59 PM GMT*  
+**UPDATED**: *Sat 23 Aug 2025 01:17 AM GMT*  
 
 -----
 
@@ -74,6 +74,11 @@ then, I uploaded that 'source code' my GitHub online a/c.: Javascript repository
 - https://pr-phonebook.netlify.app/
   
   
+## Code compression
 
-    
+When I looked at what was the original code...I noticed that it consisted of 182 lines in length.  
+Then, I had the idea to try and compress the code down...eventually, getting it to become just 8 lines in length.  
+
+Of course, this very highly compressed code does no longer function exactly the same as did the original full blown version;  
+however, it is the same code still functioning as before. You just have to add further select 'option="value" by 'copy and paste'.  
 
