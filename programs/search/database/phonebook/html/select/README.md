@@ -1,7 +1,7 @@
 # Phonebook app.
 
 **CREATED**: *Fri 22 Aug 2025 22:59 PM GMT*  
-**UPDATED**: *Sat 23 Aug 2025 01:39 AM GMT*  
+**UPDATED**: *Sat 23 Aug 2025 02:12 AM GMT*  
 
 -----
 
@@ -84,8 +84,13 @@ then, I uploaded that 'source code' my GitHub online a/c.: Javascript repository
 
 When I looked at what was the original 'source code'...I noticed that it consisted of 182 lines in length.  
 
-When I deleted the unnecessary code comment lines/and, also, removed the unnecessary blank vertical space lines;  
-then, I very quickly discovered the code line was, in fact, halved.  
+When I removed...  
+
+- unnecessary code comment lines   
+- unnecessary blank vertical space lines  
+   
+...then, I very quickly discovered the line was, in fact, halved.  
+-(Not entirely a huge surprise to me...; as I'd experienced such things before.)-        
     
 But, what if it was possible to compress that code down even further...;  
 with the ultimate aim of compressing it down to reach what is it's ultimate limit...???       
@@ -99,6 +104,6 @@ You just have to add further select:
 option="value"  
 ...statements...by using 'copy and paste'. 
 
-Natually, of course, the more you copy and paste: option="value"...;     
+Naturally, of course, the more you copy and paste: option="value"...;     
 then, the longer the code gets...; or, rather the database grows.   
 
