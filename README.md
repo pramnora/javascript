@@ -38,7 +38,7 @@ d> alternatively, instead of Windows Command Prompt...you could also use Windows
 
 ...using either the Windows Command Prompt/or, Powershell...the command to execute Javscript code is:   
 
-C:\>node filename.js
+> C:\>node filename.js
 
 **WRITE/RUN PURE 100% JAVASCRIPT CODE**
 
@@ -109,7 +109,7 @@ c> as inline code...that is included inside of the HTML tag itself
  
 2> In the HEAD-/HEAD section of the web page you can include a link to an external Javascript file: [.js]...  
 
-(<)script type="text/javascript" src="js01.js(>)(<)/script(>)    
+> <script type="text/javascript" src="js01.js></script>    
 
 **NOTE**: Please, take out the pair of curly brackets: () that you see being inserted inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
 
