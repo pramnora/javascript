@@ -106,3 +106,9 @@ option="value"
 Naturally, of course, the more you copy and paste: option="value"...;     
 then, the longer the code gets...; or, rather the database grows.   
 
+The final compressed version of the code is here:  
+
+- https://github.com/pramnora/javascript/blob/master/programs/search/database/phonebook/html/select/js-phonebook-app-j.html  
+
+...though, I have to admit...one can never really state that any code is final...;  
+when there are endless possible versions of it one can produce...???  
