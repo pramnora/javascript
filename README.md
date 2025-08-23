@@ -119,16 +119,16 @@ c> as inline code...that is included inside of the HTML tag itself
 
 If your script is not enclosed inside of a function; then, it will run instantly, right away.
 
-alert(0);  
+> alert(0);  
 
 If your script is enclosed inside of a function...; then, nothing runs until when the function name actually gets called:  
 
-// function declaration block...  
-function test(){  
- alert(0);  
-}
+> // function declaration block...  
+> function test(){  
+> alert(0);  
+> }
 
-test(); // function call  
+> test(); // function call  
 
 Sometimes, the start BODY tag will add something like the following to start the scripts running when the web page has already finished loading...
 
