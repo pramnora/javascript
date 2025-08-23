@@ -141,9 +141,7 @@ There are 2 ways to test javascript...
 
 Method 1: (short form) : USING A SIMPLE [.html] filename extension
 
-(<)script(>)alert("hi, from Javascript!")(<)/script(>)  
-
-NOTE: Please, take out the pair of curly brackets: () that you see being written inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
+> <script>alert("hi, from Javascript!")</script>    
 
 Save the file as...
 
@@ -153,16 +151,17 @@ filename.html
 
 Method 2: (long form) : USING A [barebone.html] DOCUMENT
 
-(<)DOCTYPE html(>)    
-(<)html lang="en"(>)    
- (<)meta charset="utf-8"(>)    
- (<)head(>)  
-  (<)title(>)Test Javascript(<)/title(>)        
-  (<)script(>)alert("hi, from Javascript!")(<)/script(>)      
- (<)/head(>)      
- (<)body(>)    
- (<)/body(>)    
-(<)/html(>)  
+> <DOCTYPE HTML>      
+> <html lang="en">    
+> <meta charset="utf-8">      
+> <head>      
+> <title>Test Javascript</title>          
+> <script>alert("hi, from Javascript!")</script>        
+> </head>         
+> <body>       
+> </body>      
+> </html>   
+
 
 NOTE: Please, take out the pair of curly brackets: () that you see being written inside of the above code to surround the angle brackets: <>; I had to include these as otherwise the code would not display here.
 
