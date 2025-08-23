@@ -7,20 +7,23 @@
 
 ## Introduction
 
-I wanted to be able to **test** my WebDev skills  
-to see just how *fast* I could build a simple and straight forwards:  
-Javascript phonebook application;  
-of the type where you...  
+I wanted to be able to **test** my WebDev skills to see just how *fast* I could build a simple and straight forwards: Javascript phonebook application, of the type where you...  
+
 - select name  
 - then, click a button to retrieve phone number  
+
 ...to be honest, I didn't find this exercise to be particularly easy.  
 
 At first, I thought it would take me just 1/2 an hour or less...  
+
 - keep all 'HTML/CSS/Javascript' code being located together inside of 'one' single web page file    
 - develop the UI    
 - test the Javascript works  
+
 ...then, hours later on...I found myself still working away on it...trying to fix bugs...???    
+
 Also, having to re-write the application...so that it works...  
+
 - not just on the surface UI-User Interface level  
 - but, also, that the underlying 'source code' was laid out clear/and, is well commented.  
  
