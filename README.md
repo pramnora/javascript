@@ -126,7 +126,7 @@ If your script is enclosed inside of a function...; then, nothing runs until whe
 > // function declaration block...  
 > function test(){  
 > alert(0);  
-> }
+> }  
 > test(); // function call  
 
 Sometimes, the start BODY tag will add something like the following to start the scripts running when the web page has already finished loading...
